@@ -45,14 +45,48 @@ Instead of going through the process manually, you can install it using Homebrew
 ## Downloading data from SRA
 **Include image for below**
 The Sequence Read Archive can be broken into four main levels, each with their own specific accession IDs
-* Studies: DRP, ERP, SRP accessions
-* Samples: DRS, ERS, SRS accessions
-* Analyses: DRZ, ERZ, SRZ accessions
+* Study: DRP, ERP, SRP accessions
+* Sample: DRS, ERS, SRS accessions
+* Analysis: DRZ, ERZ, SRZ accessions
 * Run: DRR, ERR, SRR accessions
-
-The smallest unit able to published in the SRA is an Analysis
 
 <img src="./images/sra_structure_infograph.png" width="600">
 
 **will introduce GEO before SRA**
-For this example, we are going to be focusing on data from a study (publication) through GEO, 
+
+The smallest unit able to published in the SRA is an Analysis, but most of the neat stuff can be found in Studies.
+
+We'll be using this one [GEO summary page](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE51443) as an example.
+
+To find the SRA link, just scroll down from the top of the page:
+
+<img src="./images/geo_accession_upper.png" width="600">
+
+And look near the bottom, and under **Relations** select the SRA accession link
+
+<img src="./images/geo_accession_lower.png" width="600">
+
+The accession link brings you to a page that holds all biological samples related to this analysis.
+Selecting, for example, this [Link](https://www.ncbi.nlm.nih.gov/sra/SRX365519[accn]) loads that specific run, and the files associated with it.
+
+However, we want to view all files with every sample in an analysis.
+To do this:
+* Click **Send to**, located below the runs and across from the summary button
+* Choose **Run Selector** as your Destination
+* Click **Go** to send the entire recordset to Run Selector
+
+The SRA Run Selector page should open upo in another tab, and lookc like this:
+
+<img src="./images/sra_run_selector.png" width="800">
+
+Under **Common Fields** you'll find a ton of information describing the samples from the study, including:
+* Assay Type (RNA-seq, CHiP-seq, etc)
+* Instrument (Sequencing platform utilized)
+* Library Layout (Single or Paired End sequencing)
+* Organism
+* as well as a plethora of other relevant information
+
+Under **Select** you have the option to download either all Metadata or an Accession List, or just those that are selected from the **Found X Items**
+* The **Metadata** option downloads metadata for all runs as a table, or as a list of accession numbers
+* The **Accession** option downloads a text file with all of the SRA accession IDs from the study
+* For additional information about many of the fields on this page, click the *Question mark* icon at the top of the page
