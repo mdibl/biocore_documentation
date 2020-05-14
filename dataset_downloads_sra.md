@@ -19,6 +19,8 @@ The SRA Toolkit is a suite of compiled binaries and source code for tools that d
 
 ## Installing SRA Toolkit
 Lets get this out of the way first:
+* Potentially just point to the NCBI Github page:
+  `https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit`
 * [Click this link view the Download page](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software)
 * Compiled binaries exist for macOS and RHEL/Ubuntu based Linux distributions
 * If running Windows (follow up with guide to install WSL Ubuntu 20.04)
@@ -33,6 +35,7 @@ Lets get this out of the way first:
 It took me some time to install sratools through NCBI documentation, so here is another, easier, method.
 Instead of going through the process manually, you can install it using Homebrew, an (imo fantastic) package manager for macOS and Linux
 * To install Homebrew, just past the following into your terminal: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+**Follow up on WSL/Linux Installation, running into issues with perl**
 * Once homebrew is installed, you need to add the tap brewsci/bio
   * This contains tons of bioinformatics packages, with one included being sratoolkit
   * Simply type `brew tap brewsci/bio` in the command line
@@ -41,6 +44,12 @@ Instead of going through the process manually, you can install it using Homebrew
 * In a nutshell, adding a program to PATH allows you to use it anywhere in the filesystem, not just in the location in which it's located.
   * Instead of having to give a direct path to fastq-dump like this: `~/sra-toolkit/bin/fastq-dump.2.10.5 -X`
   * You can immedially use it like so: `fastq-dump -X` on the command line
+
+## Alternative Alternative: Use Docker
+* For macOS and Windows, install Docker Desktop
+* Run the following `docker pull inutano/sra-toolkit`
+* Linux is a bit more involved, but the documentation does a pretty goopd job of providing a walkthrough
+  * **post doc here**
 
 ## Downloading data from SRA
 **Include image for below**
@@ -90,3 +99,5 @@ Under **Select** you have the option to download either all Metadata or an Acces
 * The **Metadata** option downloads metadata for all runs as a table, or as a list of accession numbers
 * The **Accession** option downloads a text file with all of the SRA accession IDs from the study
 * For additional information about many of the fields on this page, click the *Question mark* icon at the top of the page
+
+## Downloading Experimental Data from SRA using fastq-dump
