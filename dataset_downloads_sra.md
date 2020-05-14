@@ -86,7 +86,7 @@ To do this:
 
 The SRA Run Selector page should open upo in another tab, and lookc like this:
 
-<img src="./images/sra_run_selector.png" width="800">
+<img src="./images/sra_run_selector.png" width="1000">
 
 Under **Common Fields** you'll find a ton of information describing the samples from the study, including:
 * Assay Type (RNA-seq, CHiP-seq, etc)
