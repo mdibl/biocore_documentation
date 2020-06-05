@@ -41,6 +41,9 @@ Once you launch the PowerShell app, you should see a window similar to the one b
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/powershell.png?raw=true">
 
+### A quick note ###
+Most Linux terminal commands will work in Windows PowerShell. If not, you can reference [this post](https://mathieubuisson.github.io/powershell-linux-bash/).
+
 ## The Linux File System
 A file system is a layer underneath your computer's operating system. 
 
