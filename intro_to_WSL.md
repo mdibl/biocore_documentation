@@ -6,15 +6,16 @@ date: "May 28th"
 ---
 # Introduction to the Windows Subsystem for Linux
 
+## Learning Objectives
+* Become acquainted with PowerShell
+* Learn how to enable WSL feature-set 
+* Install a Linux distro from the MS store
+* Get set up in your Linux environment
+
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If searching for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
-
-## Learning Objectives
-* Become familiar with the WSL feature-set on Windows
-* Install a Linux distro from the MS store
-* Get set up in your Linux environment
 
 
 ## A Couple Caveats
@@ -22,8 +23,7 @@ date: "May 28th"
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
 If all you're looking to do is remote into a server via SSH, then this guide is most likely overkill.
-* If your Windows 10 release version is **1809** or higher, and you have *at least* **PowerShell 5.1** installed, OpenSSH is built in
-  * PowerShell comes integrated with all versions of Windows 10, so you *should* already have it
+* If your Windows 10 release version is **1809** or higher, and are running **PowerShell 5.1** installed, OpenSSH is built in
 
 ### Launching PowerShell
 
@@ -109,9 +109,10 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
 
 * **Congratulations! You've successfully installed and configured Ubuntu Linux on your Windows machine!**
 
-* For a quick test-run, try installing the program Neofetch using `sudo apt-get install neofetch`  
-
-* Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distro-specific ASCII graphic
+* For a quick test-run, try installing the program Neofetch 
+  * Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distro-specific ASCII graphic
+  * First, add the repository (software source): `sudo add-apt-repository ppa:dawidd0811/neofetch`
+  * then run `sudo apt-get install neofetch`  
 
 <img src="./wsl_images/ubuntu_terminal.png">
 
