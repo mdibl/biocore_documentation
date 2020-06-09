@@ -36,11 +36,15 @@ would produce the following.
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/sup-image-3.png?raw=true">
 
-In general, the man pages for a command will be long. You can scroll the docs with up/down arrows or scroll by page with the spacebar.
+## Navigating man pages
+
+In general, the man pages for a command will be long. You can scroll the docs with up/down arrows or scroll by page with the spacebar. To exit from the man page, type `q` (for quit).
+
+## Interpreting man pages
 
 It is recommended that you get familiar with the Linux man pages and how to interpret the information they supply. This will be particularly useful as you spend more time in the terminal and the programs you use become more complex.
 
-## Option format - vs --
+### Option format - vs --
 
 Most command options have two formats, namely a short format (e.g., `-a`) and a long format (e.g., `--all`). While both accomplish the same objective. The short format is easier to remember.
 
