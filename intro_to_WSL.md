@@ -1,12 +1,21 @@
 ---
 title: Introduction to the Windows Subsystem for Linux
 author: "Nathaniel Maki"
+organization: MDIBL Bioinformatics Core
 date: "May 28th"
 ---
+# Introduction to the Windows Subsystem for Linux
+
 ## Learning Objectives
-* Become familiar with the WSL feature-set on Windows
+* Become acquainted with PowerShell
+* Learn how to enable WSL feature-set 
 * Install a Linux distro from the MS store
 * Get set up in your Linux environment
+
+## Summary
+* PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
+* For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
+* If searching for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
 
 ## A Couple Caveats
@@ -14,8 +23,7 @@ date: "May 28th"
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
 If all you're looking to do is remote into a server via SSH, then this guide is most likely overkill.
-* If your Windows 10 release version is **1809** or higher, and you have *at least* **PowerShell 5.1** installed, OpenSSH is built in
-  * PowerShell comes integrated with all versions of Windows 10, so you *should* already have it
+* If your Windows 10 release version is **1809** or higher, and are running **PowerShell 5.1** installed, OpenSSH is built in
 
 ### Launching PowerShell
 
@@ -66,8 +74,8 @@ the vast repositories of free and open source software built on and for Linux.</
 With the above requirement met, turning on WSL is pretty straightforward, especially as it comes baked into Windows.  
 
 ### If you are comfortable working on the command line 
-* Open an elevated PowerShell window
-  * Right click on the **Windows PowerShell** application and select *Run as administrator*
+* Open an elevated (administrator) PowerShell window
+  * To do so, right click on the **Windows PowerShell** application and select *Run as administrator*
 * Next, paste the following code into your open, elevated PowerShell window: 
   * `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 * Reboot your computer
@@ -84,11 +92,13 @@ With the above requirement met, turning on WSL is pretty straightforward, especi
 
 ## Installing a Linux Distribution
 
-Microsoft offers a few distributions of Linux for install on its store, for this example we're going to use Ubuntu.
-Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions.  
-It's very reliable and incredibly stable, with their Long Term Support (LTS) releases recieving updates for up to 5 years after launch.  
-There are a couple LTS versions on the store, but we're going to want the one marked `Ubuntu`, with no numbers next to the name.  
-This is built off of the most recent release of the OS, 20.04, and came out in April of this year.  
+#### Enabling WSL was just the first step, with the second being to select a Linux distribution
+<p> Microsoft offers a few distributions of Linux for install on its store, for this example we're going to use Ubuntu.
+Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust featureset.
+Canonical follows a 6 month release cycle, with the LTS version of its operating system being supported for at least 5 years after launch.</p>
+
+There are a couple LTS versions on the store, but we're going to want the one marked **Ubuntu**, with no numbers next to the name.  
+This is built off of the most recent release of the OS, 20.04, and came out in April of this year.
 
 #### Open up the Microsoft Store and search "Ubuntu"  
 <img src="./wsl_images/ms-store_ubuntu.png">
@@ -99,9 +109,10 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
 
 * **Congratulations! You've successfully installed and configured Ubuntu Linux on your Windows machine!**
 
-* For a quick test-run, try installing the program Neofetch using `sudo apt-get install neofetch`  
-
-* Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distro-specific ASCII graphic
+* For a quick test-run, try installing the program Neofetch 
+  * Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distro-specific ASCII graphic
+  * First, add the repository (software source): `sudo add-apt-repository ppa:dawidd0811/neofetch`
+  * then run `sudo apt-get install neofetch`  
 
 <img src="./wsl_images/ubuntu_terminal.png">
 
