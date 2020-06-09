@@ -74,5 +74,73 @@ You'll notice that the GEO homepage is roughly divided into 4 components:
 
 </p>
   
+### GEO Datasets
+* Built from user submitted records, including Series, Samples, Platforms
+* Also stores curated gene expression + molecular abundance data put together by NCBI
+* Records additionally contain resources and tools, such as clustering utilities and multi-sample comparison
+
+#### GEO Dataset Results page:
+
+<img src="./ncbi_images/GEO_datasets_results.png" width="800">
+
+* Title of each individual dataset lists either the Dataset (GDS), Series (GSE), or Platform (GPL) accession number
+* Followed by Title, and Organism in brackets
+* Underneath Accession number are quick links to the GEO Profiles, PMC text, and tools for analysis
+* Clicking the main title brings you to the Dataset Record
+
+#### GEO Dataset Records page:
+
+<img src="./ncbi_images/GEO_dataset_record.png" width="800">
+
+* Main record contains descriptive information about the dataset (organism, platform, sample values + number)
+* Next to the record, the Expression Profiles link takes you to the GEO Profiles page
+* Cluster Analysis to the right brings you to the requisite heatmap
+* Under that are options to download various files containg additional Dataset information, experimental variable subsets, etc
+* At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
+
+### GEO Profiles
+* A derivative of Geo Datasets
+* Stores *individual* curated gene expression + molecular abundance profiles
+* Assembled and sourced from GEO microarray data
+* Queries based upon gene annotation / profile characteristics
+
+#### GEO Profile Results page:
+
+<img src="./ncbi_images/GEO_profile_results.png" width="800">
+
+* Lists Dataset accession (GDS) from where the profile is derived from
+* Platform accession (GPL) that the Dataset is based on + unique ID from record
+* Organism
+* Additionally, contains:
+  * Annotation: gene symbol, full name + aliases
+  * Reporter: Original sequence reporter(s) taken from the Platform record supplied by submitter
+  * Experiment: Dataest from where the profile comes from
+
+#### GEO Profile Chart page:
+
+<img src="./ncbi_images/GEO_profile_record.png" width="600">
+
+* By clicking on the little chart thumbnail, the full profile details are enlarged
+* This expanded chart include more comprehensive details, such as expression values and experimental design
+* Explaining the graph:
+  * Each column you see represents the expression measurement that was extracted from the VALUE column of the Sample record
+  * Original Sample accessions are listed below (GSM)
+  * Something to note: The values associated with each accession have undergone processing and normalization that is not uniform across accessions.
+  * Because of this, the values should be considered arbitrary, and direct comparisons between different Datasets may not be accurate.
+  * The square represent rank order of expression measurements, and indicate where the expression of that gene falls in comparison to all other genes on an array.
+
+#### GEO Sample Accession
+
+<img src="./ncbi_images/GEO_sample_accessions.png" width="800">
+
+* Selecting a Sample in the Profile Chart brings you to it's appropriate GEO Accession page
+* Here, you can view tons of relevent information in regards to the singular Sample including: 
+  * Sample type
+  * Source name
+  * Organism
+  * Various characteritics
+  * Protocols used for Treatment, Growth, Extraction, etc
+* Also includes the Platfrom ID (GPL) and Series ID at the bottom
+* You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
 
 
