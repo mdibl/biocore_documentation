@@ -7,10 +7,10 @@ date: "May 28th"
 # Introduction to the Windows Subsystem for Linux
 
 ## Learning Objectives
-* Become acquainted with PowerShell
-* Learn how to enable WSL feature-set 
-* Install a Linux distro from the MS store
-* Get set up in your Linux environment
+* Become introduced to PowerShell
+* Learn how to enable the WSL feature-set 
+* Install the Ubuntu Linux distribution from the Microsoft Store
+* Launch Ubuntu Linux and install a small piece of software
 
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
@@ -22,7 +22,7 @@ date: "May 28th"
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
-If all you're looking to do is remote into a server via SSH, then this guide is most likely overkill.
+**If all you're looking to do is remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is unneccesary.**  
 * If your Windows 10 release version is **1809** or higher, and are running **PowerShell 5.1** installed, OpenSSH is built in
 
 ### Launching PowerShell
@@ -63,11 +63,10 @@ the vast repositories of free and open source software built on and for Linux.</
 * Linux CLI apps like tmux, vim, and emacs
 * Language support for Python, Ruby, NodeJS, etc
 * Utilization of the selected Linux distributions package manager: installation of additional software/tools 
-  * Example (Ubuntu): `sudo apt-get install neofetch`
 
 ## Enabling WSL
 
-**WSL is supported on build 16215 and later on Windows 10**  
+**WSL is supported on Windows 10 version 1709 and higher**  
 
 **If you are running an earlier build, you need to update your system to gain access to this feature** 
 
@@ -92,7 +91,8 @@ With the above requirement met, turning on WSL is pretty straightforward, especi
 
 ## Installing a Linux Distribution
 
-#### Enabling WSL was just the first step, with the second being to select a Linux distribution
+#### Enabling WSL is the first step, the second being to select a Linux distribution
+
 <p> Microsoft offers a few distributions of Linux for install on its store, for this example we're going to use Ubuntu.
 Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust featureset.
 Canonical follows a 6 month release cycle, with the LTS version of its operating system being supported for at least 5 years after launch.</p>
@@ -115,6 +115,8 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
   * then run `sudo apt-get install neofetch`  
 
 <img src="./wsl_images/ubuntu_terminal.png">
+
+## Additional Resources
 
 And that's all there is to it!  
 
