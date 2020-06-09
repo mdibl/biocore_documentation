@@ -4,6 +4,16 @@
 
 * Gain basic understanding of the different options that can be passed to the commands introduced in Workshop 1.
 
+## Supporting Video Tutorials
+This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+
+1. [Command line options and man pages](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EUKqYiR4SppDvKmvltrJmm0BiyPK2tXBuSjK0JjAByT9zg?e=DPhP1w) This video clip provides a brief introduction to command line options.
+2. [Command line real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ETURaUJtdVRIs-yh1GDJ4hsBcmeDytHmmu1wekbPK63AhA?e=LBSlUu) This video clip contains real-time demos for a few command line options.
+3. [Man pages real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EbvesSCBx-tNlAbYU4KmAUUBSksb_UhMsLsDFHdIAjcZLA?e=BH8cUO) This video clip provides a real-time demo of man page usage.
+
+It is recommended that you references these videos in order then use this guide as an additional "follow along guide" or future reference.
+
+
 ## What are command line options?
 
 Nearly all terminal commands accept options. Options tell the command to do something "extra". 
@@ -12,7 +22,7 @@ Consider the command `ls`. We know from this workshop that `ls` lists the conten
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/image-1.png?raw=true">
 
-Suppose we want to see additional information about the items in a directory. We can see additional information by specifiying the `-l` option. This tells `ls` to list the items in "long" format.
+Suppose we want to see additional information about the items in a directory. We can see additional information by specifying the `-l` option. This tells `ls` to list the items in "long" format.
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/sup-image-1.png?raw=true">
 
