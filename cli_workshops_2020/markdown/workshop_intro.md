@@ -6,8 +6,20 @@
 * Become familiar with file system navigation using the terminal.
 * Become familiar with creating, deleting, moving and copying data using the terminal.
 
+## Supporting Video Tutorials
+This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+
+1. [Introduction including `cd`, `ls` and `pwd`](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ESjYLXiGeBtMhZQoAmIA-J0BnVmwPMpHjgYDRgS1LiVuuA?e=aVAO6X) This video clip introduces the terminal, the Linux file system and a few basic commands for navigating the file system.
+2. [`cd`, `ls` and `pwd` a real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ER16tSu1c-JDop8uTZiwGngBPFW8R9RKyLM83wPv2FuJ5A?e=5e837U) This video clip contains real-time examples for `cd`, `ls` and `pwd`.
+3. [`mkdir` and `rm`](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EQO7kiSatM1PrTFik85N5u0Bxt_3wLWTSSb3I5ghLHRmbQ?e=qEcdjU) This video clip introduces file management with the `mkdir` and `rm` commands.
+4. [`mkdir` and `rm` a real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EbSAY2MxMKxFnoy6eFpJC20Bgi6nFJOjweZ8lO923vtm6Q?e=MUhGyH) This video clip contains real-time examples for the commands `mkdir` and `rm`.
+5. [`mv` and `cp`](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EXmqdrbCXQZOu3iCxMAW5rwBC-X5x6at-osLo3jr-bqBQw?e=NqPwJj) This video clip introduces file-management commands `mv` and `cp`.
+6. [`mv` and `cp` interactive](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ec6SuPYY-59Mu9n3Q2IEJdsBdH1AiUOt9953zQDtCIwGBQ?e=Bj9Sfm) This video clip provides a real-time demo of the commands `mv` and `cp`.
+
+It is recommended that you references these videos in order then use this guide as an additional "follow along guide" or future reference.
+
 ## Supplemental Resources
-This workshop series will explore a variety of Linux terminal commands. We will start with some of the most basic commands and progress up from there. The [resources](#resources) section at the end of this document contains a list of supplemental resources that you can reference at any time during this workshop series and after.
+This workshop series will explore a variety of Linux terminal commands. We will start with some of the most basic commands and progress up from there. The [resources](hresources) section at the end of this document contains a list of supplemental resources that you can reference at any time during this workshop series and after.
 
 ## What is the command-line interface and why is it important?
 
