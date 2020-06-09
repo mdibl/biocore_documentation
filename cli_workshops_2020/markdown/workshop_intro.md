@@ -4,7 +4,10 @@
 
 * Gain basic understanding of the command-line interface (terminal).
 * Become familiar with file system navigation using the terminal.
-* Become familiar with creating, deleting, moving and copying data using the terminal. I'm an ass
+* Become familiar with creating, deleting, moving and copying data using the terminal.
+
+## Supplemental Resources
+This workshop series will explore a variety of Linux terminal commands. We will start with some of the most basic commands and progress up from there. The [resources](#resources) section at the end of this document contains a list of supplemental resources that you can reference at any time during this workshop series and after.
 
 ## What is the command-line interface and why is it important?
 
@@ -40,9 +43,6 @@ From the Start Menu, search PowerShell
 Once you launch the PowerShell app, you should see a window similar to the one below.
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/powershell.png?raw=true">
-
-### A quick note ###
-Most Linux terminal commands will work in Windows PowerShell. If not, you can reference [this post](https://mathieubuisson.github.io/powershell-linux-bash/).
 
 ## The Linux File System
 A file system is a layer underneath your computer's operating system. 
@@ -170,3 +170,11 @@ When copying a directory, you must specify the `–r` option which tells the com
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_1/image-17.png?raw=true">
 
+## Resources 
+There is a plethora of online resources for the comand-line. Below is a list of resources that you can easily reference as you build your command-line skills.
+
+* [The ultimate A-Z list of terminal commands.](https://fossbytes.com/a-z-list-linux-command-line-reference/). This reference contains a comprehensive list of Linux terminal commands. This might be too extensive when just starting out with the terminal but it will come in handy as your skills improve.
+
+* [An A-Z index of Linux terminal commands.](https://ss64.com/bash/) This tool provides a searchable, text-based list of commands. Again, this is a comprehensive list similar to the previous reference.
+
+* [Powershell equivalents of Linux commands.](https://mathieubuisson.github.io/powershell-linux-bash/) If you are working from Windows PowerShell, this resource provides a fairly detailed list of Linux commands and the PowerShell equivalent.
