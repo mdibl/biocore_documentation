@@ -1,6 +1,8 @@
 ---
 title: Introduction to PubMed
 author: "Nathaniel Maki"
+contact: nmaki@mdibl.org
+organization: MDIBL Computational Core
 date: "May 25th, 2020"
 ---
 # Introduction to PubMed

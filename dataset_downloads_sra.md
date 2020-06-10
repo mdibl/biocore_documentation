@@ -1,6 +1,8 @@
 ---
 title: Working with the SRA and the SRA Toolkit
 author: "Nathaniel Maki"
+contact: nmaki@mdibl.org
+organization: MDIBL Computational Core
 date: "May 12th, 2020"
 ---
 **add images to improve guide**

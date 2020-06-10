@@ -1,6 +1,8 @@
 ---
 title: Introduction to NCBI
 author: "Nathaniel Maki"
+contact: nmaki@mdibl.org
+organization: MDIBL Computational Core
 date: "May 17th, 2020"
 ---
 # Introduction to NCBI
