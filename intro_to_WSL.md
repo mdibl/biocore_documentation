@@ -17,7 +17,6 @@ date: "May 28th"
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If searching for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
-
 ## A Couple Caveats
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
