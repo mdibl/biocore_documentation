@@ -60,3 +60,11 @@ Most command options have two formats, namely a short format (e.g., `-a`) and a 
 
 In some cases, there is no short format for an option so the option will only have a long format (e.g., `ls --author`).
 
+
+## Contact
+If you have questions about the information in this workshop document, please contact:
+
+Chris Wilson
+Bioinformatics Software Engineer
+MDI Biological Laboratory
+cwilson[at]mdibl.org
