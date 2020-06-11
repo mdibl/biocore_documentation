@@ -116,8 +116,14 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
 
 <img src="./wsl_images/ubuntu_terminal.png">
 
-## Additional Resources
+## Contact
 
-And that's all there is to it!  
+If you have questions about the information in this workshop document, please contact:
 
-Please let me know if you have any additional questions/concerns, either through LabCentral or my organizational email! :)
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
+

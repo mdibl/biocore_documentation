@@ -183,3 +183,14 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 * Relevent for today, you can find a link under `Find Data` labeled `Up-to-date-SARS-Cov2`
   * Links to a page dedicated to COVID-19 research and literature
 * Here you can browse vast amounts of nucleotide and protein data, locate relevant PubMed and PMC articles, perform in-place alignments, and construct phylogenetic trees
+
+## Contact
+
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```

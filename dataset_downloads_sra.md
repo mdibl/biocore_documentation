@@ -103,3 +103,14 @@ Under **Select** you have the option to download either all Metadata or an Acces
 * For additional information about many of the fields on this page, click the *Question mark* icon at the top of the page
 
 ## Downloading Experimental Data from SRA using fastq-dump
+
+## Contact
+
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
