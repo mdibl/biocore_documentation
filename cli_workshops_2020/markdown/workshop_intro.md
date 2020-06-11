@@ -190,3 +190,11 @@ There is a plethora of online resources for the comand-line. Below is a list of 
 * [An A-Z index of Linux terminal commands.](https://ss64.com/bash/) This tool provides a searchable, text-based list of commands. Again, this is a comprehensive list similar to the previous reference.
 
 * [Powershell equivalents of Linux commands.](https://mathieubuisson.github.io/powershell-linux-bash/) If you are working from Windows PowerShell, this resource provides a fairly detailed list of Linux commands and the PowerShell equivalent.
+
+## Contact
+If you have questions about the information in this workshop document, please contact:
+
+Chris Wilson
+Bioinformatics Software Engineer
+MDI Biological Laboratory
+cwilson[at]mdibl.org
