@@ -1,6 +1,8 @@
 ---
 title: Introduction to GEO
 author: "Nathaniel Maki"
+contact: nmaki@mdibl.org
+organization: MDIBL Computational Core
 date: "May 25th, 2020"
 ---
 # Introduction to GEO

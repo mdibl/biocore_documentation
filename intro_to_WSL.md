@@ -1,7 +1,8 @@
 ---
 title: Introduction to the Windows Subsystem for Linux
 author: "Nathaniel Maki"
-organization: MDIBL Bioinformatics Core
+contact: nmaki@mdibl.org
+organization: MDIBL Computational Core
 date: "May 28th"
 ---
 # Introduction to the Windows Subsystem for Linux
@@ -16,7 +17,6 @@ date: "May 28th"
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If searching for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
-
 
 ## A Couple Caveats
 
