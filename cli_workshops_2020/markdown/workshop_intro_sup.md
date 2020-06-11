@@ -64,7 +64,9 @@ In some cases, there is no short format for an option so the option will only ha
 ## Contact
 If you have questions about the information in this workshop document, please contact:
 
+```
 Chris Wilson
 Bioinformatics Software Engineer
 MDI Biological Laboratory
 cwilson[at]mdibl.org
+```

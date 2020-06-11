@@ -194,7 +194,9 @@ There is a plethora of online resources for the comand-line. Below is a list of 
 ## Contact
 If you have questions about the information in this workshop document, please contact:
 
+```
 Chris Wilson
 Bioinformatics Software Engineer
 MDI Biological Laboratory
 cwilson[at]mdibl.org
+```
