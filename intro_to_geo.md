@@ -8,15 +8,19 @@ date: "May 25th, 2020"
 # Introduction to GEO
 
 ## Learning Objectives
-* Acquire a sense of what the GEO is used for, and why it's important
-* Become familier with GEO Datasets and Profiles
+
+* Get an idea of what GEO is used for, and how it can supplement research
+* Understand the difference between user-submitted and NCBI curated material
 * Learn how to construct a GEO query, and download expression data directly to either a local or remote machine
 
-## What is GEO?
+## Summary
 
 <p>
 
-The Gene Expression Omnibus, also known as GEO, is a vast online repository of expression data. It is primarily composed of user submitted experimental microarray and next-generation sequencing data, but also contains permutations of experimental data; curated and expanded upon by NCBI in the forms of GEO Datasets and Profiles. In addition to functioning as an experimental archive, NCBI provides a robust suite of tools for further analysis and exploration of submitted data.
+* The Gene Expression Omnibus, also known as GEO, is a large online repository of expression data 
+* Primarily composed of user submitted experimental microarray and next-generation sequencing data 
+* Also contains permutations of experimental data; curated and expanded upon by NCBI in the forms of GEO Datasets and Profiles
+* In addition to functioning as an experimental archive, NCBI provides a robust suite of tools for further analysis and exploration of submitted data
 
 </p>
 
@@ -28,11 +32,11 @@ GEO integrates the incredibly powerful Entrez query system to assist with parsin
 
 ## Getting Started
 
-* **When working with NCBI, it's important to have an account and to be signed in**
+**When working with NCBI, it's important to have an account and to be signed in**
 * By doing so, your search history is saved and you're afforded considerably more compute when working with any databases API, among a plethora of other benefits, including suggested queries
 * If you plan on submitting data to GEO, or other data repositories, you're required to sign in anyway, so it's a good practice to get into
 
-<img src="./geo_images/geo_start.png">
+<img src="./geo_images/geo_start.png" width="1000">
 
 You'll notice that the GEO homepage is roughly divided into 4 components:
 * Getting Started

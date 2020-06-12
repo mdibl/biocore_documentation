@@ -8,6 +8,7 @@ date: "May 17th, 2020"
 # Introduction to NCBI
 
 ## Learning Objectives
+
 * Acquire a basic understanding of the NCBI website, its resources, and its most commonly used utilities/tools
 * More specifically, become familier with Pubmed, the Gene Expression Omnibus (GEO), BLAST, Genbank, and SRA
 * Exposure to future and upcoming tools/resources under active development, such as NCBI Datasets and the NCBI Virus Repository
@@ -28,6 +29,7 @@ In addition the the above, NCBI also produces training materials to assist in or
 ## Creating an NCBI Account
 
 #### If you haven't made one yet, you should do so. Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
+
 * This includes working with NCBI's programming API:
   * With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonomyous
 * As well as searching and submitting data:
@@ -38,6 +40,7 @@ In addition the the above, NCBI also produces training materials to assist in or
 <img src="./ncbi_images/ncbi_signin.png" width="1000">
 
 ## Platform overview
+
 <img src="./ncbi_images/ncbi_home.png" width="1000">
 
 The front page of NCBI acts as a hub, with the main source of navigation being the Entrez search bar, and the database selection menu to the left, and popular resources on the right. 
@@ -78,6 +81,7 @@ Selecting `Download the complete genome for an organism` will take you to a walk
 <img src="./ncbi_images/howto_ftp_teaser.png" width="1000">
 
 ## Entrez Advanced Search
+
 The Entrez search tool is NCBI's primary method of executing text queries and retrieval.
 It integrates the entire PubMed library of related biomedical literature with a myriad of other relevent literature and moleculare databases. These libraries include:
 * DNA + protein sequence + structure
