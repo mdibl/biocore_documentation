@@ -12,6 +12,12 @@ ssh is a protocol for connecting to a "remote" computer using the terminal. This
 
 SSH is very powerful because the only information being transmitted across the internet is text. This makes the sessions very light weight and fast.
 
+**_Please note_**, when you connect to a Linux computer via SSH, the primary interface for interacting with that computer is the terminal. Therefore, it is recommended that you familiarize yourself with navigating the Linux file system using the terminal before initiating an SSH session.
+
+If you need to familiarize yourself with basic file system navigation using the terminal, please reference the following document.
+
+**[Introduction to the terminal, navigating the Linux file system](https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/markdown/workshop_intro.md)**
+
 ## Types of SSH authentication methods
 When you log into a remote computer, the computer needs to verify that you are allowed to access it. To authenticate you will either need:
 
@@ -49,13 +55,17 @@ If the ssh connection is successful, you will see a password prompt similar to t
 demo-user@123.456.7.890's password:
 ```
 
-Type your password and press `enter`. If authentication is successful, you will see a command prompt similar to the following.
+*Example: Logging into a virtual machine on Amazon Web Services (AWS)*
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_2/ssh_password_1.png">
 
-```
-demo-user@remote-machine:~$
-```
+Type your password and press `enter`. If authentication is successful, you should be presented with a prompt that resembles a typical Linux terminal session.
 
 **_Please note_**, the terminal will not display your password as you type it so you will need to make sure you are typing it correctly.
+
+
+*Example: A remote terminal session on an AWS machine*
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_2/ssh_password_2.png">
+
 
 Similar to a local terminal session, the command prompt in an ssh session shows the name of the user and the name of the machine.
 
