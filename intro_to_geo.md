@@ -145,4 +145,15 @@ You'll notice that the GEO homepage is roughly divided into 4 components:
 * Also includes the Platfrom ID (GPL) and Series ID at the bottom
 * You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
 
+## Contact
+
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
+
 
