@@ -17,8 +17,6 @@ date: "May 25th, 2020"
 * Comprised of over 30 million abstracts and citations
 * Full text articles are not always available, though links are provided to publisher sites and/or PubMed Central (PMC)
 
-<img src="./ncbi_images/pubmed_start.png" width="1000">
-
 ## Logging in / Creating an NCBI Account
 
 #### Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
@@ -31,6 +29,8 @@ date: "May 25th, 2020"
 * To sign in/create an account, click the `Sign in to NCBI` link in the top right of the NCBI homepage
 
 ## Platform Overview
+
+<img src="./ncbi_images/pubmed_start.png" width="1000">
 
 * PubMed draws from three main sources for citations and literature
   * MEDLINE

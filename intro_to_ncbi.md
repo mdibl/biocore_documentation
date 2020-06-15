@@ -65,7 +65,7 @@ Specifically selecting BLAST will take you to the tools' homepage:
 
 For a comprehensive list of all resources, select `All Resources` under the `Resources` drop-down menu
 
-<img src="./ncbi_images/ncbi_allresource.png" width="1000>
+<img src="./ncbi_images/ncbi_allresource.png" width="1000">
 
 Tutorials for many facets of NCBI are under the `How-To` menu
 

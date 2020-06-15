@@ -9,7 +9,7 @@ date: "May 25th, 2020"
 
 ## Learning Objectives
 
-* Get an idea of what GEO is used for, and how it can supplement research
+* Become familiar with what GEO is used for, and how it can supplement research
 * Understand the difference between user-submitted and NCBI curated material
 * Learn how to construct a GEO query, and download expression data directly to either a local or remote machine
 
@@ -88,6 +88,8 @@ The GEO homepage is comprised of 4 components:
   * Background data processing and normalization are uniform across the whole dataset
   * While you can look for Series and DataSets through the GEO Datasets interface, only Datasets come bundled with advanced data display and analysis tools
   * Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
+
+<img src="./geo_images/geo_dataset_browser.png" width="1000">
 
 ### Profile 
 
