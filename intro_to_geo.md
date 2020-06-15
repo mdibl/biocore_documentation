@@ -53,7 +53,7 @@ The GEO homepage is comprised of 4 components:
   * Sample
   * Series
 * Curated records
-  * GEO Dataset
+  * GEO DataSet
   * GEO Profile
 
 ## User-Submitted records
@@ -97,21 +97,17 @@ The GEO homepage is comprised of 4 components:
 
 ## Curated records 
 
-### GEO Dataset
+### GEO DataSet
 
 * Built from user submitted records of Series, Samples, and Platforms
-  *  Include gene expression + molecular abundance data
+  *  Include gene expression + molecular abundance information
 * Encompass the NCBI-curated collection of GEO samples that are both statistically and biologically comparable
-  * Samples contained in a Dataset will all point to the same Platform, due to them have a similar set of elements
-  * Background data processing and normalization are uniform across the whole dataset
-* Dataset records contain resources and tools for further analysis, including clustering utilities and multi-sample comparisons
+  * Samples contained in a DataSet will all point to the same Platform, due to their similar set of elements
+  * Background data processing and normalization are uniform across the whole DataSet
+* DataSet records contain resources and tools for further analysis, including clustering utilities and multi-sample comparisons
 * Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
 
 <img src="./geo_images/geo_dataset_browser.png" width="1000">
-
-### GEO Profile 
-
-* Profiles are derivatives from DataSet, and are comprised of gene expression measurements for an individual gene over all Samples that exist in a DataSet
 
 ## Searching GEO
 
@@ -123,56 +119,75 @@ GEO offers both `general` and `advanced` query functionality
 
 * To General search, type content into the `Search` box on the GEO Datasets front page and hit enter
 * While easy to use, a general search will often give you an overwhelming number of results
-* To refine your query, you can use the `Advanced Search` builder
 
 <img src="./geo_images/geo_dataset_search.png" width="1000">
 
+* To refine your query, you can use the `Advanced Search` button
+  * Selecting `Advanced Search` brings you to another GEO Datasets page
+
+<img src="./geo_images/geo_dataset_allsearch.png" width="1000">
+
+* This lists *everything* related to your search query. To refine to Datasets, choose `DataSets` from the `Entry type` column on the left side of the page
+
 ### Advanced Search
 
-#### GEO Dataset Results page:
+* Advanced search is a bit more involved, but still fairly easy to use
+* To access the `Advanced Search` builder, select `Advanced` under the general search bar
 
-<img src="./ncbi_images/GEO_datasets_results.png" width="1000">
+<img src="./geo_images/geo_advancedquery.png" width="1000">
 
-* Title of each individual dataset lists either the Dataset (GDS), Series (GSE), or Platform (GPL) accession number
-* Followed by Title, and Organism in brackets
-* Underneath Accession number are quick links to the GEO Profiles, PMC text, and tools for analysis
-* Clicking the main title brings you to the Dataset Record
+* To build a search query, first you need to `Add terms to the query box`
+  * The dropdown menu gives you a large number of fields to choose from, which can be further refined by the terms entered
+  * There is also an autocomplete feature built in that helps avoid spelling mistakes, and expands functionality
 
-#### GEO Dataset Records page:
+<img src="./geo_images/geo_dataset_querybuilder.png" width="1000">
 
-<img src="./ncbi_images/GEO_dataset_record.png" width="1000">
+* Refine your advanced search to only DataSets by choosing `DataSets` from the `Entry type` column on the left side of the page
 
-* Main record contains descriptive information about the dataset (organism, platform, sample values + number)
+#### GEO DataSet Results
+
+* After refining, choose a DataSet to examine
+* Each DataSet record has a descriptive title with a description, followed by additional record-specific data
+* Underneath Accession number are quick links to related GEO Profiles, PubMed citation page, PMC free full-text articles, and tools for analysis
+* Selecting the main title brings you to the specific DataSet Record page
+
+<img src="./geo_images/geo_dataset_results.png" width="1000">
+
+#### GEO DataSet Records
+
+* The main record contains descriptive information about the DataSet (organism, platform, sample values + number)
 * Next to the record, the Expression Profiles link takes you to the GEO Profiles page
 * Cluster Analysis to the right brings you to the requisite heatmap
-* Under that are options to download various files containing additional Dataset information, experimental variable subsets, etc
+* Under that are options to download various files containing additional DataSet information, experimental variable subsets, etc
 * At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
 
-### GEO Profiles
+<img src="./geo_images/geo_dataset_record.png" width="1000">
 
-* Derivative of Geo Datasets
+### GEO Profile 
+
+* Profiles are derivatives from DataSets, and are comprised of gene expression measurements for an individual gene over all Samples that exist in a DataSet
 * Store *individual* curated gene expression + molecular abundance profiles
 * Assembled and sourced from GEO microarray data
 * Queries based upon gene annotation / profile characteristics
 
-#### GEO Profile Results page:
+<img src="./geo_images/geo_profile_result.png" width="1000">
 
-<img src="./ncbi_images/GEO_profile_results.png" width="1000">
+#### GEO Profile Results
 
-* Lists Dataset accession (GDS) from where the profile is derived from
-* Platform accession (GPL) that the Dataset is based on + unique ID from record
+* Lists DataSet accession (GDS) from where the profile is derived from
+* Platform accession (GPL) that the DataSet is based on + unique ID from record
 * Organism
 * Additionally, contains:
   * Annotation: gene symbol, full name + aliases
   * Reporter: Original sequence reporter(s) taken from the Platform record supplied by submitter
-  * Experiment: Dataset from where the profile comes from
+  * Experiment: DataSet from where the profile comes from
 
-#### GEO Profile Chart page:
+<img src="./geo_images/geo_profile_record.png" width="1000">
 
-<img src="./ncbi_images/GEO_profile_record.png" width="600">
+#### GEO Profile Chart
 
-* By clicking on the little chart thumbnail, the full profile details are enlarged
-* This expanded chart include more comprehensive details, such as expression values and experimental design
+* By clicking on the little chart thumbnail, the full profile details are expanded
+* This chart includes more comprehensive details such as expression values and experimental design
 * Explaining the graph:
   * Each column you see represents the expression measurement that was extracted from the VALUE column of the Sample record
   * Original Sample accessions are listed below (GSM)
@@ -180,9 +195,11 @@ GEO offers both `general` and `advanced` query functionality
   * Because of this, the values should be considered arbitrary, and direct comparisons between different Datasets may not be accurate.
   * The square represent rank order of expression measurements, and indicate where the expression of that gene falls in comparison to all other genes on an array.
 
-#### GEO Sample Accession
+<img src="./geo_images/geo_profile_chart.png" width="1000">
 
-<img src="./ncbi_images/GEO_sample_accessions.png" width="1000">
+* Selecting a Sample Accession ID will bring you to its specific GEO Record
+
+#### GEO Profile Sample Accession
 
 * Selecting a Sample in the Profile Chart brings you to it's appropriate GEO Accession page
 * Here, you can view tons of relevant information in regards to the singular Sample including: 
@@ -193,6 +210,10 @@ GEO offers both `general` and `advanced` query functionality
   * Protocols used for Treatment, Growth, Extraction, etc
 * Also includes the Platform ID (GPL) and Series ID at the bottom
 * You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
+
+<img src="./ncbi_images/GEO_sample_accessions.png" width="1000">
+
+## Downloading GEO Data with FTP
 
 ## Contact
 

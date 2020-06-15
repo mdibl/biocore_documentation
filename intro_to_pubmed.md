@@ -86,12 +86,12 @@ PubMed offers both `general` and `advanced` query functionality
 ### Advanced Search
 
 * Advanced search is a bit more involved, but still fairly easy to use
-  * To access, just click the `advanced` button below the search bar
+* To access the `Advanced Search` builder, select `Advanced` under the general search bar
 
 <img src="./ncbi_images/pubmed_advanced_search.png" width="1000">
 
 * To build a search query, first you need to `Add terms to the query box`
-  * The dropdown menu gives you a large number of subjects to choose from, which can be further refined by the terms entered
+  * The dropdown menu gives you a large number of fields to choose from, which can be further refined by the terms entered
   * There is also an autocomplete feature built in that helps avoid spelling mistakes, and expands functionality
 
 <img src="./ncbi_images/pubmed_allfields.png" width="1000">
