@@ -22,7 +22,7 @@ date: "May 28th"
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
-**If all you're looking to do is remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is unneccesary.**  
+**If all you're looking to do is remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is unnecessary.**  
 * If your Windows 10 release version is **1809** or higher, and are running **PowerShell 5.1** installed, OpenSSH is built in
 
 ### Launching PowerShell
@@ -43,7 +43,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 * Additionally, if you'd like a nice quality of life addition, you can install Windows Terminal from the Microsoft Store
   * Windows Terminal is a fast, customizable, and modern terminal application, specifically built for Windows 10
   * It acts as a hub of sorts for Command Prompt, PowerShell, and WSL
-  * Natively supports many terminal features that can be found on MacOS/Linux distros
+  * Natively supports many terminal features that can be found on MacOS/Linux distributions
 
 With that out of the way, let's begin!
 
@@ -94,7 +94,7 @@ With the above requirement met, turning on WSL is pretty straightforward, especi
 #### Enabling WSL is the first step, the second being to select a Linux distribution
 
 <p> Microsoft offers a few distributions of Linux for install on its store, for this example we're going to use Ubuntu.
-Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust featureset.
+Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust feature-set.
 Canonical follows a 6 month release cycle, with the LTS version of its operating system being supported for at least 5 years after launch.</p>
 
 There are a couple LTS versions on the store, but we're going to want the one marked **Ubuntu**, with no numbers next to the name.  
@@ -110,7 +110,7 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
 * **Congratulations! You've successfully installed and configured Ubuntu Linux on your Windows machine!**
 
 * For a quick test-run, try installing the program Neofetch 
-  * Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distro-specific ASCII graphic
+  * Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distribution-specific ASCII graphic
   * First, add the repository (software source): `sudo add-apt-repository ppa:dawidd0811/neofetch`
   * then run `sudo apt-get install neofetch`  
 
