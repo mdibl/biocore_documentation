@@ -30,7 +30,7 @@ date: "May 25th, 2020"
   * You're required to have an account for data submission
 * To sign in/create an account, click the `Sign in to NCBI` link in the top right of the NCBI homepage
 
-## Core Content
+## Platform Overview
 
 * PubMed draws from three main sources for citations and literature
   * MEDLINE

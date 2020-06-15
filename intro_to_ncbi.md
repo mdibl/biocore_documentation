@@ -34,11 +34,11 @@ In addition the the above, NCBI also produces training materials to assist in or
 * Assists in searching for and submitting through NCBI:
   * Saving of search strategies and queries built through PubMed and other repositories
   * You're required to have an account for data submission
-* To sign in/create an account, click the `Sign in to NCBI` link in the top right of the NCBI homepage
+* To sign in/create an account, click this [link](https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)
 
 <img src="./ncbi_images/ncbi_signin.png" width="1000">
 
-## Platform overview
+## Platform Overview
 
 <img src="./ncbi_images/ncbi_home.png" width="1000">
 
