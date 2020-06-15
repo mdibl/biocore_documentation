@@ -38,13 +38,13 @@ date: "May 25th, 2020"
 
 The GEO homepage is comprised of 4 components:
 * Getting Started
-  * provides an overview of GEO as a whole, as well as DataSets, Profiles, and how to build queries and download data
+  * Provides an overview of GEO as a whole, as well as DataSets, Profiles, and how to build queries and download data
 * Tools
-  * includes utilities and sites for querying DataSets, Profiles and Documentation, as well as guides on on working with the API and FTP site
+  * Includes utilities and sites for querying DataSets, Profiles and Documentation, as well as guides on on working with the API and FTP site
 * Browse Content
-  * in a nutshell, a repository browser broken up into the types of submitted content on GEO (DataSets, Series, Platforms, and Samples)
+  * Repository browser broken up into the types of submitted content on GEO (DataSets, Series, Platforms, and Samples)
 * Information for Submitters
-  * various guidelines and standards required for the submission of data to the GEO repository
+  * Various guidelines and standards required for the submission of data to the GEO repository
 
 ## Content Breakdown
 
@@ -56,7 +56,7 @@ The GEO homepage is comprised of 4 components:
   * Dataset
   * Profile
 
-## User-submitted records
+## User-Submitted records
 
 ### Platform
 
@@ -81,11 +81,16 @@ The GEO homepage is comprised of 4 components:
 
 ## Curated records 
 
+### Dataset
+
 * DataSets make up the NCBI curated collection of GEO samples that are both statistically and biologically comparable
   * Samples contained in a Dataset will all point to the same Platform, meaning they have a similar set of elements
   * Background data processing and normalization are uniform across the whole dataset
   * While you can look for Series and DataSets through the GEO Datasets interface, only Datasets come bundled with advanced data display and analysis tools
-  * Because of a backlog in the generation of DataSets, not every Series has an accompanying DataSet record
+  * Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
+
+### Profile 
+
 * Profiles are derivatives from DataSet, and are comprised of gene expression measurements for an individual gene over all Samples that exist in a DataSet
   
 ### GEO Datasets
