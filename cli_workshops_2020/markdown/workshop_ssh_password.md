@@ -10,7 +10,7 @@
 This document is supported by a series of videos that cover roughly the same content. The video references are described below:
 
 1. [Introduction to SSH ](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EeyGW8xVVYZHrThYzeikXCcBGZsOOzTXtqwbEPcTzGyCcA?e=a5iaJj) This video clip introduces the the basics of a remote terminal session via ssh.
-2. [Introduction to SSH a continuation](hhttps://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ebkm3AWN5xNCj9HQDt_KIdYBeF_oL6Y8lykWCwi42f9p2g?e=sMIbmA) A continuation of the previous video.
+2. [Introduction to SSH a continuation](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ebkm3AWN5xNCj9HQDt_KIdYBeF_oL6Y8lykWCwi42f9p2g?e=sMIbmA) A continuation of the previous video.
 3. [Introduction to SSH a real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ec-2JzUZr5lMtAMpDUIT3SIBhJciJiRi2YSHguG7uBiYcA?e=ZaB8Z7) This video clip introduces file management with the `mkdir` and `rm` commands.
 
 ## What is Secure Shell (SSH)?
