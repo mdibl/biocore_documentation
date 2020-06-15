@@ -63,13 +63,13 @@ PubMed offers both `general` and `advanced` query functionality
 
 <img src="./ncbi_images/pubmed_general_search.png" width="1000">
 
-  * You can use the filters on the left to help refine your records
-  * Once you've selected an entry:
+* You can use the filters on the left to help refine your records
+* Once you've selected an entry:
 
 <img src="./ncbi_images/pubmed_results.png" width="1000">
 
-  * Notice the `Full Text Links` button, that will take you to the publisher page, where the full article is freely available to access
-  * You can use the `Page Navigation` links on the right to find similar articles and additional resources
+* Notice the `Full Text Links` button, that will take you to the publisher page, where the full article is freely available to access
+* You can use the `Page Navigation` links on the right to find similar articles and additional resources
 
 ### Advanced
 
@@ -77,3 +77,35 @@ PubMed offers both `general` and `advanced` query functionality
   * To access, just click the `advanced` button below the search bar
 
 <img src="./ncbi_images/pubmed_advanced_search.png" width="1000">
+
+* To build a search query, first you need to `Add terms to the query box`
+  * The dropdown menu gives you a large number of subjects to choose from, which can be further refined by the terms entered
+  * There is also an autocomplete feature built in that helps avoid spelling mistakes, and expands functionality
+
+<img src="./ncbi_images/pubmed_allfields.png" width="1000">
+
+* You can also modify how these terms are interpreted by using boolean operators
+
+<img src="./ncbi_images/Pubmed_searchop.png" width="1000">
+
+* Once you've entered in all terms, click `Search`
+
+<img src="./ncbi_images/pubmed_advanced_result.png" width="1000">
+
+* From here, you can refine your search in the same way that we covered in the `General search` component
+* If you go back to the `PubMed Advanced Search Builder` page, you'll notice that near the bottom of the page, your History and Search Details are saved
+
+<img src="./ncbi_images/pubmed_querybuilt.png" width="1000">
+
+* When signed in to NCBI, these queries are recorded, and provide a good reference point, should you ever need to revisit for similar content in the future
+
+## Contact
+
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
