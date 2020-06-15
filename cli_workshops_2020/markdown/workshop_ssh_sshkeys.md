@@ -4,6 +4,13 @@
 
 * Gain a basic understanding of SSH keys and how to generate them.
 
+## Supporting Video Tutorials
+This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+
+1. [Introduction to SSH keys](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EbSAY2MxMKxFnoy6eFpJC20Bgi6nFJOjweZ8lO923vtm6Q?e=MUhGyH) This video introduces SSH keys and how to generate them.
+2. [SSH keys a real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ec1zURkcxipHhb7hogmQX_EBJu08YZ08T1-xuLGoWqBtkw?e=pBILey) This video clip includes a real-time demo of authentication using ssh keys.
+
+
 ## What are SSH keys?
 
 SSH is a communication protocol for connecting to a remote computer. Before a connection can be established, the protocol must verifiy the user with a combination of either:
@@ -35,26 +42,11 @@ The path `/Users/YOURUSERNAME/.ssh/id_rsa` is the default file for storing the k
 3. Hit `enter` after the prompt.
 4. ssh-keygen will now prompt you for a passphrase. Hit `enter` for an empty passphrase, then hit `enter` again to confirm the empty passphrase. You should then see output similar to the following.
 
-```
-Your identification has been saved in /Users/YOURUSERNAME/.ssh/id_rsa.
-Your public key has been saved in /Users/YOURUSERNAME/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:xcI06cdLOcNNCED+LhnzqJyyKAsHQJLF/hvytkniA4U YOURUSERNAME@yourmachinename
-The key's randomart image is:
-+---[RSA 3072]----+
-|.=.  .o.+o .     |
-|+ .  . o.o. .    |
-|.o    ..ooo+     |
-|E o    ..oO .    |
-|.. .  o So +     |
-|... o  B  .      |
-|..oo.o+ o        |
-|o+o+++ .         |
-|+.o=*.           |
-+----[SHA256]-----+
-```
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_2/ssh_keys_1.png">
 
 At this point, you should now have two files namely, _id_rsa_ and _id_rsa.pub_ in `/Users/YOURUSERNAME/.ssh/`.
+
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_2/ssh_keys_2.png">
 
 ## Next steps
 

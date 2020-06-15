@@ -6,6 +6,13 @@
 * Gain an understanding of different methods of connection using `ssh`.
 * Understand the basics of a remote session.
 
+## Supporting Video Tutorials
+This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+
+1. [Introduction to SSH ](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EeyGW8xVVYZHrThYzeikXCcBGZsOOzTXtqwbEPcTzGyCcA?e=a5iaJj) This video clip introduces the the basics of a remote terminal session via ssh.
+2. [Introduction to SSH a continuation](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ebkm3AWN5xNCj9HQDt_KIdYBeF_oL6Y8lykWCwi42f9p2g?e=sMIbmA) A continuation of the previous video.
+3. [Introduction to SSH a real-time demo](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/Ec-2JzUZr5lMtAMpDUIT3SIBhJciJiRi2YSHguG7uBiYcA?e=ZaB8Z7) This video clip introduces file management with the `mkdir` and `rm` commands.
+
 ## What is Secure Shell (SSH)?
 
 ssh is a protocol for connecting to a "remote" computer using the terminal. This allows you to access and interact with the remote machine without leaving your laptop or desktop computer. 
@@ -100,7 +107,7 @@ If the passwords match, the command will finish executing and your password will
 
 ### Use strong passwords
 
-Weak passwords can have disasterous consequences, especially for users of remote computers. Nefarious actors are always trying to gain access to these types of resources. While you might think there is nothing "important" on a remote computer, an attacker might simply want to use it as a resource to carry out attacks on other computers or set up a relay or communication point for illicit activity.
+Weak passwords can have disastrous consequences, especially for users of remote computers. Nefarious actors are always trying to gain access to these types of resources. While you might think there is nothing "important" on a remote computer, an attacker might simply want to use it as a resource to carry out attacks on other computers or set up a relay or communication point for illicit activity.
 
 Strong passwords (coupled with other measures) can prevent unauthorized access.
 As a general rule, I recommend a password with the following form:
