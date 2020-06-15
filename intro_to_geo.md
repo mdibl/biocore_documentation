@@ -101,7 +101,7 @@ You'll notice that the GEO homepage is roughly divided into 4 components:
 * Main record contains descriptive information about the dataset (organism, platform, sample values + number)
 * Next to the record, the Expression Profiles link takes you to the GEO Profiles page
 * Cluster Analysis to the right brings you to the requisite heatmap
-* Under that are options to download various files containg additional Dataset information, experimental variable subsets, etc
+* Under that are options to download various files containing additional Dataset information, experimental variable subsets, etc
 * At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
 
 ### GEO Profiles
@@ -120,7 +120,7 @@ You'll notice that the GEO homepage is roughly divided into 4 components:
 * Additionally, contains:
   * Annotation: gene symbol, full name + aliases
   * Reporter: Original sequence reporter(s) taken from the Platform record supplied by submitter
-  * Experiment: Dataest from where the profile comes from
+  * Experiment: Dataset from where the profile comes from
 
 #### GEO Profile Chart page:
 
@@ -140,13 +140,13 @@ You'll notice that the GEO homepage is roughly divided into 4 components:
 <img src="./ncbi_images/GEO_sample_accessions.png" width="800">
 
 * Selecting a Sample in the Profile Chart brings you to it's appropriate GEO Accession page
-* Here, you can view tons of relevent information in regards to the singular Sample including: 
+* Here, you can view tons of relevant information in regards to the singular Sample including: 
   * Sample type
   * Source name
   * Organism
-  * Various characteritics
+  * Various characteristics
   * Protocols used for Treatment, Growth, Extraction, etc
-* Also includes the Platfrom ID (GPL) and Series ID at the bottom
+* Also includes the Platform ID (GPL) and Series ID at the bottom
 * You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
 
 ## Contact
