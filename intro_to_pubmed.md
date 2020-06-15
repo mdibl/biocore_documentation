@@ -63,7 +63,7 @@ date: "May 25th, 2020"
 
 ## Searching PubMed
 
-**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent; building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
 
 PubMed offers both `general` and `advanced` query functionality
 
