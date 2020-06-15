@@ -26,16 +26,16 @@ In addition the the above, NCBI also produces training materials to assist in or
 
 #### Training material can be found [here](https://www.ncbi.nlm.nih.gov/home/learn/)
 
-## Creating an NCBI Account
+## Logging in / Creating an NCBI Account
 
-#### If you haven't made one yet, you should do so. Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
+#### Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
 
 * This includes working with NCBI's programming API:
   * With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonymous
-* As well as searching and submitting data:
-  * Having an account allows you to save search strategies
-  * For data submission, an account is required
-* To sign in/create an account, click the `Sign in to NCBI` link in the top right of the homepage
+* Assists in searching for and submitting through NCBI:
+  * Saving of search strategies and queries built through PubMed and other repositories
+  * You're required to have an account for data submission
+* To sign in/create an account, click the `Sign in to NCBI` link in the top right of the NCBI homepage
 
 <img src="./ncbi_images/ncbi_signin.png" width="1000">
 

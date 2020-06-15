@@ -20,6 +20,17 @@ date: "May 25th, 2020"
 
 <img src="./ncbi_images/pubmed_start.png" width="1000">
 
+## Logging in / Creating an NCBI Account
+
+#### Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
+
+* This includes working with NCBI's programming API:
+  * With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonymous
+* Assists in searching for and submitting through NCBI:
+  * Saving of search strategies and queries built through PubMed and other repositories
+  * You're required to have an account for data submission
+* To sign in/create an account, click the `Sign in to NCBI` link in the top right of the NCBI homepage
+
 ## Core Content
 
 * PubMed draws from three main sources for citations and literature
