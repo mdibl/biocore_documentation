@@ -157,11 +157,12 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 
 <img src="./ncbi_images/download_hub.png" width="1000">
 
-#### Almost all data queried or interacted with on NCBI can be direct downloaded from the FTP site, using an index location and programs such as `curl` or `wget`.
+* Almost all data queried or interacted with on NCBI can be direct downloaded from the FTP site, using an index location and command line programs such as `curl` or `wget`.
 
 <img src="./ncbi_images/ftp_index.png" width="1000">
 
-#### Additionally, there are suites of tools for general data access (Entrez Programming Utilities) and ones that are repository specific (SRA Toolkit, GEO2R), though some require software to be installed locally before use.
+* There are suites of tools for general data access (Entrez Programming Utilities) and ones that are repository specific (SRA Toolkit, GEO2R) 
+* Some require software to be installed locally before use
 
 ## Under Development
 
