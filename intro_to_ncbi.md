@@ -97,8 +97,6 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 
 ### Gene Expression Omnibus (GEO)
 
- <img src="./geo_images/geo_start.png" width="1000">
-
 * Large online repository of expression data
 * Primarily composed of user submitted experimental microarray and next-generation sequencing data
   * Original records stored in the form of Platforms, Samples, and Series
@@ -106,18 +104,18 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Curated and expanded upon by NCBI in the forms of GEO Datasets and Profiles
 * In addition to functioning as an experimental archive, NCBI provides a robust suite of tools for further analysis and exploration of submitted records
 
-### Sequence Read Archive (SRA)
+<img src="./geo_images/geo_start.png" width="1000">
 
-<img src="./ncbi_images/sra_start.png" width="1000">
+### Sequence Read Archive (SRA)
 
 * Vast online archive for raw sequence data
 * Contains sequencing data from most NGS platforms (Illumina, Roche, etc)
 * Largest publicly available repository of High Throughput Sequencing (HTS) data
 * Accompanied by SRA-toolkit suite for acquisition + dumping of data from SRA database to local and remote machines
 
-### Genbank
+<img src="./ncbi_images/sra_start.png" width="1000">
 
-<img src="./ncbi_images/genbank_start.png" width="1000">
+### Genbank
 
 * Annotated collection of all publicly available nucleotide sequences, along with their protein translations
 * Genbank records contain detailed information related to the organism under observation
@@ -125,9 +123,9 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Gene (region of biological interest in record)
   * Coding sequence (CDS)
 
-### PubMed + PubMed Central
+<img src="./ncbi_images/genbank_start.png" width="1000">
 
-<img src="./ncbi_images/pubmed_start.png" width="1000">
+### PubMed + PubMed Central
 
 * Biomedical Literature database
 * Includes citations + abstracts, from biomedical journals such as Nature, Medline, etc
@@ -136,11 +134,11 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 * **PubMed Central (PMC)** contains full-text versions of articles for free
 * If available, PubMed will link to PMC for appropriate article
 
+<img src="./ncbi_images/pubmed_start.png" width="1000">
+
 ## Commonly used NCBI Site Utilities
 
 ### BLAST
-
-<img src="./ncbi_images/ncbi_blast.png" width="1000">
 
 * Searches for areas of similarity between sequences
 * Compares various nucleotide or protein sequences to sequence databases, and calculates statistical significance of matches
@@ -151,7 +149,12 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * CD-search, which locates conserved domains in the submitted sequence
   * Primer-BLAST, which allows you to design primers that are specific to a PCR template
 
+<img src="./ncbi_images/ncbi_blast.png" width="1000">
+
 ### Downloading + FTP
+
+* There are suites of tools for general data access (Entrez Programming Utilities) and ones that are repository specific (SRA Toolkit, GEO2R) 
+* Some require software to be installed locally before use
 
 <img src="./ncbi_images/download_hub.png" width="1000">
 
@@ -159,14 +162,10 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 
 <img src="./ncbi_images/ftp_index.png" width="1000">
 
-* There are suites of tools for general data access (Entrez Programming Utilities) and ones that are repository specific (SRA Toolkit, GEO2R) 
-* Some require software to be installed locally before use
 
 ## Under Development
 
 ### NCBI Datasets (Beta)
-
-<img src="./ncbi_images/ncbi_datasets.png" width="1000">
 
 * Resource that NCBI is developing for locating and building datasets
 * Allows for bulk downloading of genome sequence as well as matching annotation
@@ -176,15 +175,17 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * For example, searching for *Mus musculus*, will present you with only a couple reference genomes, and a single available annotation
 * As this resource expands, expect usefulness to mature as well
 
-### NCBI Virus (Beta)
+<img src="./ncbi_images/ncbi_datasets.png" width="1000">
 
-<img src="./ncbi_images/ncbi_virus.png" width="1000">
+### NCBI Virus (Beta)
 
 * Aggregate repository for viral sequence data originating from GenBank, Refseq, and other NCBI repositories
 * Includes visualized graphic(s) for taxonomy of viruses, discriminating between hosts
 * Relevant for today, you can find a link under `Find Data` labeled `Up-to-date-SARS-Cov2`
   * Links to a page dedicated to COVID-19 research and literature
 * Here you can browse vast amounts of nucleotide and protein data, locate relevant PubMed and PMC articles, perform in-place alignments, and construct phylogenetic trees
+
+<img src="./ncbi_images/ncbi_virus.png" width="1000">
 
 ## Contact
 

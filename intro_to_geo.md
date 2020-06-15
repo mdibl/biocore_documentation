@@ -187,17 +187,14 @@ GEO offers both `general` and `advanced` query functionality
 #### GEO Profile Chart
 
 * By clicking on the little chart thumbnail, the full profile details are expanded
-* This chart includes more comprehensive details such as expression values and experimental design
-* Explaining the graph:
-  * Each column you see represents the expression measurement that was extracted from the VALUE column of the Sample record
+* This chart includes comprehensive information such as expression values and experimental design
+* Each column you see represents the expression measurement that was extracted from the VALUE column of the Sample record
   * Original Sample accessions are listed below (GSM)
-  * Something to note: The values associated with each accession have undergone processing and normalization that is not uniform across accessions.
+* Something to note: The values associated with each accession have undergone processing and normalization that is not uniform across accessions.
   * Because of this, the values should be considered arbitrary, and direct comparisons between different Datasets may not be accurate.
-  * The square represent rank order of expression measurements, and indicate where the expression of that gene falls in comparison to all other genes on an array.
+  * The squares represent rank order of expression measurements, and indicate where the expression of that gene falls in comparison to all other genes on an array.
 
 <img src="./geo_images/geo_profile_chart.png" width="1000">
-
-* Selecting a Sample Accession ID will bring you to its specific GEO Record
 
 #### GEO Profile Sample Accession
 
@@ -211,9 +208,17 @@ GEO offers both `general` and `advanced` query functionality
 * Also includes the Platform ID (GPL) and Series ID at the bottom
 * You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
 
-<img src="./ncbi_images/GEO_sample_accessions.png" width="1000">
+<img src="./geo_images/geo_profile_sampleacc.png" width="1000">
 
 ## Downloading GEO Data with FTP
+
+* NCBI provides you with a plethora of options to download GEO data. We'll touch on the FTP site briefly
+
+<img src="./geo_images/geo_download.png" width="1000">
+
+* Almost all data queried or interacted with on NCBI can be direct downloaded from the FTP site, using an index location and command line programs such as `curl` or `wget`
+
+<img src="./geo_images/geo_index.png" width="1000">
 
 ## Contact
 
