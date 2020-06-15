@@ -58,7 +58,7 @@ PubMed offers both `general` and `advanced` query functionality
 ### General
 
 * To General search, type content into the `Search` box on the front page and hit enter
-  * Depending on what you looked for, PubMed, using a machine learning algorithm, will do its best to find the most relevant citation(s)
+  * Depending on what you looked for, PubMed (using a machine learning algorithm) will do its best to find the most relevant citation(s)
   * While easy to use, a general search will often give you an overwhelming number of results
 
 <img src="./ncbi_images/pubmed_general_search.png" width="1000">
