@@ -65,7 +65,9 @@ date: "May 25th, 2020"
 
 PubMed offers both `general` and `advanced` query functionality
 
-### General
+### General Search
+
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
 
 * To General search, type content into the `Search` box on the front page and hit enter
   * Depending on what you looked for, PubMed (using a machine learning algorithm) will do its best to find the most relevant citation(s)
@@ -81,7 +83,7 @@ PubMed offers both `general` and `advanced` query functionality
 * Notice the `Full Text Links` button, that will take you to the publisher page, where the full article is freely available to access
 * You can use the `Page Navigation` links on the right to find similar articles and additional resources
 
-### Advanced
+### Advanced Search
 
 * Advanced search is a bit more involved, but still fairly easy to use
   * To access, just click the `advanced` button below the search bar

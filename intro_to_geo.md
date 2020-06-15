@@ -66,9 +66,9 @@ The GEO homepage is comprised of 4 components:
 
 <img src="./geo_images/geo_platform_browser.png" width="1000"> 
 
-#### Example Record
+#### Example Platform Record
 
-<img src="./geo>
+<img src="./geo_images/geo_platform_ex.png" width="1000">
 
 ### Sample
 
@@ -78,6 +78,10 @@ The GEO homepage is comprised of 4 components:
 
 <img src="./geo_images/geo_samples_browser.png" width="1000">
 
+#### Example Sample Record
+
+<img src="./geo_images/geo_sample_ex.png" width="1000">
+
 ### Series
 
 * Original, submitter-supplied record summarizing an experiment
@@ -86,6 +90,10 @@ The GEO homepage is comprised of 4 components:
 * GEO accession number (GSExxx)
 
 <img src="./geo_images/geo_series_browser.png" width="1000">
+
+#### Example Series Record
+
+<img src="./geo_images/geo_series_ex.png" width="1000">
 
 ## Curated records 
 
@@ -107,10 +115,16 @@ The GEO homepage is comprised of 4 components:
 
 ## Searching GEO
 
+GEO offers both `general` and `advanced` query functionality
 
+### General Search
+
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+
+* To General search, type content into the `Search` box
 #### GEO Dataset Results page:
 
-<img src="./ncbi_images/GEO_datasets_results.png" width="800">
+<img src="./ncbi_images/GEO_datasets_results.png" width="1000">
 
 * Title of each individual dataset lists either the Dataset (GDS), Series (GSE), or Platform (GPL) accession number
 * Followed by Title, and Organism in brackets
@@ -119,7 +133,7 @@ The GEO homepage is comprised of 4 components:
 
 #### GEO Dataset Records page:
 
-<img src="./ncbi_images/GEO_dataset_record.png" width="800">
+<img src="./ncbi_images/GEO_dataset_record.png" width="1000">
 
 * Main record contains descriptive information about the dataset (organism, platform, sample values + number)
 * Next to the record, the Expression Profiles link takes you to the GEO Profiles page
@@ -128,14 +142,15 @@ The GEO homepage is comprised of 4 components:
 * At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
 
 ### GEO Profiles
+
 * Derivative of Geo Datasets
-* Stores *individual* curated gene expression + molecular abundance profiles
+* Store *individual* curated gene expression + molecular abundance profiles
 * Assembled and sourced from GEO microarray data
 * Queries based upon gene annotation / profile characteristics
 
 #### GEO Profile Results page:
 
-<img src="./ncbi_images/GEO_profile_results.png" width="800">
+<img src="./ncbi_images/GEO_profile_results.png" width="1000">
 
 * Lists Dataset accession (GDS) from where the profile is derived from
 * Platform accession (GPL) that the Dataset is based on + unique ID from record
@@ -160,7 +175,7 @@ The GEO homepage is comprised of 4 components:
 
 #### GEO Sample Accession
 
-<img src="./ncbi_images/GEO_sample_accessions.png" width="800">
+<img src="./ncbi_images/GEO_sample_accessions.png" width="1000">
 
 * Selecting a Sample in the Profile Chart brings you to it's appropriate GEO Accession page
 * Here, you can view tons of relevant information in regards to the singular Sample including: 
