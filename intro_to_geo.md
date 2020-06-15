@@ -53,52 +53,60 @@ The GEO homepage is comprised of 4 components:
   * Sample
   * Series
 * Curated records
-  * Dataset
-  * Profile
+  * GEO Dataset
+  * GEO Profile
 
 ## User-Submitted records
 
 ### Platform
 
 * Platform records contain summaries of sequencer or arrays used
-* May reference many Samples
+* May reference many Samples that have been submitted by multiple submitters
+* GEO accession number (GPLxxx)
 
 <img src="./geo_images/geo_platform_browser.png" width="1000"> 
+
+#### Example Record
+
+<img src="./geo>
 
 ### Sample
 
 * Sample records describe all the conditions surrounding how a singular sample was handled, the treatment that was applied to it, and abundance measurements
 * May only reference one Platform, but can exist in multiple Series
+* GEO accession number (GSMxxx)
 
 <img src="./geo_images/geo_samples_browser.png" width="1000">
 
 ### Series
 
-* Series records bring together a group of related Samples and provides a central point and description of the study 
+* Original, submitter-supplied record summarizing an experiment
+* Series records bring together a group of related Samples and provide points of observation and a description of the study 
 * May contain tables describing extracted data, summary conclusions, and/or analyses
+* GEO accession number (GSExxx)
 
 <img src="./geo_images/geo_series_browser.png" width="1000">
 
 ## Curated records 
 
-### Dataset
+### GEO Dataset
 
-* DataSets make up the NCBI curated collection of GEO samples that are both statistically and biologically comparable
-  * Samples contained in a Dataset will all point to the same Platform, meaning they have a similar set of elements
+* Built from user submitted records of Series, Samples, and Platforms
+  *  Include gene expression + molecular abundance data
+* Encompass the NCBI-curated collection of GEO samples that are both statistically and biologically comparable
+  * Samples contained in a Dataset will all point to the same Platform, due to them have a similar set of elements
   * Background data processing and normalization are uniform across the whole dataset
-  * While you can look for Series and DataSets through the GEO Datasets interface, only Datasets come bundled with advanced data display and analysis tools
-  * Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
+* Dataset records contain resources and tools for further analysis, including clustering utilities and multi-sample comparisons
+* Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
 
 <img src="./geo_images/geo_dataset_browser.png" width="1000">
 
-### Profile 
+### GEO Profile 
 
 * Profiles are derivatives from DataSet, and are comprised of gene expression measurements for an individual gene over all Samples that exist in a DataSet
-  
-### GEO Datasets
-* Built from user submitted records, including Series, Samples, Platforms
-* Also stores curated gene expression + molecular abundance data put together by NCBI
-* Records additionally contain resources and tools, such as clustering utilities and multi-sample comparison
+
+## Searching GEO
+
 
 #### GEO Dataset Results page:
 
@@ -120,7 +128,7 @@ The GEO homepage is comprised of 4 components:
 * At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
 
 ### GEO Profiles
-* A derivative of Geo Datasets
+* Derivative of Geo Datasets
 * Stores *individual* curated gene expression + molecular abundance profiles
 * Assembled and sourced from GEO microarray data
 * Queries based upon gene annotation / profile characteristics
