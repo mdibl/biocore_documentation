@@ -115,13 +115,20 @@ The GEO homepage is comprised of 4 components:
 
 ## Searching GEO
 
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+
 GEO offers both `general` and `advanced` query functionality
 
 ### General Search
 
-**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+* To General search, type content into the `Search` box on the GEO Datasets front page and hit enter
+* While easy to use, a general search will often give you an overwhelming number of results
+* To refine your query, you can use the `Advanced Search` builder
 
-* To General search, type content into the `Search` box
+<img src="./geo_images/geo_dataset_search.png" width="1000">
+
+### Advanced Search
+
 #### GEO Dataset Results page:
 
 <img src="./ncbi_images/GEO_datasets_results.png" width="1000">

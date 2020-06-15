@@ -63,11 +63,11 @@ date: "May 25th, 2020"
 
 ## Searching PubMed
 
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+
 PubMed offers both `general` and `advanced` query functionality
 
 ### General Search
-
-**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
 
 * To General search, type content into the `Search` box on the front page and hit enter
   * Depending on what you looked for, PubMed (using a machine learning algorithm) will do its best to find the most relevant citation(s)
