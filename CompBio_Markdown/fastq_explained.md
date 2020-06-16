@@ -8,7 +8,7 @@ Each entry in a FASTQ file consists of four lines, with the following format:
   @unique_sequence_ID<br />  
   ATTCATTAAAGCAGTTTATTGGCTTAATGTACATCAGTGAAATCATAAATGCTAAAAATTTATGATAAAA<br />
   +<br />  
-  =-(DD--DDD/DD5:*1B3&)-B6+8@+1(DDB:DD07/DB&3((+:?=8*D+DDD+B)*)B.8CDBDD4<br />
+  =-(DD--DDD/DD5:\*1B3&)-B6+8@+1(DDB:DD07/DB&3((+:?=8\*D+DDD+B)\*)B.8CDBDD4<br />
 </pre></code>
 
 ## Features
