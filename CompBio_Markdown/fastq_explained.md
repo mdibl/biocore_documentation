@@ -4,12 +4,12 @@
 FASTQ files are the standard means of storing and working with modern sequence data.  The Q in the file stands for "Quality", which is an assessment of the likelihood of error for each base in each sequence.  (FASTQ was used as an extension/adaptation of the standard "fasta" file format, which is the standard if there are no quality scores to be included.)
 Each entry in a FASTQ file consists of four lines, with the following format:
 
-<code>
-  @unique_sequence_ID<br />  
-  ATTCATTAAAGCAGTTTATTGGCTTAATGTACATCAGTGAAATCATAAATGCTAAAAATTTATGATAAAA<br />
-  +<br />  
-  =-(DD--DDD/DD5:*1B3&)-B6+8@+1(DDB:DD07/DB&3((+:?=8*D+DDD+B)*)B.8CDBDD4<br />
-</code>
+```
+  @unique_sequence_ID 
+  ATTCATTAAAGCAGTTTATTGGCTTAATGTACATCAGTGAAATCATAAATGCTAAAAATTTATGATAAAA
+  +
+  =-(DD--DDD/DD5:*1B3&)-B6+8@+1(DDB:DD07/DB&3((+:?=8*D+DDD+B)*)B.8CDBDD4
+```
 
 ## Features
 1. The header line, starts with ‘@’,followed directly by an ID and an optional description
