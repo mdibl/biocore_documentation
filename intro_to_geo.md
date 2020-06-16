@@ -111,7 +111,7 @@ The GEO homepage is comprised of 4 components:
 
 ## Searching GEO
 
-**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent, building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
+**NCBI integrates its Entrez search system across all repositories. This means that while sometimes graphically divergent; building queries, locating search history, and finding related material will be functionally identical and uniform across platforms**
 
 GEO offers both `general` and `advanced` query functionality
 
