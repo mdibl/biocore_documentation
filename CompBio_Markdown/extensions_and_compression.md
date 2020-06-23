@@ -28,7 +28,7 @@ ReadAlignChunk_processChunks.cpp:115:processChunks EXITING because of FATAL ERRO
 <p>While I wish I could give you an exhaustive safe list of programs that will work with compressed files, it's really a bit random.  The best bet is to read the program's documentation, or at the very least run the program with the <code>--help</code> option to see what the acceptable input formats are.</p>
 
 ### Closing thoughts
-- What about image files?  They're typically already pretty efficiently stored in many cases (.jpg, .png, for exapmle).  An image is typically a rectangular grid with each pixel having a description of the color, brightness, transparency for that point.  Most images use a non-human readable form that image viewers intrinsically know how to show.
+- What about image files?  They're typically already pretty efficiently stored in many cases (.jpg, .png, for example).  An image is typically a rectangular grid with each pixel having a description of the color, brightness, transparency for that point.  Most images use a non-human readable form that image viewers intrinsically know how to show.
 - Some programs will insist on extensions that match their internal list of "acceptable" file types. Others don't. This requirement is more common in Windows-based software than Mac or linux/unix, but there are again, no hard and fast rules on this.
 - Thanks to Elise Courtney for the question and impetus to create this help page.
 
