@@ -20,7 +20,7 @@ TODO
 ## CWL
 
 * In a nutshell, the Common Workflow Language, also known as CWL, serves as a medium in which to write descriptions of existing command line programs and tools, and then to string those descriptions into functional workflows
-* The language requires you to pre-emptively record inputs and expected outputs, but can be very flexible in what it takes in, and what results are given
+* The language requires you to preemptively record inputs and expected outputs, but can be very flexible in what it takes in, and what results are given
 * The main benefit of using this language is its incredible portability, re-usability, and scalability
 * Instead of having to deal with the environment of your host machine to run your analysis / execute your tool, you can use integrated Docker calls to download and configure images of your tool at runtime
   * Basically, to run a pipeline written in CWL, all you need to have installed is CWLTool and Docker

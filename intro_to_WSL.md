@@ -106,17 +106,18 @@ This is built off of the most recent release of the OS, 20.04, and came out in A
 <img src="./wsl_images/ms-store_ubuntu.png">
 
 * From there, just click *install*, and once it finishes, *launch*  
-
 * Follow along with the on screen prompts (creating a username/password, etc)
-
 * **Congratulations! You've successfully installed and configured Ubuntu Linux on your Windows machine!**
-
 * For a quick test-run, try installing the program Neofetch 
   * Neofetch is a small tool that gives you an overview of your system resources, along with a neat little distribution-specific ASCII graphic
   * First, add the repository (software source): `sudo add-apt-repository ppa:dawidd0811/neofetch`
   * then run `sudo apt-get install neofetch`  
 
 <img src="./wsl_images/ubuntu_terminal.png">
+
+#### Navigating to the Windows Filesystem
+* By default, when launching your installed Linux distribution through WSL, you will be placed in your instance-specific home directory
+* To work with files/folders that exist on your Windows Filesystem, use the following command: `cd /mnt/c/`
 
 ## Contact
 
