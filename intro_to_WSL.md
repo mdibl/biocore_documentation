@@ -8,7 +8,7 @@ date: "May 28th"
 # Introduction to the Windows Subsystem for Linux
 
 ## Learning Objectives
-* Become introduced to PowerShell
+* Get introduced to PowerShell
 * Learn how to enable the WSL feature-set 
 * Install the Ubuntu Linux distribution from the Microsoft Store
 * Launch Ubuntu Linux and install a small piece of software
@@ -16,14 +16,15 @@ date: "May 28th"
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
-* If searching for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
+* If looking for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
 ## A Couple Caveats
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
-**If all you're looking to do is remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is unnecessary.**  
-* If your Windows 10 release version is **1809** or higher, and are running **PowerShell 5.1** installed, OpenSSH is built in
+**If all you're looking to do is to remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is probably overkill.**  
+* If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
+* This means that you can remotely connect to a server via PowerShell without any additional installations
 
 ### Launching PowerShell
 
@@ -38,7 +39,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 
 * To check which version of PowerShell you have installed, run the following command:
     * `Get-Host | Select-Object Version`
-* If you meet all of the criteria above, open a PowerShell window and SSH away!
+* If you meet all of the criteria above, open a PowerShell window and remote away!
 
 * Additionally, if you'd like a nice quality of life addition, you can install Windows Terminal from the Microsoft Store
   * Windows Terminal is a fast, customizable, and modern terminal application, specifically built for Windows 10
@@ -79,25 +80,26 @@ With the above requirement met, turning on WSL is pretty straightforward, especi
   * `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 * Reboot your computer
 
-### If you'd rather use the GUI
+### If you'd rather use the Graphical User Interface (GUI)
 
-#### Open the start menu and search for *turn windows features on or off*  
+#### Open the start menu and search for *turn Windows features on or off*  
 <img src="./wsl_images/on-off_windows.png">
 
-#### Scroll down and click the box marked *Windows Subsystem for Linux*  
+#### Scroll down and check the box marked *Windows Subsystem for Linux*  
 <img src="./wsl_images/wsl_box.png">
 
 #### Click OK and Reboot!
 
 ## Installing a Linux Distribution
 
-#### Enabling WSL is the first step, the second being to select a Linux distribution
+#### Enabling WSL is the first step, the second being to select a Linux distribution to install from the Microsoft Store
 
-<p> Microsoft offers a few distributions of Linux for install on its store, for this example we're going to use Ubuntu.
-Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust feature-set.
-Canonical follows a 6 month release cycle, with the LTS version of its operating system being supported for at least 5 years after launch.</p>
+Microsoft offers a few distributions of Linux for install on its store, including Debian, OpenSUSE, Ubuntu, and Kali. For this example, we're going to work with Ubuntu.
 
-There are a couple LTS versions on the store, but we're going to want the one marked **Ubuntu**, with no numbers next to the name.  
+Developed by the company Canonical, Ubuntu is one of the most widely used and supported Linux distributions, in part due to it's stability and robust feature-set. It's LTS versions are supported for up to 5 years after launch!
+
+There are a couple LTS Ubuntu distributions on the store, but we're going to want the one marked simply **Ubuntu**, with no numbers next to the name.
+
 This is built off of the most recent release of the OS, 20.04, and came out in April of this year.
 
 #### Open up the Microsoft Store and search "Ubuntu"  
