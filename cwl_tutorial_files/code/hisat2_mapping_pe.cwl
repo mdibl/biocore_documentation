@@ -80,8 +80,8 @@ outputs:
   error_log:
     type: stderr
 
-stdout: hisat2_mapping_pe_console.txt
-stderr: hisat2_mapping_pe_error.txt
+stdout: HISAT2_mapping_pe_console.txt
+stderr: HISAT2_mapping_pe_error.txt
 
 $namespaces:
   s: https://schema.org/

@@ -17,7 +17,6 @@ date: "June 21st, 2020"
 ## Summary
 
 * The analysis work we do in the MDIBL Computational Core can be boiled down to a few key components/tools/languages, two of which we will be discussing today (CWL and JSON/YAML)
-* 
 
 ## CWL
 
@@ -71,8 +70,15 @@ nthreads: 8
 ## Editing Configuration Files
 
 * Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files used with CWL
-* As mentioned above, they can be composed in either the JSON or YAML file format (personally, I prefer YAML)
-
+* As mentioned above, they can be composed in either the JSON or YAML file format
+* To access the scripts and config files for this tutorial, clone the biocore_documentation repository found [here](https://github.com/mdibl/biocore_documentation)
+  1. To clone, simply click the `Clone` button on the main repo page, and copy the link provided in the `Clone with HTTPS` box
+  2. Next, open up the terminal, navigate to where you'd like to place these test files on your remote machine, and type the following
+  3. `Git clone` followed by pasting the repo link you copied earlier
+  
+* Once you've cloned the repository, use `cd` to navigate to the directory labeled `cwl_tutorial_files`
+  * Then `cd` into `configuration`
+  * Under this directory you will see a couple tool-specific YAML files 
 
 ## FastQC
 
