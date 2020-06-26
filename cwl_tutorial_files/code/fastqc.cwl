@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 label: "FastQC: A quality control tool for high throughput sequence data"
 doc: >
-     "FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. 
+     "FastQC provides a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. 
      It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should 
      be aware before doing any further analysis. Documenation can be found here: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
 
