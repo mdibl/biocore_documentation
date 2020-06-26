@@ -69,16 +69,35 @@ nthreads: 8
 
 ## Editing Configuration Files
 
-* Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files used with CWL
-* As mentioned above, they can be composed in either the JSON or YAML file format
+* Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files needed to successfully execute a wrapped tool
+* As mentioned above, they can be written in either the JSON or YAML language
 * To access the scripts and config files for this tutorial, clone the biocore_documentation repository found [here](https://github.com/mdibl/biocore_documentation)
   1. To clone, simply click the `Clone` button on the main repo page, and copy the link provided in the `Clone with HTTPS` box
-  2. Next, open up the terminal, navigate to where you'd like to place these test files on your remote machine, and type the following
+  2. Next, open up the terminal, navigate to where you'd like to place these tutorial/documentation files on your remote machine, and type the following
   3. `Git clone` followed by pasting the repo link you copied earlier
   
-* Once you've cloned the repository, use `cd` to navigate to the directory labeled `cwl_tutorial_files`
-  * Then `cd` into `configuration`
-  * Under this directory you will see a couple tool-specific YAML files 
+* Once you've cloned the repository, `cd` into `biocore_documentation`
+  * Then `cd` into `cwl_tutorial_files`
+  * From there, `cd` into `configuration`
+  * To view the contents of this directory, use the `ls -al` command
+  * Under this directory you will see a couple tool-specific YAML files, including one for FastQC and trim_galore
+  * The easiest (well, quickest) way to edit these files is through a built-in text-editing program such as Vim or nano (for this example, we'll use nano and the FastQC-test.yaml)
+
+### Using nano
+
+* To edit the YAML file, type `nano FastQC-test.yaml` into the command line
+  * This will open the file in the nano text editor
+* At the top of the page are the contents of the file, and at the bottom, the list of commands available to you
+  * Use the arrow keys to move to the line that says `path: "/compbio/data/test_fastq/KO_cort2.fastq"`
+  * Move along the length of the line to `/KO_cort2.fastq`
+  * Edit the path so that instead of reading `/KO_cort2.fastq`, it reads `/KO_cort1.fastq`
+* Once that change has been made, use the `control` and `o` key to write out
+  * Type `y` to save the changes you made to the file
+* Exit the nano text editor by using the `control` and `x` keys
+
+Great! You've successfully edited a configuration file to point to a new sequence!
+
+Now we can use the CWL-wrapped FastQC tool to generate a quality report of the sequence file specified.
 
 ## FastQC
 
@@ -87,3 +106,32 @@ nthreads: 8
 * Provides a descriptive overview highlighting where there may exist problems in your data
 * Can be ran either as a GUI program, or completely on the command line
   
+### Using FastQC via CWL
+
+Before we execute the CWL script, we first want to create a named directory for our analysis.
+
+* `cd` into the `/compbio/analysis` directory
+  * then use the `mkdir` command to create a named directory for your output
+  * i.e `mkdir nmaki`
+* `cd` into your new directory, and you're now ready to execute some CWL code
+  * on a side note, you can also create tool specific directories such as `fastqc-test` to avoid clutter, but it's up to personal preference
+  
+To run the FastQC tool with the configuration file we edited, use the following command:
+`cwltool ~/biocore_documentation/cwl_tutorial_files/code/FastQC.cwl ~/biocore_documentation/cwl_tutorial_files/configuration/FastQC-test.yaml`
+* This will use CWLtool to invoke FastQC, and pass in the wrappers required inputs via the YAML file
+* `~/` brings you to your home directory, and the rest are just the locations of the two components; CWL script and config file
+
+As the sample sequences are fairly small in size, the run should complete fairly quickly.
+
+You can now use `ls -al` to view the generated files, and unzip the FastQC output through the `unzip` command
+
+## Contact
+
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Research Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
