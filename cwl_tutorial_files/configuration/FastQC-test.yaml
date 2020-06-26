@@ -1,6 +1,6 @@
 seqfile:
   - class: File
-    path: "/compbio/data/test_fastq/*.fastq"
+    path: "/compbio/data/test_fastq/KO*.fastq"
 
 default_adapters_file:
   - class: File

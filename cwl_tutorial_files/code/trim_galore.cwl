@@ -212,3 +212,7 @@ s:author:
     s:identifier: https://orcid.org/0000-0001-9120-8365
     s:email: mailto:nmaki@mdibl.org
     s:name: Nathaniel Maki
+
+$schemas:
+  - https://schema.org/docs/schema_org_rdfa.html
+  - http://edamontology.org/EDAM_1.18.owl

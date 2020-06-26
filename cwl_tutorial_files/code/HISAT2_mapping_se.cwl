@@ -91,3 +91,7 @@ s:author:
     s:email: mailto:nmaki@mdibl.org
     s:name: Nathaniel Maki
 
+$schemas:
+  - https://schema.org/docs/schema_org_rdfa.html
+  - http://edamontology.org/EDAM_1.18.owl
+
