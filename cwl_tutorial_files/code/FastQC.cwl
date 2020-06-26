@@ -8,6 +8,7 @@ doc: >
 
 hints:
   DockerRequirement:
+    dockerImageId:fastqc
     dockerPull: quay.io/biocontainers/fastqc:0.11.7--pl5.22.0_2
 
 requirements:
