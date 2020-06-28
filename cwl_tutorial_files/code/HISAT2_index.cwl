@@ -1,4 +1,4 @@
-mecwlVersion: v1.0
+cwlVersion: v1.0
 class: CommandLineTool
 label: "The hisat2-build indexer"
 doc: "The hisat2-build indexer: hisat2-build builds a HISAT2 index from a set of DNA sequences. https://ccb.jhu.edu/software/hisat2/manual.shtml#the-hisat2-build-indexer"
