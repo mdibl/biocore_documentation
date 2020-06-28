@@ -6,6 +6,6 @@ hisat2_idx_basename: "hisat2-ensembl-dna"
 
 fq:
   - class: File
-    path: "/compbio/data/test_fastq/*.fastq"
+    path: "/compbio/data/test_fastq/KO_cort2.fastq"
 
 nthreads: 8
