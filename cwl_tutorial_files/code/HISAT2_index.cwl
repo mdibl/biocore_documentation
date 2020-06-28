@@ -12,7 +12,7 @@ baseCommand: [hisat2-build]
 inputs:
   reference_fasta:
     label: "reference sequence(s) given on the command line"
-    type: Directory
+    type: File[]
     inputBinding:
       position: 1
   index_basename:

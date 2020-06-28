@@ -1,5 +1,5 @@
 reference_fasta:
-  class: Directory
+  class: File
   path: "/compbio/reference/ensemble/release-93/danio_rerio/dna"
 
 index_basename: "hisat2-ensembl-93-dna"
