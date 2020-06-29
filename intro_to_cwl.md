@@ -108,41 +108,68 @@ Now we can use the CWL-wrapped FastQC tool to generate a quality report of a rea
 * Provides a descriptive overview highlighting where there may exist problems in your data
 * Can be ran either as a GUI program, or completely on the command line
   
-### Using FastQC via CWL
+### Executing FastQC via CWL
 
-Before we execute the CWL script, we first want to create a named directory for our analysis.
+Before we run our CWL script, we first want to create a named directory for our analysis.
 
 * `cd` into the `/compbio/analysis` directory
   * then use the `mkdir` command to create a named directory for your output
-  * i.e `mkdir nmaki`
+  * i.e `mkdir nmaki/fastqc-test/etc`
 * `cd` into your new directory, and you're now ready to execute some CWL code
   * on a side note, you can also create tool specific directories such as `fastqc-test` to avoid clutter, but it's up to personal preference
   
-To run the FastQC tool with the configuration file we edited, use the following command:
-`cwltool ~/biocore_documentation/cwl_tutorial_files/code/FastQC.cwl ~/biocore_documentation/cwl_tutorial_files/configuration/FastQC-test.yaml`
-* This will use CWLtool to invoke FastQC, and pass in the tools required inputs via the YAML file
-* `~/` brings you to your home directory, and the rest are just the locations of the two components; CWL script and config file
+* To launch the FastQC tool with the configuration file we edited, use the following command:
+  * `cwltool ~/biocore_documentation/cwl_tutorial_files/code/FastQC.cwl ~/biocore_documentation/cwl_tutorial_files/configuration/FastQC-test.yaml`
+* This uses CWLtool to invoke FastQC, and pass in required inputs via YAML file
+* `~/` refers to your home directory, and the rest are just the locations of the two files in the repository
     * `cwltool commandlinetool.cwl config.yaml`
-As the sample sequences are fairly small in size, the run should complete pretty quickly.
 
-You can now use `ls -al` to view the generated files, and unzip the FastQC output through the `unzip` command.
+As the sample sequences are fairly small in size, the run should complete quickly.
+
+You can now use `ls -al` to view the generated files
+
+To unzip the FastQC output, use the `unzip` command, followed by the name of the zipped directory.
 
 If you were to just run FastQC by itself, without CWL, the equivalent command would look something like this: `fastqc ../../../data/test_fastq/KO_cort1.fastq`
 
 Seems straightforward right? You may be wondering, "why go through the hassle of having these scripts, modifying a configuration file, if this is all you really need to do?".
 
-Well, CWLs real potential shines through when needing to work with tools that are a bit more involved, and that require a laundry list of inputs/outputs to do what you want.
+Well, CWL works best with programs that are slightly more involved, and that require more inputs/outputs to run completely (see: our next tool).
 
+## trim_galore
 
-## Trim_galore
-
-* Trim_galore encompasses the quality control program Cutadapt, and FastQC for preprocessing analysis
+* trim_galore combines the quality control program Cutadapt with FastQC
   * Cutadapt finds and removes adapter sequences, primers, and other unwanted sequence type from HTS read files
     * (This helps improve the quality of your input reads, before conducting full-fledged analysis)
 * Consistent quality and adapter trimming on FastQ files
 * After running Cutadapt, FastQC is ran on the trimmed reads, and a report generated
   * While not completely necessary, it does provide an additional point of comparison between the two reports; pre and post trimming
 
+### Executing trim_galore via CWL
+
+Running trim_galore with CWL is done in the same manner as FastQC
+
+* `cd` into the directory where you want your results to be stored
+* To launch the trim_galore tool with the appropriate configuration file, use the following command:
+  * `cwltool  ~/biocore_documentation/cwl_tutorial_files/code/trim_galore.cwl ~/biocore_documentation/cwl_tutorial_files/configuration/trim_galore_se-test.yaml` 
+
+While that command mirrors the previous one, the equivalent command without CWL is a bit different: 
+* `-f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC /var/lib/cwl/stgb4e72ffe-0f77-4d9b-86a4-24bc1d82bdf4/KO_cort1.fastq`
+  * If you were to examine the YAML configuration file, you'd find that there are only a few inputs being passed in to trim_galore through CWL
+  * Many of the inputs you see above (-f, -e, -q, etc) are all included in the CWL file itself, as defaults
+    * This allows you to have a relatively simple configuration file that only passes in what it needs to
+    * It also means that there is a running record of the options you used for your programs execution, baked right into the CWL and YAML code
+* To explore the output from your trim_galore run, simply use `ls -al` in your output directory
+
+### Single End / Paired End
+
+When working with high-throughput sequencing read files, you'll often come across them in one of two configurations
+
+* Single End: DNA is sequenced from one end only, is simpler and more efficient than Paired End sequencing, and works best for smaller RNA-Seq or ChIP-Seq.
+
+* Paired End: DNA is sequenced from both ends (doubles read files), allows for generation of higher quality sequence data (more accurate read alignments, indel variant detection), gene fusions, and novel transcript identification.
+
+Commonly, CWL tools and configuration files are "duplicated" with this in mind; discriminating between SE and PE with _se or _pe appended after the tool/config filename
 
 ## Contact
 
