@@ -42,12 +42,6 @@ inputs:
     default: 100
     inputBinding:
       prefix: --sjdbOverhang
-  output_prefix:
-    label: "prefix to be added to output files"
-    doc: "creates a tag to be added to output file names"
-    type: string?
-    default: ""
-    inputBinding: null
 
 outputs:
   starIndex:
@@ -60,8 +54,8 @@ outputs:
   error_log:
     type: stderr
   
-stdout: $(inputs.output_prefix + inputs.genomeFastaFiles[0].basename + ".STAR-index.console.txt")
-stderr: $(inputs.output_prefix + inputs.genomeFastaFiles[0].basename + ".STAR-index.err.txt")
+stdout: STAR-index.console.txt
+stderr: STAR-index.err.txt
 $namespaces:
   s: https://schema.org/
   edam: http://edamontology.org/
