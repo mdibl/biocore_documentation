@@ -43,7 +43,7 @@ to be set to the number of available cores on the server node."
 
 outputs:
   starIndex:
-    type: File[]
+    type: File
     outputBinding:
       glob: "*"
 
