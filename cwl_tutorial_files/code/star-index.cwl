@@ -53,7 +53,7 @@ outputs:
     type: stderr
     
   starIndex:
-    type: File[]
+    type: File
     outputBinding:
       glob: "*"
   
