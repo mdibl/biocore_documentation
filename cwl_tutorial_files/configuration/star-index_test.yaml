@@ -4,4 +4,7 @@ genomeFastaFiles:
 sjdbGTFfile:
   class: File
   path: "/compbio/reference/ensembl/release-100/danio_rerio/gtf/Danio_rerio.GRCz11.100.gtf.gz"
+genomeDir:
+  class: Directory
+  path: "/compbio/transformed/STAR-2.6.0c"
 nthreads: 8
