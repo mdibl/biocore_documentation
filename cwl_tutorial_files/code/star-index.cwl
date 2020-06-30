@@ -45,7 +45,7 @@ inputs:
 
 outputs:
   starIndex:
-    type: File[]
+    type: Directory
     outputBinding:
       glob: "*"
 
