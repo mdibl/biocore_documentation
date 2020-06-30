@@ -9,9 +9,9 @@ hints:
 
 baseCommand: [STAR, --runMode, genomeGenerate]
 
-arguments:
-  - prefix: "--genomeDir"
-    valueFrom: $(runtime.outdir)
+#arguments:
+  #- prefix: "--genomeDir"
+    #valueFrom: $(runtime.outdir)
 
 inputs:
   nthreads:
@@ -43,7 +43,7 @@ to be set to the number of available cores on the server node."
 
 outputs:
   starIndex:
-    type: File
+    type: File[]
     outputBinding:
       glob: "*"
 
