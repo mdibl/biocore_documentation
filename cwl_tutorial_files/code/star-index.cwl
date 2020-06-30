@@ -7,9 +7,6 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/star:2.6.0c--0
 
-requirements:
-  - class: InlineJavascriptRequirement
-
 baseCommand: [STAR, --runMode, genomeGenerate]
 
 arguments:
@@ -19,7 +16,8 @@ arguments:
 inputs:
   nthreads:
     label: "Number of threads"
-    doc: "defines the number of threads to be used for genome generation, it has to be set to the number of available cores on the server node."
+    doc: "defines the number of threads to be used for genome generation, it has
+to be set to the number of available cores on the server node."
     type: int
     inputBinding:
       prefix: --runThreadN
@@ -45,7 +43,7 @@ inputs:
 
 outputs:
   starIndex:
-    type: Directory
+    type: File[]
     outputBinding:
       glob: "*"
 
