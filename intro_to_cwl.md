@@ -154,7 +154,7 @@ Running trim_galore with CWL is done in the same manner as FastQC
   * `cwltool  ~/biocore_documentation/cwl_tutorial_files/code/trim_galore.cwl ~/biocore_documentation/cwl_tutorial_files/configuration/trim_galore_se-test.yaml` 
 
 While that command mirrors the previous one, the equivalent command without CWL is a bit different: 
-* `-f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC /var/lib/cwl/stgb4e72ffe-0f77-4d9b-86a4-24bc1d82bdf4/KO_cort1.fastq`
+* `trim_ galore -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC /var/lib/cwl/stgb4e72ffe-0f77-4d9b-86a4-24bc1d82bdf4/KO_cort1.fastq`
   * If you were to examine the YAML configuration file, you'd find that there are only a few inputs being passed in to trim_galore through CWL
   * Many of the inputs you see above (-f, -e, -q, etc) are all included in the CWL file itself, as defaults
     * This allows you to have a relatively simple configuration file that only passes in what it needs to
