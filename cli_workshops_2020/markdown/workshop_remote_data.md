@@ -6,11 +6,11 @@
 * Gain an understanding of different methods of data transfer
 
 ## Supporting Video Tutorials
-This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+This document is supported by a series of videos that cover roughly the same content. The video references are listed below:
 
 ## Working with remote data
 
-As mentiond in the second workshop series, SSH allows us to access and work with remote computers without the need to leave our local laptop or desktop computer. For a review of SSH please reference the following document.
+As mentioned in the second workshop series, SSH allows us to access and work with remote computers without the need to leave our local laptop or desktop computer. For a review of SSH please reference the following document.
 
 [Secure Shell (SSH) with Username and Password](https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/markdown/workshop_ssh_password.md)
 
@@ -68,7 +68,7 @@ scp source destination
 
 In this case however, the source is now the location of the data on the remote resource and the destination is a location on the user's local machine.
 
-Foor example, if we want to copy the file `test.txt` from the user's home directory on the server acme.com to the user's home directory on the local machine, the command would look like
+For example, if we want to copy the file `test.txt` from the user's home directory on the server acme.com to the user's home directory on the local machine, the command would look like
 
 ```
 scp cwilson@acme.com:~/test.txt ~/
@@ -117,6 +117,7 @@ scp -r cwilson@acme.com:~/test-files ~/
 ```
 
 The following screenshot demonstrates how we would copy a directory on an AWS cloud machine to the user's home directory on a local machine.
+
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_6.png">
 
 ## Limitations of `scp`
@@ -178,7 +179,8 @@ rsync -a test.txt cwilson@acme.com:~/
 ```
 
 The following screenshot demonstrates how we would copy a file to an AWS cloud machine using `rsync` with the archive option.
-<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_7.png">
+
+G<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_7.png">
 
 ### Verbose and progress options
 By default, `rsync` is fairly quiet. By that we mean it doesn't print a lot of output to the screen. In some cases, a user might want to see what files are being copied. You can tell `rsync` to print the files being copied by passing the `-v` or `--verbose` option.
@@ -209,11 +211,33 @@ The following screenshot shows sample output from the `rsync` command with the p
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_9.png">
 
+### Excluding files from copy
 
-## Contact
-If you have questions about the information in this workshop document, please contact:
+Sometimes we want to copy the contents of a directory but we want to exclude certain files. We can tell `rsync` to exclude these files with the `--exclude` option.
+
+For example, if a directory contains a subdirectory named `dont_copy`, the
+command to exclude this subdirectory from the copy would look like the
+following
 
 ```
+rsync -av --progress --exclude 'test-files/dont_copy' test-files cwilson@acme.com:~/
+```
+
+The following screenshot demonstrates how we would copy a file to an AWS cloud machine using `rsync` with the `--exclude` option.
+
+If we want to exclude a specific file from an `rsync` copy, the command would look like the following
+
+```
+rsync -av --progress --exclude 'test-files/dont_copy_this_file.txt' test-files cwilson@acme.com:~/
+```
+
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_10.png">
+
+```
+## Contact
+If you have questions about the information in this workshop document, please contact:
+```
+
 Chris Wilson
 Bioinformatics Software Engineer
 MDI Biological Laboratory
