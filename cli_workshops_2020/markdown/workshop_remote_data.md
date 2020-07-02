@@ -237,11 +237,10 @@ rsync -av --progress --exclude 'test-files/dont_copy_this_file.txt' test-files c
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_10.png">
 
-```
 ## Contact
 If you have questions about the information in this workshop document, please contact:
-```
 
+```
 Chris Wilson
 Bioinformatics Software Engineer
 MDI Biological Laboratory
