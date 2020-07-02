@@ -56,6 +56,7 @@ In this case, we are telling the `scp` command to copy `test.txt` to the folder 
 Please note, the destination `~/test-files` will expand to `/home/cwilson/test-files`.
 
 The following screenshot demonstrates how `scp` can be used to copy the file `test.txt` to a location other than the user's home directory.
+
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_2.png">
 
 
@@ -75,6 +76,7 @@ scp cwilson@acme.com:~/test.txt ~/
 ```
 
 The following screenshot demonstrates how we would copy a file from an AWS cloud machine to a local computer.
+
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_3.png">
 
 In each of these examples, we are telling `scp` to copy the file `test.txt` in cwilson's home directory on the remote resource to the user's home directory on the user's local machine.
@@ -86,6 +88,7 @@ scp cwilson@acme.com:~/test.txt ~/test-files
 ```
 
 The following screenshot demonstrates how we would copy a file from an AWS cloud machine to the directory `test-files` on the user's local computer.
+
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_4.png">
 
 ### Copying a directory **_to_** a remote resource. 
@@ -104,6 +107,7 @@ scp -r test-files cwilson@acme.com:~/
 In this example, the source is the directory `test-files` and we are telling `scp` to copy this directory to the user's home directory on the remote resource.
 
 The following screenshot demonstrates how we would copy a local directory to an AWS cloud machine.
+
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_5.png">
 
 
