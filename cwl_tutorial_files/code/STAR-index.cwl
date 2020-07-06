@@ -9,9 +9,9 @@ hints:
 
 baseCommand: [STAR, --runMode, genomeGenerate]
 
-#arguments:
-  #- prefix: "--genomeDir"
-    #valueFrom: $(runtime.outdir)
+arguments:
+  - prefix: "--genomeDir"
+    valueFrom: $(runtime.outdir)
 
 inputs:
   nthreads:
