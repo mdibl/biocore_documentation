@@ -1,6 +1,6 @@
 input_fastq:
-  - class: File
-    path: "/compbio/analysis/nmaki/trim_galore-test/KO_cort1_trimmed.fq"
+  class: File
+  path: "/compbio/analysis/nmaki/trim_galore-test/KO_cort1_trimmed.fq"
 rsem_index_dir:
   - class: Directory
     path: /compbio/analysis/nmaki/RSEM-index-test
