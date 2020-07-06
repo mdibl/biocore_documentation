@@ -44,7 +44,7 @@ inputs:
       position: 3
 
 outputs:
-   genes_result:
+  genes_result:
     type: File
     outputBinding:
       glob: $(inputs.rsem_output_prefix + ".genes.results")
