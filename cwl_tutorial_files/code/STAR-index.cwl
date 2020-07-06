@@ -43,7 +43,7 @@ to be set to the number of available cores on the server node."
   limitGenomeGenerateRAM:
     label: "Limit amount of RAM for STAR to consume"
     type: int
-    default: 15000000000
+    default: 31000000000
     inputBinding:
       prefix: --limitGenomeGenerateRAM
   #genomeDir:
