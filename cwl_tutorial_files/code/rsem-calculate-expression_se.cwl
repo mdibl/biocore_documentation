@@ -7,7 +7,7 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/rsem:1.3.0--boost1.64_3
 
-baseCommand: [rsem-calculate-expression, --star, --keep-intermediate-files, --no-bam-output]
+baseCommand: [rsem-calculate-expression, --keep-intermediate-files, --no-bam-output]
 
 arguments:
   - valueFrom: $(inputs.rsem_index_dir.path)/$(inputs.rsem_index_prefix)
@@ -52,15 +52,23 @@ outputs:
     type: File
     outputBinding:
       glob: $(inputs.rsem_output_prefix + ".isoforms.results")
-  stat:
-    type: Directory
-    outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".stat")
+  rsem_stat:
+      type:
+      - 'null'
+      - {type: array, items: File}
+      outputBinding:
+        glob: $(inputs.rsem_output_prefix + ".stat/*")
   star_output:
     type: Directory
     outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".star_out")
+      glob: $(inputs.rsem_output_prefix + ".temp")
+  console_log:
+    type: stdout
+  error_log:
+    type: stderr
 
+stdout: rsem-calculate-expression_console.txt
+stderr: rsem-calculate-expression_error.txt
 $namespaces:
   s: https://schema.org/
   edam: http://edamontology.org/
