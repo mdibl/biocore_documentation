@@ -33,9 +33,11 @@ inputs:
 
 outputs:
   rsem_index:
-    type: Directory
+    type:
+      type: array
+      items: File
     outputBinding:
-      glob: $(inputs.reference_name)
+      glob: "*"
 
 $namespaces:
   s: https://schema.org/
