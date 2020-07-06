@@ -10,8 +10,8 @@ hints:
 baseCommand: [STAR, --runMode, genomeGenerate]
 
 arguments:
- - prefix: "--genomeDir"
-   valueFrom: $(runtime.outdir)
+  - prefix: "--genomeDir"
+    valueFrom: $(runtime.outdir)
 
 inputs:
   nthreads:
@@ -40,12 +40,6 @@ to be set to the number of available cores on the server node."
     default: 100
     inputBinding:
       prefix: --sjdbOverhang
-  limitGenomeGenerateRAM:
-    label: "Limit amount of RAM for STAR to consume"
-    type: int
-    default: 31000000000
-    inputBinding:
-      prefix: --limitGenomeGenerateRAM
   #genomeDir:
    # label: "Path to genome directory"
     #type: Directory
@@ -65,6 +59,7 @@ outputs:
   
 stdout: STAR-index.console.txt
 stderr: STAR-index.err.txt
+
 $namespaces:
   s: https://schema.org/
   edam: http://edamontology.org/
