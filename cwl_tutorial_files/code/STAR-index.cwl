@@ -40,6 +40,12 @@ to be set to the number of available cores on the server node."
     default: 100
     inputBinding:
       prefix: --sjdbOverhang
+  limitGenomeGenerateRAM:
+    label: "Limit amount of RAM for STAR to consume"
+    type: int
+    default: 15000000000
+    inputBinding:
+      prefix: --limitGenomeGenerateRAM
   #genomeDir:
    # label: "Path to genome directory"
     #type: Directory
