@@ -4,6 +4,6 @@ gtf:
 
 reference_fasta_dir:
   class: Directory
-  path: "/compbio/reference/ensembl/release-100/danio_rerio/genome/danio_rerio.genome.fa"
+  path: "/compbio/reference/ensembl/release-100/danio_rerio/genome"
 
 reference_name: "danio_rerio-rsem_index"
