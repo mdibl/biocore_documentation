@@ -59,7 +59,7 @@ outputs:
   star_output:
     type: Directory
     outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".star_out"
+      glob: $(inputs.rsem_output_prefix + ".star_out")
 
 $namespaces:
   s: https://schema.org/
