@@ -48,9 +48,9 @@ to be set to the number of available cores on the server node."
 
 outputs:
   starIndex:
-    type: File[]
-    outputBinding:
-      glob: "*"
+    type:
+        type: array
+        items: [ File, Directory ]
   console_log:
     type: stdout
   error_log:
