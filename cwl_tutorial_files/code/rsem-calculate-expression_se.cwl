@@ -9,9 +9,9 @@ hints:
 
 baseCommand: [rsem-calculate-expression, --star, --keep-intermediate-files, --no-bam-output]
 
-arguments:
-  - valueFrom: $(inputs.rsem_index_dir.path)/$(inputs.rsem_index_prefix)
-    position: 2
+#arguments:
+ # - valueFrom: $(inputs.rsem_index_dir.path)/$(inputs.rsem_index_prefix)
+  #  position: 2
 
 inputs:
   nthreads:
@@ -56,10 +56,10 @@ outputs:
     type: Directory
     outputBinding:
       glob: "*.stat"
-  rsem_output:
-    type:
-        type: array
-        items: [ File, Directory ]
+  star_output:
+    type: Directory
+    outputBinding:
+      glob: "*.temp"
   console_log:
     type: stdout  
   error_log:
