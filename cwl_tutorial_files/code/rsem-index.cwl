@@ -38,6 +38,13 @@ outputs:
       items: File
     outputBinding:
       glob: "*"
+  console_log:
+    type: stdout
+  error_log:
+    type: stderr
+
+stdout: rsem-index_console.txt
+stderr: rsem-index_error.txt
 
 $namespaces:
   s: https://schema.org/
