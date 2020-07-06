@@ -56,10 +56,10 @@ outputs:
     type: Directory
     outputBinding:
       glob: "*.stat"
-  star_output:
-    type: Directory
-    outputBinding:
-      glob: "*.temp"
+  rsem_output:
+    type:
+        type: array
+        items: [ File, Directory ]
   console_log:
     type: stdout  
   error_log:
