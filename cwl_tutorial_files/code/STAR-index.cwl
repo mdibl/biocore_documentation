@@ -55,7 +55,7 @@ outputs:
   starIndex:
     type:
       type: array
-      items: File
+      items: Directory
     outputBinding:
       glob: "*"
   
