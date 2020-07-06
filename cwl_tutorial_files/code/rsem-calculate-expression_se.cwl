@@ -44,22 +44,22 @@ inputs:
       position: 3
 
 outputs:
-  genes_result:
+   genes_result:
     type: File
     outputBinding:
-      glob: "*.genes.results"
+      glob: $(inputs.rsem_output_prefix + ".genes.results")
   isoforms_result:
     type: File
     outputBinding:
-      glob: "*.isoforms.results"
+      glob: $(inputs.rsem_output_prefix + ".isoforms.results")
   stat:
     type: Directory
     outputBinding:
-      glob: "*.stat"
+      glob: $(inputs.rsem_output_prefix + ".stat")
   star_output:
     type: Directory
     outputBinding:
-      glob: "*.temp"
+      glob: $(inputs.rsem_output_prefix + ".star_out"
 
 $namespaces:
   s: https://schema.org/
