@@ -65,8 +65,8 @@ outputs:
   error_log:
     type: stderr
 
-stdout: $(inputs.rsem_output_prefix.basename + "_rsem-calc-exp_se_console.txt")
-stderr: $(inputs.rsem_output_prefix.basename + "_rsem-calc-exp_se_error.txt")
+stdout: rsem-calc-exp_se_console.txt
+stderr: rsem-calc-exp_se_error.txt
 
 $namespaces:
   s: https://schema.org/
