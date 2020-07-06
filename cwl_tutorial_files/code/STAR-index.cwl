@@ -53,7 +53,9 @@ outputs:
     type: stderr
     
   starIndex:
-    type: File
+    type:
+      type: array
+      items: File
     outputBinding:
       glob: "*"
   
