@@ -9,6 +9,9 @@ hints:
 
 baseCommand: [rsem-calculate-expression, --keep-intermediate-files, --no-bam-output]
 
+requirements:
+  - class: InlineJavascriptRequirement
+
 arguments:
   - valueFrom: $(inputs.rsem_index_dir.path)/$(inputs.rsem_index_prefix)
     position: 2
