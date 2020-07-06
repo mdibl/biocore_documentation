@@ -47,17 +47,15 @@ to be set to the number of available cores on the server node."
      # prefix: --genomeDir
 
 outputs:
+  starIndex:
+    type: File[]
+    outputBinding:
+      glob: "*"
   console_log:
     type: stdout
   error_log:
     type: stderr
-    
-  starIndex:
-    type:
-      type: array
-      items: File[]
-    outputBinding:
-      glob: "*"
+
   
 stdout: STAR-index.console.txt
 stderr: STAR-index.err.txt
