@@ -7,10 +7,7 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/rsem:1.3.0--boost1.64_3
 
-baseCommand: [rsem-calculate-expression, --keep-intermediate-files, --no-bam-output]
-
-requirements:
-  - class: InlineJavascriptRequirement
+baseCommand: [rsem-calculate-expression, --star, --keep-intermediate-files, --no-bam-output]
 
 arguments:
   - valueFrom: $(inputs.rsem_index_dir.path)/$(inputs.rsem_index_prefix)
@@ -50,21 +47,19 @@ outputs:
   genes_result:
     type: File
     outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".genes.results")
+      glob: "*.genes.results"
   isoforms_result:
     type: File
     outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".isoforms.results")
-  rsem_stat:
-      type:
-      - 'null'
-      - {type: array, items: File}
-      outputBinding:
-        glob: $(inputs.rsem_output_prefix + ".stat/*")
+      glob: "*.isoforms.results"
+  stat:
+    type: Directory
+    outputBinding:
+      glob: "*.stat"
   star_output:
     type: Directory
     outputBinding:
-      glob: $(inputs.rsem_output_prefix + ".temp")
+      glob: "*.temp"
   console_log:
     type: stdout
   error_log:
