@@ -24,7 +24,7 @@ inputs:
   input_fastq:
     label: "Comma-separated list of files containing single-end reads"
     doc: "Comma-separated list of files containing single-end reads. By default, these files are assumed to be in FASTQ format."
-    type: File[]
+    type: File
     inputBinding:
       position: 1
       itemSeparator: ","
