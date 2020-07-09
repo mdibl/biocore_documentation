@@ -47,19 +47,19 @@ outputs:
   genes_result:
     type: File
     outputBinding:
-      glob: "*.genes.results"
+      glob: "./*.genes.results"
   isoforms_result:
     type: File
     outputBinding:
-      glob: "*.isoforms.results"
+      glob: "./*.isoforms.results"
   stat:
     type: Directory
     outputBinding:
-      glob: "*.stat"
+      glob: "./*.stat"
   star_output:
     type: Directory
     outputBinding:
-      glob: "*.temp"
+      glob: "./*.temp"
   console_log:
     type: stdout
   error_log:
