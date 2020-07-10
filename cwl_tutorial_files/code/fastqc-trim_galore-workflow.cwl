@@ -7,12 +7,12 @@ $namespaces:
 inputs:
   - id: seqfile
     type: 'File[]'
-    'sbg:x': -1144
-    'sbg:y': -103
+    'sbg:x': -1275
+    'sbg:y': -86
   - id: fastq1
     type: File
-    'sbg:x': -1123.046875
-    'sbg:y': 167
+    'sbg:x': -1266.046875
+    'sbg:y': 206
 outputs:
   - id: fastqc_result
     outputSource:
@@ -68,6 +68,9 @@ steps:
       - id: seqfile
         source:
           - seqfile
+      - id: nthreads
+        source:
+          - nthreads
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
