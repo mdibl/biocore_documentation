@@ -9,6 +9,10 @@ inputs:
     type: 'File[]'
     'sbg:x': -1144
     'sbg:y': -103
+  - id: fastq1
+    type: File
+    'sbg:x': -1123.046875
+    'sbg:y': 167
 outputs:
   - id: fastqc_result
     outputSource:
@@ -68,12 +72,12 @@ steps:
       - id: fastqc_result
     run: ./FastQC.cwl
     label: 'FastQC: A quality control tool for high throughput sequence data'
-    'sbg:x': -917
-    'sbg:y': -326
+    'sbg:x': -969
+    'sbg:y': -176
   - id: trim_galore
     in:
       - id: fastq1
-        source: seqfile
+        source: fastq1
     out:
       - id: fastq1_trimmed
       - id: fastq1_trimmed_unpaired

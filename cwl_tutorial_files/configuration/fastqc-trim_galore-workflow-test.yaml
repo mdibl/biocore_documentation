@@ -7,6 +7,8 @@ default_adapters_file:
   - class: File
     path: "/compbio/reference/auxiliary/default_adapters_fromfastqc_30aug2018.fa"
 
+nthreads: 8
+
 # trim_galore input parameters
 fastq1:
     class: File
@@ -23,4 +25,3 @@ adapter1: illumina
 
 #adapter2: illumina
 
-nthreads: 8
