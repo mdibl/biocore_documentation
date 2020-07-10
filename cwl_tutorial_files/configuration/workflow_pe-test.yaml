@@ -27,9 +27,9 @@ fastq2:
     class: File
     path: "/compbio/data/JimCoffman/jcoffman_006.abOnly_cortisol_2018/0AB1_S1_LALL_R2_001.fastq.gz"
 
-#adapter2: illumina
+adapter2: illumina
 
-# kallisto-quant_se parameters
+# kallisto-quant
 index_file:
   class: File
   path: "/compbio/transformed/kallisto_linux-v0.46.2/ensembl/release-100/danio_rerio-transcriptome_joined/kallisto-ensembl-transcriptome_joined.idx"
