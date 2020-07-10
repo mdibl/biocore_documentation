@@ -3,7 +3,7 @@ index_file:
   path: "/compbio/transformed/kallisto_linux-v0.46.2/ensembl/release-100/danio_rerio-transcriptome_joined/kallisto-ensembl-transcriptome_joined.idx"
 
 fq:
-  - class: File
-    path: "/compbio/analysis/nmaki/trim_galore-test/KO_cort1_trimmed.fq"
+  class: File
+  path: "/compbio/analysis/nmaki/trim_galore-test/KO_cort1_trimmed.fq"
 
 nthreads: 8

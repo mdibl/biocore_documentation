@@ -131,7 +131,7 @@ inputs:
   fq:
     label: "Input FASTQ file(s)"
     doc: "Input FASTQ file(s)"
-    type: File[]
+    type: File
     inputBinding:
       position: 50
 
