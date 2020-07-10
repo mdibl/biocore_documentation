@@ -25,3 +25,11 @@ adapter1: illumina
 
 #adapter2: illumina
 
+# kallisto-quant_se parameters
+index_file:
+  class: File
+  path: "/compbio/transformed/kallisto_linux-v0.46.2/ensembl/release-100/danio_rerio-transcriptome_joined/kallisto-ensembl-transcriptome_joined.idx"
+
+fq:
+  - class: File
+    path: "/compbio/analysis/nmaki/workflow-test/KO_cort1_trimmed.fq"
