@@ -7,89 +7,57 @@ $namespaces:
 inputs:
   - id: seqfile
     type: 'File[]'
-    'sbg:x': -869
-    'sbg:y': 134
-  - id: fastq1
-    type: File
-    'sbg:x': -759
-    'sbg:y': -364
-  - id: fastq2
-    type: File
-    'sbg:x': -754
-    'sbg:y': -114
+    'sbg:x': -1144
+    'sbg:y': -103
 outputs:
-  - id: console_log
-    outputSource:
-      - _fast_q_c/console_log
-    type: stdout
-    'sbg:x': -384
-    'sbg:y': 273
-  - id: error_log
-    outputSource:
-      - _fast_q_c/error_log
-    type: stderr
-    'sbg:x': -382
-    'sbg:y': 170
   - id: fastqc_result
     outputSource:
       - _fast_q_c/fastqc_result
     type: 'File[]'
-    'sbg:x': -375
-    'sbg:y': 32
+    'sbg:x': -768.046875
+    'sbg:y': -454.5
   - id: trimmed_fastqc_zip
     outputSource:
       - trim_galore/trimmed_fastqc_zip
     type: 'File[]'
-    'sbg:x': 4
-    'sbg:y': -519
+    'sbg:x': -593
+    'sbg:y': -277
   - id: trimmed_fastqc_html
     outputSource:
       - trim_galore/trimmed_fastqc_html
     type: 'File[]'
-    'sbg:x': 1
-    'sbg:y': -394
-  - id: console_log_1
-    outputSource:
-      - trim_galore/console_log
-    type: stdout
-    'sbg:x': -121
-    'sbg:y': 505
-  - id: error_log_1
-    outputSource:
-      - trim_galore/error_log
-    type: stderr
-    'sbg:x': -75
-    'sbg:y': 382
-  - id: fastq1_trimmed
-    outputSource:
-      - trim_galore/fastq1_trimmed
-    type: File
-    'sbg:x': -48
-    'sbg:y': 246
-  - id: fastq1_trimmed_unpaired
-    outputSource:
-      - trim_galore/fastq1_trimmed_unpaired
-    type: File?
-    'sbg:x': -1
-    'sbg:y': 121
-  - id: fastq2_trimmed
-    outputSource:
-      - trim_galore/fastq2_trimmed
-    type: File?
-    'sbg:x': 1
-    'sbg:y': -14
-  - id: fastq2_trimmed_unpaired
-    outputSource:
-      - trim_galore/fastq2_trimmed_unpaired
-    type: File?
-    'sbg:x': 3
-    'sbg:y': -162
+    'sbg:x': -580
+    'sbg:y': -156
   - id: trim_galore_log
     outputSource:
       - trim_galore/trim_galore_log
     type: 'File[]'
-    'sbg:x': 5
-    'sbg:y': -277
+    'sbg:x': -564
+    'sbg:y': -25
+  - id: fastq2_trimmed_unpaired
+    outputSource:
+      - trim_galore/fastq2_trimmed_unpaired
+    type: File?
+    'sbg:x': -592
+    'sbg:y': 99
+  - id: fastq2_trimmed
+    outputSource:
+      - trim_galore/fastq2_trimmed
+    type: File?
+    'sbg:x': -603
+    'sbg:y': 238
+  - id: fastq1_trimmed_unpaired
+    outputSource:
+      - trim_galore/fastq1_trimmed_unpaired
+    type: File?
+    'sbg:x': -629
+    'sbg:y': 370
+  - id: fastq1_trimmed
+    outputSource:
+      - trim_galore/fastq1_trimmed
+    type: File
+    'sbg:x': -691
+    'sbg:y': 501
 steps:
   - id: _fast_q_c
     in:
@@ -97,22 +65,16 @@ steps:
         source:
           - seqfile
     out:
-      - id: console_log
-      - id: error_log
       - id: fastqc_result
     run: ./FastQC.cwl
     label: 'FastQC: A quality control tool for high throughput sequence data'
-    'sbg:x': -617
-    'sbg:y': 132
+    'sbg:x': -917
+    'sbg:y': -326
   - id: trim_galore
     in:
       - id: fastq1
-        source:
-          - fastq1
-          - fastq2
+        source: seqfile
     out:
-      - id: console_log
-      - id: error_log
       - id: fastq1_trimmed
       - id: fastq1_trimmed_unpaired
       - id: fastq2_trimmed
@@ -121,7 +83,6 @@ steps:
       - id: trimmed_fastqc_html
       - id: trimmed_fastqc_zip
     run: ./trim-galore.cwl
-    'sbg:x': -331
-    'sbg:y': -236
-requirements:
-  - class: MultipleInputFeatureRequirement
+    'sbg:x': -892
+    'sbg:y': 96
+requirements: []

@@ -200,13 +200,13 @@ outputs:
       items: File # since one or two matches (single/paired end)
     outputBinding:
       glob: "*fastqc.zip"
-  console_log:
-    type: stdout
-  error_log:
-    type: stderr
+  #console_log:
+    #type: stdout
+  #error_log:
+    #type: stderr
 
-stdout: $(inputs.fastq1.nameroot + "_trim_galore_console.txt")
-stderr: $(inputs.fastq1.nameroot + "_trim_galore_error.txt")
+#stdout: $(inputs.fastq1.nameroot + "_trim_galore_console.txt")
+#stderr: $(inputs.fastq1.nameroot + "_trim_galore_error.txt")
 #$namespaces:
 #  s: https://schema.org/
 #  edam: http://edamontology.org/

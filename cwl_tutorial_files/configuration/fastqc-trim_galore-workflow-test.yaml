@@ -14,4 +14,13 @@ fastq1:
 
 adapter1: illumina
 
+# For ease of use, I've added parameters for paired end here as well, commented out
+# To use, remove comment and populate path: with valid location of secondary read file
+
+#fastq2:
+#    class: File
+#    path: ""
+
+#adapter2: illumina
+
 nthreads: 8
