@@ -15,16 +15,16 @@ inputs:
     'sbg:y': -431
   - id: fastq1
     type: File
-    'sbg:x': -930
-    'sbg:y': -62
-  - id: fastq2
-    type: File
-    'sbg:x': -916
-    'sbg:y': 112
+    'sbg:x': -927
+    'sbg:y': 119
   - id: index_file
     type: File
     'sbg:x': -276
     'sbg:y': 171
+  - id: fastq2
+    type: File?
+    'sbg:x': -937
+    'sbg:y': -62
 outputs:
   - id: fastqc_result
     outputSource:
@@ -32,7 +32,7 @@ outputs:
     type: 'File[]'
     'sbg:x': -351
     'sbg:y': -569
-  - id: fastqc_result_1
+  - id: fastqc_result2
     outputSource:
       - _fast_q_c_1/fastqc_result
     type: 'File[]'
@@ -100,9 +100,9 @@ steps:
   - id: trim_galore
     in:
       - id: fastq1
-        source:
-          - fastq1
-          - fastq2
+        source: fastq1
+      - id: fastq2
+        source: fastq2
     out:
       - id: fastq1_trimmed
       - id: fastq1_trimmed_unpaired
@@ -112,8 +112,8 @@ steps:
       - id: trimmed_fastqc_html
       - id: trimmed_fastqc_zip
     run: ./trim-galore.cwl
-    'sbg:x': -722
-    'sbg:y': 21
+    'sbg:x': -728
+    'sbg:y': 20
   - id: kallisto_quant_pe
     in:
       - id: fq1
@@ -128,5 +128,4 @@ steps:
     label: 'kallisto quant: runs the quantification algorithm'
     'sbg:x': -93
     'sbg:y': 342
-requirements:
-  - class: MultipleInputFeatureRequirement
+requirements: []
