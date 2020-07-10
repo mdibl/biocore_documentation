@@ -5,7 +5,7 @@ seqfile:
 
 seqfile2:
   - class: File
-    path: "/compbio/data/test_fastq/KO_cort2.fastq"
+    path: "/compbio/data/JimCoffman/jcoffman_006.abOnly_cortisol_2018/0AB1_S1_LALL_R2_001.fastq.gz"
 
 default_adapters_file:
   - class: File
