@@ -68,9 +68,6 @@ steps:
       - id: seqfile
         source:
           - seqfile
-      - id: nthreads
-        source:
-          - nthreads
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
