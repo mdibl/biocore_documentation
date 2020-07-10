@@ -7,6 +7,9 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/rsem:1.3.0--boost1.64_3
 
+#requirements:
+  #- class: InitialWorkDirRequirement
+
 baseCommand: [rsem-calculate-expression, --star, --keep-intermediate-files, --no-bam-output]
 
 arguments:
@@ -47,19 +50,19 @@ outputs:
   genes_result:
     type: File
     outputBinding:
-      glob: "./*.genes.results"
+      glob: "*.genes.results"
   isoforms_result:
     type: File
     outputBinding:
-      glob: "./*.isoforms.results"
+      glob: "*.isoforms.results"
   stat:
     type: Directory
     outputBinding:
-      glob: "./*.stat"
+      glob: "*.stat"
   star_output:
     type: Directory
     outputBinding:
-      glob: "./*.temp"
+      glob: "*.temp"
   console_log:
     type: stdout
   error_log:
@@ -67,18 +70,18 @@ outputs:
 
 stdout: rsem-calculate-expression_console.txt
 stderr: rsem-calculate-expression_error.txt
-$namespaces:
-  s: https://schema.org/
-  edam: http://edamontology.org/
+#$namespaces:
+ # s: https://schema.org/
+  #edam: http://edamontology.org/
 
-s:license: https://spdx.org/licenses/Apache-2.0
-s:codeRepository: https://github.com/pitagora-network/pitagora-cwl
-s:author:
-  - class: s:Person
-    s:identifier: https://orcid.org/0000-0003-3777-5945
-    s:email: mailto:inutano@gmail.com
-    s:name: Tazro Ohta
+#s:license: https://spdx.org/licenses/Apache-2.0
+#s:codeRepository: https://github.com/pitagora-network/pitagora-cwl
+#s:author:
+ # - class: s:Person
+  #  s:identifier: https://orcid.org/0000-0003-3777-5945
+   # s:email: mailto:inutano@gmail.com
+    #s:name: Tazro Ohta
 
-$schemas:
-  - https://schema.org/docs/schema_org_rdfa.html
-  - http://edamontology.org/EDAM_1.18.owl
+#$schemas:
+ # - https://schema.org/docs/schema_org_rdfa.html
+ # - http://edamontology.org/EDAM_1.18.owl
