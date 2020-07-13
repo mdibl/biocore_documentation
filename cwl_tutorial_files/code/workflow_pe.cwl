@@ -17,6 +17,14 @@ inputs:
     type: File?
     'sbg:x': -906
     'sbg:y': -47
+  - id: seqfile
+    type: 'File[]'
+    'sbg:x': -900
+    'sbg:y': 248
+  - id: seqfile2
+    type: 'File[]'
+    'sbg:x': -909
+    'sbg:y': -230
 outputs:
   - id: fastqc_result
     outputSource:
@@ -71,7 +79,7 @@ steps:
     in:
       - id: seqfile
         source:
-          - fastq1
+          - seqfile
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
@@ -82,7 +90,7 @@ steps:
     in:
       - id: seqfile
         source:
-          - fastq2
+          - seqfile2
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
