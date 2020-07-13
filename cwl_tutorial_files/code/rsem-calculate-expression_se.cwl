@@ -7,8 +7,13 @@ hints:
   DockerRequirement:
     dockerPull: quay.io/biocontainers/rsem:1.3.0--boost1.64_3
 
-#requirements:
-  #- class: InitialWorkDirRequirement
+requirements:
+ - class: InlineJavascriptRequirement
+ - class: InitialWorkDirRequirement
+   listing:
+    - entry: "$({class: 'Directory', listing: []})"
+      entryname: $(inputs.rsem_output_dir)
+      writable: true
 
 baseCommand: [rsem-calculate-expression, --star, --keep-intermediate-files, --no-bam-output]
 
@@ -45,6 +50,8 @@ inputs:
     type: string
     inputBinding:
       position: 3
+  rsem_output_dir:
+    type: Directory
 
 outputs:
   genes_result:
