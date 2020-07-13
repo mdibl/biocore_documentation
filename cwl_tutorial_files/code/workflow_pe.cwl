@@ -5,39 +5,31 @@ label: workflow_pe
 $namespaces:
   sbg: 'https://www.sevenbridges.com/'
 inputs:
-  - id: seqfile
-    type: 'File[]'
-    'sbg:x': -830
-    'sbg:y': -570
-  - id: seqfile2
-    type: 'File[]'
-    'sbg:x': -820
-    'sbg:y': -431
   - id: fastq1
     type: File
-    'sbg:x': -927
-    'sbg:y': 119
+    'sbg:x': -904.1851806640625
+    'sbg:y': 106.36761474609375
   - id: index_file
     type: File
-    'sbg:x': -276
-    'sbg:y': 171
+    'sbg:x': -223.92166137695312
+    'sbg:y': 103.53487396240234
   - id: fastq2
     type: File?
-    'sbg:x': -937
-    'sbg:y': -62
+    'sbg:x': -906
+    'sbg:y': -47
 outputs:
   - id: fastqc_result
     outputSource:
       - _fast_q_c/fastqc_result
     type: 'File[]'
-    'sbg:x': -351
-    'sbg:y': -569
+    'sbg:x': -408
+    'sbg:y': 427
   - id: fastqc_result2
     outputSource:
       - _fast_q_c_1/fastqc_result
     type: 'File[]'
-    'sbg:x': -357
-    'sbg:y': -432
+    'sbg:x': -442
+    'sbg:y': -394
   - id: trimmed_fastqc_zip
     outputSource:
       - trim_galore/trimmed_fastqc_zip
@@ -72,31 +64,31 @@ outputs:
     outputSource:
       - kallisto_quant_pe/quant_output
     type: Directory
-    'sbg:x': 199
-    'sbg:y': 330
+    'sbg:x': 268.8818359375
+    'sbg:y': 295.33282470703125
 steps:
   - id: _fast_q_c
     in:
       - id: seqfile
         source:
-          - seqfile
+          - fastq1
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
     label: 'FastQC: A quality control tool for high throughput sequence data'
-    'sbg:x': -603
-    'sbg:y': -569
+    'sbg:x': -753.1651611328125
+    'sbg:y': 215.6083221435547
   - id: _fast_q_c_1
     in:
       - id: seqfile
         source:
-          - seqfile2
+          - fastq2
     out:
       - id: fastqc_result
     run: ./FastQC.cwl
     label: 'FastQC: A quality control tool for high throughput sequence data'
-    'sbg:x': -594
-    'sbg:y': -432
+    'sbg:x': -748.2660522460938
+    'sbg:y': -198.79959106445312
   - id: trim_galore
     in:
       - id: fastq1
@@ -112,7 +104,7 @@ steps:
       - id: trimmed_fastqc_html
       - id: trimmed_fastqc_zip
     run: ./trim-galore.cwl
-    'sbg:x': -728
+    'sbg:x': -707.185791015625
     'sbg:y': 20
   - id: kallisto_quant_pe
     in:
@@ -126,6 +118,6 @@ steps:
       - id: quant_output
     run: ./kallisto-quant_pe.cwl
     label: 'kallisto quant: runs the quantification algorithm'
-    'sbg:x': -93
-    'sbg:y': 342
+    'sbg:x': -42.26038360595703
+    'sbg:y': 292.6689453125
 requirements: []
