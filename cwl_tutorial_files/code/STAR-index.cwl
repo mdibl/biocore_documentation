@@ -15,6 +15,8 @@ arguments:
 
 inputs:
   nthreads:
+    type: int
+    default: 8
     label: "Number of threads"
     doc: "defines the number of threads to be used for genome generation, it has
 to be set to the number of available cores on the server node."
