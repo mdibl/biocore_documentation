@@ -61,19 +61,3 @@ outputs:
     type: File
     outputBinding:
       glob: "*.txt"
-
-$namespaces:
-  s: https://schema.org/
-  edam: http://edamontology.org/
-s:copyrightHolder: "MDI Biological Laboratory, 2020"
-s:license: "https://www.apache.org/licenses/LICENSE-2.0"
-s:codeRepository: https://github.com/mdibl/biocore_documentation
-s:author:
-  - class: s:Person
-    s:identifier: https://orcid.org/0000-0001-9120-8365
-    s:email: mailto:nmaki@mdibl.org
-    s:name: Nathaniel Maki
-
-$schemas:
-  - https://schema.org/version/latest/schema.rdf
-  - http://edamontology.org/EDAM_1.18.owl
