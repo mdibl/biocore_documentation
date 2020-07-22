@@ -15,11 +15,14 @@ hints:
   DockerRequirement:
     dockerImageId: tapas:latest
 
+requirements:
+  - class: InitialWorkDirRequirement
+  - class: ShellCommandRequirement
 arguments:
   - valueFrom: $(runtime.outdir)/$(inputs.output_file_name)
     position: 50
 
-baseCommand: [~/TAPAS/Finding_APA_Sites/APA_sites_detection]
+baseCommand: [APA_sites_detection]
 
 inputs:
   annotation_file_name:
@@ -63,7 +66,7 @@ outputs:
   APA_site_detection_result:
     type: File
     outputBinding:
-      glob: $(inputs.output_file_name)
+      glob: "*"
   console_log:
     type: stdout
   error_log:
