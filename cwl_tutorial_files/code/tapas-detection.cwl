@@ -51,7 +51,7 @@ inputs:
   penalty_value:
     label: "A penalty value can be provided using this option"
     doc: "If nothing is given, the value is determined from the read coverage of the 3' UTR frame"
-    type: double
+    type: double?
     inputBinding:
       prefix: -p
 
