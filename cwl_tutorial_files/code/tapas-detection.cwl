@@ -15,7 +15,7 @@ hints:
   DockerRequirement:
     dockerImageId: tapas:latest
 
-baseCommand: [/home/nmaki/TAPAS/Finding_APA_Sites/APA_sites_detection]
+baseCommand: [~/TAPAS/Finding_APA_Sites/APA_sites_detection]
 
 inputs:
   annotation_file_name:
