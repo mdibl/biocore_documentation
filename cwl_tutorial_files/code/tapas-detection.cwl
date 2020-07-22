@@ -1,5 +1,5 @@
 cwlVersion: v1.0
-class: CommandLineTools
+class: CommandLineTool
 label: "TAPAS - APA site detection: a tool for detecting novel APA sites within a gene from RNA-seq Data"
 doc: >
     "Accoring to the central dogma of molecular biology, a pre-mRNA is synthesized from the coding sequence of a gene during the transcriptional process. 
