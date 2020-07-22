@@ -15,7 +15,7 @@ hints:
   DockerRequirement:
     dockerImageId: tapas:latest
 
-baseCommand: [APA_sites_detection]
+baseCommand: [./APA_sites_detection]
 
 inputs:
   annotation_file_name:
@@ -57,14 +57,13 @@ inputs:
 
 outputs:
   APA_site_detection_result:
+    type: File
+    outputBinding:
+      glob: out.txt
+  console_log:
     type: stdout
-  #  type: File
-  #  outputBinding:
-  #    glob: "*"
-  #console_log:
-  #  type: stdout
-  #error_log:
-  #  type: stderr
+  error_log:
+    type: stderr
 
-#stdout: "tapas-detection_console.txt"
-#stderr: "tapas-detection_error.txt"
+stdout: "tapas-detection_console.txt"
+stderr: "tapas-detection_error.txt"
