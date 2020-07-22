@@ -1,0 +1,79 @@
+cwlVersion: v1.0
+class: CommandLineTools
+label: "TAPAS - APA site detection: a tool for detecting novel APA sites within a gene from RNA-seq Data"
+doc: >
+    "Accoring to the central dogma of molecular biology, a pre-mRNA is synthesized from the coding sequence of a gene during the transcriptional process. 
+    This pre-mRNA is coverted into a (mature) mRNA by the post-transcriptional process. The post-transcriptional process consists of three major steps. 
+    One of them is the addition of polyadenylation (polyA) tail using the polyadenylation pocess, which in turn consists of two substeps: 
+    cleavage at the 3' end of the pre-mRNA and addition of a polyA tail at the cleavage site. But, due to the effect of certain cis-acting elements and 
+    trans-acting factors, alternative cleavage sites can be formed from in a pre-mRNA. More precisely, a single pre-mRNA may often produce more than one 
+    mRNA with 3' untranslated regions (3' UTRs) of different lengths. TAPAS is a tool for detecting such alternative (or all) polyadenylation (APA) sites 
+    within a gene from RNA-Seq data. If two biological samples with multiple replicates are given, TAPAS can indentify differentially expressed APA sites 
+    between the samples. Moreover, its differential analysis has been extended to discover the shortening/lengthening of 3' UTRs within a gene."
+
+hints:
+  DockerRequirement:
+    dockerImageId: tapas:latest
+
+baseCommand: [./APA_sites_detection]
+
+inputs:
+  annotation_file_name:
+    label: "An annotation file is given using this option"
+    doc: "e.g. Human annotation file is given in Finding_APA_Sites directory for reference"
+    type: File
+    inputBinding:
+      position: 1
+      prefix: -ref
+  
+  coverage_file_name:
+    label: "A read coverage file is provided using this option"
+    doc: "Samtools is used to have the read coverage"
+    type: File
+    inputBinding:
+      position: 2
+      prefix: -cov
+  
+  read_length:
+    label: "Read length"
+    type: int
+    inputBinding:
+      position: 3
+      prefix: -l
+  
+  output_file_name:
+    label: "Output file name is given using this option"
+    type: string
+    inputBinding:
+      position: 4
+      prefix: -o
+  
+  penalty_value:
+    label: "A penalty value can be provided using this option"
+    doc: "If nothing is given, the value is determined from the read coverage of the 3' UTR frame"
+    type: double
+    inputBinding:
+      position: 5
+      prefix: -p
+
+outputs:
+  APA_site_detection_result:
+    type: File
+    outputBinding:
+      glob: "*.txt"
+
+$namespaces:
+  s: https://schema.org/
+  edam: http://edamontology.org/
+s:copyrightHolder: "MDI Biological Laboratory, 2020"
+s:license: "https://www.apache.org/licenses/LICENSE-2.0"
+s:codeRepository: https://github.com/mdibl/biocore_documentation
+s:author:
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0001-9120-8365
+    s:email: mailto:nmaki@mdibl.org
+    s:name: Nathaniel Maki
+
+$schemas:
+  - https://schema.org/version/latest/schema.rdf
+  - http://edamontology.org/EDAM_1.18.owl
