@@ -16,3 +16,67 @@ hints:
     dockerImageId: tapas:latest
 
 baseCommand: [Diff_APA_site_analysis]
+
+inputs:
+  primary_condition:
+    label: "Comma separated file names of condition 1 are given using this option"
+    doc: "Each of these files is the APA site detection file, outputted by the first part of TAPAS (outputted by APA_sites_detection)"
+    type: File[]
+    inputBinding:
+      position: 1
+      prefix: -C1
+
+  secondary_condition:
+    label: "Comma separated file names of condition 2 are given using this option"
+    doc: "Each of these files is the APA site detection file, outputted by the first part of TAPAS (outputted by APA_sites_detection)"
+    type: File[]
+    inputBinding:
+      position: 2
+      prefix: -C2
+
+  annotation_file_name:
+    label: "An annotation file is given using this option"
+    doc: "e.g. Human annotation file is given in Finding_APA_Sites directory for reference"
+    type: File
+    inputBinding:
+      position: 3
+      prefix: -ref
+  
+  cutoff_value:
+    label: "Cutoff value is given using this option"
+    doc: "This parameter is explained in TAPAS manuscript. Default value: 70"
+    type: int
+    default: 70
+    inputBinding:
+      position: 4
+      prefix: -cutoff
+  
+  differential_analysis_type:
+    label: "Type of differential analysis"
+    doc: "d -> differential APA site analysis, s -> shortening/lengthening event analysis"
+    type: string
+    inputBinding:
+      position: 5
+      prefix: -type
+  
+  output_file_name:
+    label: "Output file name is given using this option"
+    doc: "Default: for differential APA site analysis "diff_result_final.txt", 
+					for shortening/lengthening event analysis: "decision_output.txt""
+    type: string
+    inputBinding:
+      position: 6
+      prefix: -o
+
+outputs:
+  Diff_APA_site_analysis_result:
+    type: File
+    outputBinding:
+      glob: $(inputs.output_file_name)
+  console_log:
+    type: stdout
+  error_log:
+    type: stderr
+
+stdout: "tapas-analysis_console.txt"
+stderr: "tapas-analysis_error.txt"
