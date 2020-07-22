@@ -57,9 +57,8 @@ inputs:
 
 outputs:
   APA_site_detection_result:
-    type:
-        type: array
-        items: [ File, Directory ]
+    type: File
+    glob: $(inputs.output_file_name)
   console_log:
     type: stdout
   error_log:
