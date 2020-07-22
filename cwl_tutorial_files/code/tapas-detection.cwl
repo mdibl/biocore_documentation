@@ -15,6 +15,10 @@ hints:
   DockerRequirement:
     dockerImageId: tapas:latest
 
+arguments:
+  - valueFrom: $(runtime.outdir)/$(inputs.output_file_name)
+    position: 50
+
 baseCommand: [~/TAPAS/Finding_APA_Sites/APA_sites_detection]
 
 inputs:
