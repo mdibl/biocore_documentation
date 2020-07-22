@@ -15,9 +15,6 @@ hints:
   DockerRequirement:
     dockerImageId: tapas:latest
 
-requirements:
-  - class: InitialWorkDirRequirement
-  - class: ShellCommandRequirement
 arguments:
   - valueFrom: $(runtime.outdir)/$(inputs.output_file_name)
     position: 50
@@ -64,13 +61,14 @@ inputs:
 
 outputs:
   APA_site_detection_result:
-    type: File
-    outputBinding:
-      glob: "*"
-  console_log:
     type: stdout
-  error_log:
-    type: stderr
+  #  type: File
+  #  outputBinding:
+  #    glob: "*"
+  #console_log:
+  #  type: stdout
+  #error_log:
+  #  type: stderr
 
-stdout: "tapas-detection_console.txt"
-stderr: "tapas-detection_error.txt"
+#stdout: "tapas-detection_console.txt"
+#stderr: "tapas-detection_error.txt"
