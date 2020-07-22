@@ -59,7 +59,7 @@ outputs:
   APA_site_detection_result:
     type: File
     outputBinding:
-      glob: "*"
+      glob: $(inputs.output_file_name)
   console_log:
     type: stdout
   error_log:
