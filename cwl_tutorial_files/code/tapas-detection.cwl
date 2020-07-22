@@ -59,4 +59,11 @@ outputs:
   APA_site_detection_result:
     type: File
     outputBinding:
-      glob: "*.txt"
+      glob: "*"
+  console_log:
+    type: stdout
+  error_log:
+    type: stderr
+
+stdout: "tapas-detection_console.txt"
+stderr: "tapas-detection_error.txt"
