@@ -1,8 +1,8 @@
 ---
 title: Introduction to NCBI
-author: "Nathaniel Maki"
+author: Nathaniel Maki
 organization: MDIBL Computational Core
-date: "May 17th, 2020"
+date: May 17th, 2020
 ---
 # Introduction to NCBI
 
@@ -10,7 +10,7 @@ date: "May 17th, 2020"
 
 * Acquire a basic understanding of the NCBI website, its resources, and its most commonly used utilities/tools
 * More specifically, become familiar with Pubmed, the Gene Expression Omnibus (GEO), BLAST, Genbank, and SRA
-* Exposure to future and upcoming tools/resources under active development, such as NCBI Datasets and the NCBI Virus Repository
+* Exposure to future and upcoming resources under active development, such as NCBI Datasets and the NCBI Virus Repository
   
 ## Summary
 
@@ -21,7 +21,7 @@ date: "May 17th, 2020"
   * BLAST, SRA-toolkit, RAPT
 * Provide a web interface for interaction, data submission, and and constructing data queries
 
-In addition the the above, NCBI also produces training materials to assist in orienting students, fledgling researchers, and seasoned PIs to the tools/resources they offer. 
+In addition the the above, NCBI also produces training materials to assist in orienting students, fledgling researchers, and seasoned PIs to the tools and resources they offer
 
 #### Training material can be found [here](https://www.ncbi.nlm.nih.gov/home/learn/)
 
@@ -40,7 +40,7 @@ In addition the the above, NCBI also produces training materials to assist in or
 
 <img src="./ncbi_images/ncbi_home.png" width="1000">
 
-The front page of NCBI acts as a hub, with the main source of navigation being the Entrez search bar, and the database selection menu to the left, and popular resources on the right. 
+The front page of NCBI acts as a hub, with the main source of navigation being the Entrez search bar, and the database selection menu to the left, and popular resources on the right
 
 On the right side of the page are popular resources within the NCBI site.
 
