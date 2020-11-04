@@ -15,11 +15,11 @@ First, a review of some exploratory tools for both pre and post transcriptome an
 
 Next, we're taking a look at a couple of software packages that do the heavy lifting, and are chiefly responsible for the, er, Quality Control aspects of Quality Control. Specifically Trimmomatic, in an integrated context within Trinity, and Trim Galore!; a wonderful piece of software built by the developers of FastQC (which is, coincidentally, half of it!).
 
-Then we'll jump into a quick tutorial on how to use the tools described above to prepare your raw sequence data for assembly (and some things to watch out for).
+Then we'll jump into a quick tutorial on how to use the tools described above to prepare your raw sequence data for assembly.
 
 We're also going to cover methods for transcriptome quality control, and how to critically examine your assembled output.
 
-Lastly, I wanted to touch briefly on entire concept of QC'ing your read files before building an assembly, as there has been some literature that suggests QC may be detrimental, and should either be toned down or abandoned entirely.
+Lastly, we'll touch on the concept of QC'ing your read files before building an assembly, as there has been some literature that suggests QC may be detrimental, and should either be toned down or forgone entirely.
 
 ## Pre and Post Quality Control Assessment
 
@@ -27,7 +27,7 @@ Lastly, I wanted to touch briefly on entire concept of QC'ing your read files be
 (Slide 3)
 
 Before you start sending your raw files to the chopping block, it's probably a good idea to see what's actually in them! To that end, enter FastQC.
-Developed by Babraham Bioinformatics, FastQC generates a quality report of whatever you throw at it (mostly) (SAM, BAM, FastQ). It's executable both on the command line, and through a GUI (graphical user interface) application, for those of you who don't want to channel your inner Neo (or maybe just haven't found him yet :P). 
+Developed by Babraham Bioinformatics, FastQC generates a quality report of whatever you throw at it (mostly) (SAM, BAM, FastQ). It's executable both on the command line, and through a GUI (graphical user interface) application, for those of you who'd rather not channel your inner Neo (or maybe just haven't found him yet). 
 
 The report itself is interactive, opened as an HTML webpage, and comes bundled with supplementary graphs and tables (we'll cover these in some detail). It's especially useful to run *before* you conduct QC, as it'll give you a good baseline to compare your reads to after trimming, by highlighting contaminants lurking about. If you're using a trimming tool that requires you to specify the sequence beforehand, this can be a good way to find them and plug them in accordingly.
 
@@ -39,7 +39,7 @@ If FastQC is the one thing you want to run before you begin an analysis, then Mu
 ## Trimming
 (Slide 5)
 
-Trimming, in a nutshell, is spring cleaning for your input. It removes unwanted adapters, excises pesky primers and poly-A tails, and scrubs poor quality bases from your sequence file(s). This is especially important because if you allow those components to remain, it may compromise the accuracy of your results downstream. Error-ridden input can lead to unaligned reads, low mapping efficiency, and mismatches between your reads and a transcriptome/reference genome. There are a fair number of tools available, but we're going to focus on Trimmomatic, both in its standalone and Trinity-integrated form, and Trim Galore! (not that excited, just the name of the software :P).
+Trimming, in a nutshell, is spring cleaning for your input. It removes unwanted adapters, excises pesky primers and poly-A tails, and scrubs poor quality bases from your sequence file(s). This is especially important because if you allow those components to remain, it may compromise the accuracy of your results downstream. Error-ridden input can lead to unaligned reads, low mapping efficiency, and mismatches between your reads and a transcriptome/reference genome. There are a fair number of tools available, but we're going to focus on Trimmomatic, both in its standalone and Trinity-integrated form, and Trim Galore!.
 
 ### Trimmomatic
 (Slide 6 + 7)
@@ -47,11 +47,11 @@ Trimming, in a nutshell, is spring cleaning for your input. It removes unwanted 
 Trimmomatic is an Illumina-specific read trimming + adapter clipping tool, and functions the same in both its setups (either by itself or bundled with Trinity).
 To briefly touch on Trinity and tool integration; Outside programs aside, Trinity comes bundled with a host of useful packages, allowing for (what appears to be a full pipeline run). This includes downstream processes such as transcript abundance estimation, building transcript + gene expression matrices, and transcript + gene counts.
 
-Anyways, trimmomatic's default standalone settings are:
+Trimmomatic's default standalone settings are:
 
 `java -jar trimmomatic-0.39 SE -phred33 input.fq.gz output.fq.gz ILLUMINACLIP:TruSeq3-SE:2:30:10 LEADING:3 TRAILING: 3 SLIDINGWINDOW:4:15 MINLEN:36`
 
-* `trimmomatic-0.39` is the version of trimmomatic being used
+* `trimmomatic-0.39` is the version of Trimmomatic being used
 * `SE` is the single-end argument (`PE` for paired end)
 * `-phred33` is the quality scoring used
 * `input.fq.gz` and `output.fq.gz` are your input read file and the name of your trimmed output (for `PE` option, you'd have `input_1.fq.gz`, etc)
@@ -68,29 +68,29 @@ Now in comparison (don't worry, I'm now going to write out the entire command ag
 * `SLIDINGWINDOW:4:5` (as opposed to 4:15)
 * `MINLEN:25` (as opposed to 36)
 
-As you can see, the Trinity-integrated version of trimmomatic has "softer" defaults. This is explained in detail in the following [paper](https://www.frontiersin.org/articles/10.3389/fgene.2014.00013/full)
+As you can see, the Trinity-integrated version of Trimmomatic has "softer" defaults. This is explained in detail in the following [paper](https://www.frontiersin.org/articles/10.3389/fgene.2014.00013/full)
 
 **(Summarize + Explain, or perhaps Joel has a quick+dirty summary)**
 
 ### Trim Galore!
 (Slide 8)
 
-Remember how I mentioned that you'll want a point of comparison for your untrimmed reads? Well, Trim Galore! challenges the "age-old" question of "Should I trim my reads or run FastQC?" with the answer "why not both?!". Unmatched in executing a trimming tool (Cutadapt) and following it up with a report on the output, Trim Galore! only asks that you have both installed prior (oof). 
+Remember how I mentioned that you'll want a point of comparison for your untrimmed reads? Well, Trim Galore! challenges the "age-old" question of "Should I trim my reads or run FastQC?" with an answer of "why not both?!". Unmatched in executing a trimming tool (Cutadapt) and following it up with a report on the output, Trim Galore! only asks that you have both installed prior (oof). 
 
-First, Cutadapt trims your read files, in much the same way as trimmomatic, removing adapter sequences primers, unwanted poly-A tails.
-Then, FastQC is ran on the trimmed reads, building a report for your output. Trim Galore! also comes bundled with a standard 13bp Illumina adapter, working for PE libraries as well as SE.
+First, Cutadapt trims your read files, in much the same way as Trimmomatic, removing adapter sequences primers, unwanted poly-A tails, and low quality transcripts.
+Then, FastQC is executed on the trimmed reads, building a report for your output. Trim Galore! also comes bundled with a standard 13bp Illumina adapter, working for PE libraries as well as SE.
 
 ### Which Should You Choose?
 (Slide 9)
 
-If you plan on using Trinity for you transcriptome assembler, it's easiest to simply enable the trimmomatic option `--trimmomatic` (and it's been optimized for that specific use case). You can always run MultiQC on your output down the line to get your trimmed QC report. Additionally, you can modify the Trinity trimmomatic defaults to you hearts content by using the `--quality_trimming_params` flag and setting them accordingly.
+If you plan on using Trinity as your transcriptome assembler, it's easiest to simply enable the Trimmomatic option `--trimmomatic` (and it's been optimized for that specific use case). You can always run MultiQC on your output down the line to get your trimmed QC report. Additionally, you can modify the Trinity Trimmomatic defaults to you hearts content by using the `--quality_trimming_params` flag and setting them accordingly.
 
-If you're using another assembler such as RNASpades, or SOAPdenovo-Trans, Trim Galore! may be the more convenient option. Though, there's nothing stopping you from replicating Trinity's trimmomatic settings on the standalone version, and running MultiQC at the end. I would argue that at that point it's up to personal preference. 
+If you're using another assembler such as RNASpades, or SOAPdenovo-Trans, Trim Galore! may be the more convenient option. Though, there's nothing stopping you from replicating Trinity's Trimmomatic settings on the standalone version, and running MultiQC at the end. I would argue that at that point it's up to personal preference. 
 
 ## Preparing Sequence Data for Assembly
 (Slide 10+ / Live?)
 
-Since this workshop is being ran using the CWL language as a basis for tools and workflow analysis, we're going to use it together to produce a pre-QC FastQC report, followed by a run of Trim Galore!. These components are already bundled in our Assembly pipeline, so this will be the time to get a feel for how CWL works, and what you can expect from these tools! (Now you'll notice this is a blank slide; a "great" man once said: "We'll do it live!", and so we shall :P)
+Since this workshop is being ran using the CWL language as a basis for tools and workflow analysis, we're going to use it together to produce a pre-QC FastQC report, followed by Trim Galore! to create a trimmed fastq file and accompanying report. These steps are built into our Assembly pipeline, so this will be the time to get a feel for how CWL works, and what you can expect from these tools!
 
 First, you're going to want to fire up your favorite terminal, and ssh into your MDIBL Computational Core-provisioned machine.
 
