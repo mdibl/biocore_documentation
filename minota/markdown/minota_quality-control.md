@@ -1,16 +1,7 @@
----
-title: Introduction to Quality Control
-author: Nathaniel Maki
-organization: MDIBL Computational Core
-date: October 16th, 2020
----
-
-# Introduction to Quality Control
+# MINOTA Workshop: Introduction to Quality Control
 (Slide 1 + 2)
 
-**do we encourage people to cat their reads together?**
-
-Welcome to Detail 0 of the MINOTA Workshop. In this portion of the course, we'll be covering Quality Control (an incredibly important initial step).
+Welcome to the MDIBL MINOTA Workshop. In this portion of the course, we'll be covering Quality Control (an incredibly important initial step).
 First, a review of some exploratory tools for both pre and post transcriptome analysis, and how they can provide you with an overview of your input data and output results, without having to sift through pages of text log files (as fun as that sounds).
 
 Next, we're taking a look at a couple of software packages that do the heavy lifting, and are chiefly responsible for the, er, Quality Control aspects of Quality Control. Specifically Trimmomatic, in an integrated context within Trinity, and Trim Galore!; a wonderful piece of software built by the developers of FastQC (which is, coincidentally, half of it!).
@@ -40,6 +31,15 @@ If FastQC is the one thing you want to run before you begin an analysis, then Mu
 (Slide 5)
 
 Trimming, in a nutshell, is spring cleaning for your input. It removes unwanted adapters, excises pesky primers and poly-A tails, and scrubs poor quality bases from your sequence file(s). This is especially important because if you allow those components to remain, it may compromise the accuracy of your results downstream. Error-ridden input can lead to unaligned reads, low mapping efficiency, and mismatches between your reads and a transcriptome/reference genome. There are a fair number of tools available, but we're going to focus on Trimmomatic, both in its standalone and Trinity-integrated form, and Trim Galore!.
+
+## Assembly-Specific
+
+What I mentioned above is fairly general; however, there is a specific reason
+
+When building a transcriptome assembly, you do so by combining multiple reads together to generate the best possible read. The problem is, whenever the contents of the sequences diverge (i.e. differences between them), a new path is created. This forces the assembler to decide whether or not the path is valid, and what supporting evidence exists to determine its validity.
+
+Attempting to assemble using low-quality or error-ridden reads will result in many new paths being built, with many being low-count and useless. 
+This is especially true with retention of adapters; your provisional transcripts will be peppered with artificial sequences that don't belong in your final assembly.
 
 ### Trimmomatic
 (Slide 6 + 7)
@@ -102,7 +102,7 @@ It'll look something like this:
 
 We'll be working with the FastQC tool first, so once you're in, navigate to `/compbio/cwl/config` and use the `cp` command to copy the `fastqc_config.yaml` file to `/compbio/analysis/MINOTA/minota_002.PRJNA259826`. 
 
-Here, you will be editing the file using either `nano` or `vim`, with `nano` being the slightly more user-friendly option. 
+Here, you will be editing the file using the built in `nano` text editor (if you have another that you'd like to use, feel free to).
 
 **(I may make a doc on editing files using remote vscode editing)**
 
@@ -116,19 +116,17 @@ Now, open the `fastqc_config.yaml` file with your editor of choice. You should n
 
 The only portion you want to look at is the `seqfile` entry. Use the arrow keys on your keyboard to move down to `path:`, where is says `a/file/path`.
 
-If you opened the file with `nano`, you can immediately begin deleting the text after `path:` under `seqfile:`. 
-
-If you are using `vim`, you must first type `i` on the keyboard to enter insert mode.
+Once you open the file with `nano`, you can immediately begin deleting the text after `path:` under `seqfile:`. 
 
 Fill the empty `path:` with the file path we `ls`'d earlier: 
 
 <img src="./../images/detail0/ssh_fastqc_edit.png" width="800">
 
-**If you botch or delete something, and you don't remember what it was: in `vim`, first hit the `esc` key, then type `:q!` and `enter`; in `nano`, `control + x` on macOS / `ctrl + x` on Windows, followed by `n` and `enter`.**
+**If you botch or delete something, and you don't remember what it was: in `nano`, use `control + x` on macOS / `ctrl + x` on Windows, followed by `n` and `enter`.**
 
 Those commands exit the file without saving.
 
-To save your changes, on `vim`, `esc`, then `wq`, and `enter`; on `nano`, `control + o` and `enter`.
+To save your changes, use `control + o` and `enter`.
 
 Great, the hard part is over! To run the FastQC tool in CWL, simply type the following on the command line:
 
@@ -165,3 +163,13 @@ There are a few keys ways to determine the quality of your assembled transcript 
 * Comparing the assembly against a database of known protein sequences (swissprot, etc), looking for representation of protein-coding genes
 * Examine completeness based on conserved ortholog content through BUSCO
 * Use TransRate to statistically analyze your transcriptome assembly
+
+## Contact
+If you have questions about the information in this workshop document, please contact:
+
+```
+Nathaniel Maki
+Bioinformatics Training Specialist
+MDI Biological Laboratory
+nmaki[at]mdibl.org
+```
