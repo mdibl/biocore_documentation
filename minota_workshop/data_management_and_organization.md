@@ -1,4 +1,4 @@
-# MINOTA Workshop November, 2020: Working with Scientific Data
+# MINOTA Workshop November, 2020: Organizing and managing scientific data
 
 ## Workshop objectives
 
