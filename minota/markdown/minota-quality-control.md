@@ -22,7 +22,7 @@ The report itself is interactive, opened as an HTML webpage, and comes bundled w
 
 ### MultiQC
 
-If FastQC is the one thing you want to run before you begin an analysis, then MultiQc is the last. Super simple to use, it pieces together a report composed of the aggregate results of all analyses in a given directory. This includes results from FastQC, STAR, Trim Galore!, featurecounts, etc. It's also smart enough to descend into multiple sub-directories, so once you navigate to your root project dir, simply type `multiqc .` and you're golden.
+If FastQC is the one thing you want to run before you begin an analysis, then MultiQc is the tool to run after it completes. Super simple to use, it pieces together a report composed of the aggregate results of all analyses in a given directory. This includes results from FastQC, STAR, Trim Galore!, featurecounts, etc. It's also smart enough to descend into multiple sub-directories, so once you navigate to your root project dir, simply type `multiqc .` and you're golden.
 
 ## Trimming
 
@@ -97,7 +97,7 @@ First, you're going to want to fire up your favorite terminal, and ssh into your
 
 It'll look something like this:
 
-<img src="./../images/detail0/ssh_1.png" width="800">
+<img src="./../images/quality-control/ssh_1.png" width="800">
 
 ### QC Workflow Guided Run
 
@@ -121,7 +121,7 @@ Delete the text after `path:` under `seqfile:`.
 
 Fill the empty `path:` with the file path we `ls`'d earlier: 
 
-<img src="./../images/detail0/ssh_fastqc_edit.png" width="800">
+<img src="./../images/quality-control/qc_workflow_edit.png" width="800">
 
 **If you botch or delete something, and you don't remember what it was: in `nano`, use `control + x` on macOS / `ctrl + x` on Windows, followed by `n` and `enter`.**
 
@@ -131,7 +131,7 @@ To save your changes, use `control + o` and `enter`.
 
 To execute the workflow in CWL, simply type the following on the command line:
 
-<img src="./../images/detail0/ssh_fastqc_run.png" width="800">
+<img src="./../images/quality-control/qc_workflow_run.png" width="800">
 
 Depending on the file you chose, it should process fairly quickly, depositing six named files in your directory: an html file,a zipped folder containing the raw contents of the initial FastQC report, a trimmed read file, a trimmed html file + zipped raw contents, and a trimming report text file.
 
@@ -143,11 +143,15 @@ For those of you may not have worked with FastQC reports before, I'll be going o
 
 #### Basic Statistics
 
+<img src="./../images/quality-control/basic_stats.png" width="800">
+
 * Summary statistics of your input file
 * File type, encoding, total sequence, sequence quality, length, and %GC
   * Why does the sequence length vary between unrtrimmed/trimmed? Most likely due to adapters being removed, shortening the sequence and introducing variation
 
 #### Per Base Sequence Quality
+
+<img src="./../images/quality-control/per_base_seq_qual.png" width="800">
 
 * BoxWhisker plot made up of
   * central red line being the median value
@@ -162,17 +166,23 @@ For those of you may not have worked with FastQC reports before, I'll be going o
 
 #### Per Tile Sequence Quality
 
+<img src="./../images/quality-control/per_tile_seq_qual.png" width="800">
+
 * Shows deviations from average quality for each tile
 * Blue = positions where quality was at or above average for that base in the run
 * Red = worse quality
 
 #### Per Sequence Quality Scores
 
+<img src="./../images/quality-control/per_seq_qual_score.png" width="800">
+
 * Shows you if a subset of your sequences contain universally low quality values
 * If a large amount of sequences in a run have an overall low quality, may point to a systemic problem (either entirely, or a portion) with the run itself
 * Errors will arise when a general loss of quality within a run is encountered
 
 #### Per Base Sequence Content
+
+<img src="./../images/quality-control/per_base_seq_con.png" width="800">
 
 * Plots out proportion of each base position in a file, where normal DNA bases are called
 * There should be little to no difference, and the lines should run close to one another (should not be massively imbalanced)
@@ -186,21 +196,29 @@ For those of you may not have worked with FastQC reports before, I'll be going o
 
 #### Per Sequence GC Content
 
+<img src="./../images/quality-control/per_seq_gc_con.png" width="800">
+
 * Measures GC content across entire length of every sequence, compares to a normal distribution model of GC content
 * Sharp peaks in measured may indicate a contaminated library
 * Distribution shift may point to an existing systemic bias (independent of base position)
 
 #### Per Base N Content
 
+<img src="./../images/quality-control/per_base_N_con.png" width="800">
+
 * When a base call is unable to be made by a sequencer, an N is put in place of the normal base
 * If there are a significant portion of per-base N content, it suggests that the pipeline was not able to conduct valid base calls
 
 #### Sequence Length Distribution
 
+<img src="./../images/quality-control/seq_len_dist.png" width="800">
+
 * Graphs the distribution of fragment sizes in the sequence file analyzed
 * Some sequencers generate fragments with uniform lengths; even so, after trimming the uniformity will be broken and variation in length introduced
 
 #### Sequence Duplication Levels
+
+<img src="./../images/quality-control/seq_dup_lev.png" width="800">
 
 * When working with a diverse library, most sequences should occur only once in the final set
   * low levels of duplication can point to a high amount of coverage of the target sequence
@@ -217,10 +235,14 @@ For those of you may not have worked with FastQC reports before, I'll be going o
 
 #### Overrepresented Sequences
 
+<img src="./../images/quality-control/ovr_rep_seq.png" width="800">
+
 * Lists all sequences making up more that 0.1% of total, though to conserve memory, only ones that appear in first 100,000 sequencs are tracked
 * For every overrepresented sequence, FastQC looks for matches in a database of common contaminants, reporting best found hits
 
 ### Adapter Content
+
+<img src="./../images/quality-control/adp_con.png" width="800">
 
 * Picks up wether your library has a significant amount of adapter sequence, and whether you need to conducting trimming.
 * Plot shows cumulative percentage count of the proportion of the library that has seen each adapter sequence at each position
