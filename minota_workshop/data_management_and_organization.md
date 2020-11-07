@@ -60,7 +60,7 @@ The MDIBL Biocore team organizes all sample data, reference data and computation
 4. `/compbio/reference`
 5. `/compbio/transformed`,
 
-## Managing Sample Data `/compbio/data`
+## Organizing Sample Data `/compbio/data`
 
 As you conduct your research, it is good practice to organize your sample data in a way that allows you to easily find and reanalyze that data. The Biocore team at MDIBL organizes all sample data beneath a single "data" directory namely, `/compbio/data`.
 
@@ -72,13 +72,13 @@ While this naming scheme specific to our process here at MDIBL, it is good pract
 
 **Please note**, for the purpose of the MINOTA workshop, the Biocore team has initialized `/compbio/data` with a variety of sample datasets ranging in size and complexity. All datasets for the MINOTA workshop live under `/compbio/data/MINOTA`. This includes minota_001,  minota_002,  minota_003, minota_004 and minota_005. 
 
-## Managing Analysis Results `/compbio/analysis`
+## Organizing Analysis Results `/compbio/analysis`
 
-When performing an analysis, the tools you use can generate many files. To avoid confusion and unneccessary clutter, you should store the results of an analysis separately from your sample data. The Biocore team stores all analysis data under `/compbio/analysis`. 
+When performing an analysis, the tools you use can generate many files. To avoid confusion and unnecessary clutter, you should store the results of an analysis separately from your sample data. The Biocore team stores all analysis data under `/compbio/analysis`. 
 
-Much like `/compbio/data/`, all data in `/compbio/analysis/` is organized according to the project leader with all analysis results further organized by project. These directories mirror those under `/compbio/data`. For example, all analysis results for Lara Crotf's tomb_1 sample will live under `/compbio/analysis/LaraCroft/lcroft_001.tomb_1`. For the purpose of the MINOTA workshop, all analysis results should be stored under `/compbio/analysis/MINOTA`.
+Much like `/compbio/data/`, all data in `/compbio/analysis/` is organized according to the project leader with all analysis results further organized by project. These directories mirror those under `/compbio/data`. For example, all analysis results for Lara Croft's tomb_1 sample will live under `/compbio/analysis/LaraCroft/lcroft_001.tomb_1`. For the purpose of the MINOTA workshop, all analysis results should be stored under `/compbio/analysis/MINOTA`.
 
-## Managing Computational Pipeline Scripts `/compbio/cwl`
+## Organizing Computational Workflow and Pipeline Scripts `/compbio/cwl`
 
 There can be many steps involved when performing a traditional RNA seq or a
 transcriptome assembly. To complicate things further, there can be multiple
@@ -100,7 +100,7 @@ Each script and configuration file is named according to a tool. For example, th
 
 ## Managing pipeline configurations
 
-The scripts in `/compbio/cwl` should not be modified. They are intended to be called or executed "in place". That is when invoking a CWL script you should call the appropriate tool script from the `/compbio/cwl` directory. For example, when running FastQC, you would execute the command `cwltool /compbio/cwl/fastqc.cwl <path_to_your_config>`. This ensures the tool script for CWL is unmodified and can be reused without unwanted consequence.
+The scripts in `/compbio/cwl` should not be modified. They are intended to be called or executed "in place". That is, when invoking a CWL script you should call the appropriate tool script from the `/compbio/cwl` directory. For example, when running FastQC, you would execute the command `cwltool /compbio/cwl/fastqc.cwl <path_to_your_config>`. This ensures the tool script for CWL is unmodified and can be reused without unwanted consequence.
 
 The configuration files provided in `/compbio/cwl` are intended to be tailored to a specific analysis. In fact, these files, along with details of the tools used (e.g., tool version, etc.) can be used to define a pipeline should your results need to be replicated.
 
@@ -110,17 +110,26 @@ Unlike CWL scripts, tool configurations (e.g., fastqc.yaml) are not intended to 
 
 As we mentioned above, your workflow or pipeline configuration is critical to reproducing your results. To ensure reproducibility, it is a good practice to save the configuration files used to run a pipeline analysis in a conspicuous location. The Biocore team stores the configuration files specific to a workflow or pipeline in a directory called `config` under the appropriate project analysis directory. For example, configuration files for Lara Croft's analysis would live under `/compbio/analysis/LaraCroft/lcroft_001.tomb_1/config`.
 
-Whether you copy a configuration file to the appropriate `config` directory then edit it in place or you edit your configuration file in another location, you should ensure your configuration file is transfered to the appropriate `config` directory before pipeline execution. This allows you to reference that file in place when running your scripts. In this case, executing a CWL script might look like 
+Whether you copy a configuration file to the appropriate `config` directory then edit it in place or you edit your configuration file in another location, you should ensure your configuration file is transferred to the appropriate `config` directory before pipeline execution. This allows you to reference that file in place when running your scripts. In this case, executing a CWL script might look like 
 
 `cwltool /compbio/cwl/fastqc.cwl /compbio/analysis/LaraCroft/lcroft_001.tomb_1/config/fastqc.yaml`
 
 ## Organizing reference data `/compbio/reference`
 
-**UNDER CONSTRUCTION** It will be a short blurb anyway since it's not completely relevant to the workshop, but it's good to at least mention.
+When working with organisms that have a reference genome available (e.g.,
+yeast, zebrafish), it is good practice to store the reference data in a
+conspicuous location. The MDIBL Biocore team organizes available reference data
+under `/compbio/reference`. All reference data is organized by the producer,
+the version and finally, the organism. For example, reference data for
+zebrafish would live under `/combio/reference/ensembl/release_100/danio_rerio`.
 
 ## Transformed data `/compbio/transformed`
 
-**UNDER CONSTRUCTION** It will be a short blurb anyway since it's not completely relevant to the workshop, but it's good to at least mention.
+In many cases, reference data will need to be pre-processes or transformed before to make it more useful. As Dr. Joel Graber of the MDIBL Biocore states: "many analyses in our field are optimized by preprocessing the reference data in some way to make the analysis of new or unknown data more rapid and efficient." Alignment is just one example of preprocessing reference data. 
+
+Much like other data used in a workflow or pipeline analysis, it's good to store that data in a conspicuous location so it can be easily referenced.
+The Biorcore team stores all pre-processed or "transformed" data in `/compbio/transformed`. All transformed data is organized by the tool used to perform the pre-processing or transformation. Data is further organized according to the original reference data set. For example, the result of aligning zebrafish data using STAR would be stored under `/compbio/transformed/STAR-2.6.0/ensemble-100/danio_rerio`
+
 
 ## Contact
 If you have questions about the information in this workshop document, please contact:

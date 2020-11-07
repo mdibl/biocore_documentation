@@ -184,7 +184,7 @@ rsync -a test.txt cwilson@acme.com:~/
 
 The following screenshot demonstrates how we would copy a file to an AWS cloud machine using `rsync` with the archive option.
 
-G<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_7.png">
+<img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_7.png">
 
 ### Verbose and progress options
 By default, `rsync` is fairly quiet. By that we mean it doesn't print a lot of output to the screen. In some cases, a user might want to see what files are being copied. You can tell `rsync` to print the files being copied by passing the `-v` or `--verbose` option.
@@ -236,6 +236,9 @@ rsync -av --progress --exclude 'test-files/dont_copy_this_file.txt' test-files c
 ```
 
 <img src="https://github.com/mdibl/biocore_documentation/blob/master/cli_workshops_2020/images/images_workshop_3/workshop_image_10.png">
+
+### Preserving paths
+`rsync` can also create and preserve directory structures during a copy.
 
 ## Contact
 If you have questions about the information in this workshop document, please contact:
