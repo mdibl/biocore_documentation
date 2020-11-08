@@ -1,12 +1,4 @@
----
-title: Introduction to CWL
-author: "Nathaniel Maki"
-organization: MDIBL Computational Core
-date: "June 21st, 2020"
----
 # Introduction to CWL
-
-[//]: <> (TODO: add reference to man-pages)
 
 ## Learning Objectives
 
@@ -68,6 +60,8 @@ nthreads: 8
 ```
 
 ## Editing Configuration Files
+
+**the tutorial contents of this markdown have moved, please refer to the minota-quality-control doc (though the steps are more or less the same**
 
 * Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files needed to successfully execute a wrapped tool
 * As mentioned above, they can be written in either the JSON or YAML language
