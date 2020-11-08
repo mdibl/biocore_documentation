@@ -4,8 +4,21 @@
 
 * Gain basic understanding of best practices when working with and managing scientific data.
 
+## Supporting Video Tutorials
+This document is supported by a series of videos that cover roughly the same content. The video references are described below:
+
+1. [Organizing scientific data - intro](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EalFHcQlLehJowbSv4Y-vI4Bj6OlCpl1_wWS5DSzqoT7sA?e=9ke9cD) In this video clip we talk about the importance of your data and the Biocore team's approach to organizing research data.
+2. [Organizing sample data](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ER9DHgjuS5FBmYBH_3prRq0BePG9v1tyAFZ3GN594LOAHQ?e=BJ28yN) In this video clip we discuss the organization of sample data.
+3. [Organizing analysis results](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EYCc7I9QgCFCg2a7y5uc-gEBjkJ-Tw35iEJ9z3XiTiKZSQ?e=Msk7fr) IN this video clip we talk about the organization of analysis results.
+4. [Organizing pipeline scripts](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EcXxh2dSKndKpD9ED-jF6KMBU_HlWA8OzCtVGa4am1q-jA?e=bvGAbe) In this video clip we talk about the organization of workflow and pipeline scripts.
+5. [Organizing reference and transformed data](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EWg0ABgCoGBFgfCPbXRh-mIB453kJna6gmiQjtgZuV1aqA?e=XNh158) This video clip contains real-time examples for the commands `mkdir` and `rm`.
+6. [Managing pipeline scripts and ensuring reproducibility](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ETeaz2TvlVhEslS-3zlHRUIBdx4eI67dU9crYKhjVCQ97Q?e=1NSkFD) In this video clip we talk about managing configuration files used in a workflow or pipeline analysis.
+7. [Exploring the /compbio directory structure: an interactive guide]()
+
+It is recommended that you references these videos in order then use this guide as an additional "follow along guide" or future reference.
+
 ## Supplemental Resources
-This workshop series will explore a variety of Linux terminal commands. We will start with some of the most basic commands and progress up from there. The [resources](hresources) section at the end of this document contains a list of supplemental resources that you can reference at any time during this workshop series and after.
+This workshop series will explore a variety of Linux terminal commands. We will start with some of the most basic commands and progress up from there. The [resources](resources) section at the end of this document contains a list of supplemental resources that you can reference at any time during this workshop series and after.
 
 ## Preliminary requirements
 
