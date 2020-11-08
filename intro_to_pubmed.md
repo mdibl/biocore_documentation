@@ -1,8 +1,8 @@
 ---
 title: Introduction to PubMed
-author: "Nathaniel Maki"
+author: Nathaniel Maki
 organization: MDIBL Computational Core
-date: "May 25th, 2020"
+date: May 25th, 2020
 ---
 # Introduction to PubMed
 
