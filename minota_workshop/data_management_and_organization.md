@@ -13,7 +13,6 @@ This document is supported by a series of videos that cover roughly the same con
 4. [Organizing pipeline scripts](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EcXxh2dSKndKpD9ED-jF6KMBU_HlWA8OzCtVGa4am1q-jA?e=bvGAbe) In this video clip we talk about the organization of workflow and pipeline scripts.
 5. [Organizing reference and transformed data](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/EWg0ABgCoGBFgfCPbXRh-mIB453kJna6gmiQjtgZuV1aqA?e=XNh158) This video clip contains real-time examples for the commands `mkdir` and `rm`.
 6. [Managing pipeline scripts and ensuring reproducibility](https://mdibl-my.sharepoint.com/:v:/g/personal/cwilson_mdibl_org/ETeaz2TvlVhEslS-3zlHRUIBdx4eI67dU9crYKhjVCQ97Q?e=1NSkFD) In this video clip we talk about managing configuration files used in a workflow or pipeline analysis.
-7. [Exploring the /compbio directory structure: an interactive guide]()
 
 It is recommended that you references these videos in order then use this guide as an additional "follow along guide" or future reference.
 
