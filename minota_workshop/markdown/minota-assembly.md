@@ -15,12 +15,12 @@ Depending on what dataset you want to work with for testing, create a new direct
 Then use `nano` to open the file to begin editing the configuration options:
 
 * `output_dir` is just the name of the output files(s). Trinity can be a bit finicky, and may yell at you if the name does not contain "trinity" in some capacity
-* `normalize_by_read_set` runs normalization separately for each pair of fastq files. Leave this set to `true` when working with multiple read sets, change to `false` if using only a single read pait
+* `normalize_by_read_set` runs normalization separately for each pair of fastq files. Leave this set to `true` when working with multiple read sets, change to `false` if using only a single read pair
 * `no_normalize_reads` does *not* run normalization of reads. Leave this set to `false` if working with multiple read sets
 * `trinity_cpu` number of cores used in execution
 * `trinity_ss_lib_type` strand-specific RNA-Seq read orientation if paired, FR or RF, if single F or R
-* `right_reads` right read set
-* `left reads` left read set
+* `right_reads` right read set (normally R2)
+* `left reads` left read set (normally R1)
 * `trinity_max_mem` memory set aside for this run. The default of 80GB should suffice for most Trinity executions, though you can up it if you start to run into bottlenecks
 * `trimmomatic` runs trimmomatic on input read files, leave on `true` if using untrimmed reads, set to `false` if you've already conducted trimming (i.e using Trim Galore!)
 * `trinity_seq_type` sequence type for input files
