@@ -44,7 +44,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 * Additionally, if you'd like a nice quality of life addition, you can install Windows Terminal from the Microsoft Store
   * Windows Terminal is a fast, customizable, and modern terminal application, specifically built for Windows 10
   * It acts as a hub of sorts for Command Prompt, PowerShell, and WSL
-  * Natively supports many terminal features that can be found on MacOS/Linux distributions
+  * Natively supports many terminal features that can be found on macOS/Linux distributions
 
 With that out of the way, let's begin!
 
@@ -53,7 +53,7 @@ With that out of the way, let's begin!
 <p>In a nutshell, WSL lets you execute a Linux environment directly in Windows. No virtual machine or VM software required.
 
 At the moment, you are constrained to command-line tools and applications, though Microsoft is working to bring full GUI
-applications to the platform. 
+application support to the platform. 
 
 This lets you leverage the wide range of professional programs developed for Windows, along with 
 the vast repositories of free and open source software built on and for Linux.</p>
