@@ -135,7 +135,7 @@ To execute the workflow in CWL, simply type the following on the command line:
 
 Depending on the file you chose, it should process fairly quickly, depositing six named files in your directory: an html file,a zipped folder containing the raw contents of the initial FastQC report, a trimmed read file, a trimmed html file + zipped raw contents, and a trimming report text file.
 
-To view the reports on your local machine, you can `rsync` them down (along with the any contents of this workshop if you so choose)
+To view the reports on your local machine, you can `rsync` them down (along with any contents of this workshop if you so choose)
 
 ### Exploring Output
 
