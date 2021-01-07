@@ -34,7 +34,7 @@ date: "May 25th, 2020"
 
 ## Platform Overview
 
-<img src="./geo_images/geo_start.png" width="1000">
+<img src="./intro_to_geo_img/geo_start.png" width="1000">
 
 The GEO homepage is comprised of 4 components:
 * Getting Started
@@ -64,11 +64,11 @@ The GEO homepage is comprised of 4 components:
 * May reference many Samples that have been submitted by multiple submitters
 * GEO accession number (GPLxxx)
 
-<img src="./geo_images/geo_platform_browser.png" width="1000"> 
+<img src="./intro_to_geo_img/geo_platform_browser.png" width="1000"> 
 
 #### Example Platform Record
 
-<img src="./geo_images/geo_platform_ex.png" width="1000">
+<img src="./intro_to_geo_img/geo_platform_ex.png" width="1000">
 
 ### Sample
 
@@ -76,11 +76,11 @@ The GEO homepage is comprised of 4 components:
 * May only reference one Platform, but can exist in multiple Series
 * GEO accession number (GSMxxx)
 
-<img src="./geo_images/geo_samples_browser.png" width="1000">
+<img src="./intro_to_geo_img/geo_samples_browser.png" width="1000">
 
 #### Example Sample Record
 
-<img src="./geo_images/geo_sample_ex.png" width="1000">
+<img src="./intro_to_geo_img/geo_sample_ex.png" width="1000">
 
 ### Series
 
@@ -89,11 +89,11 @@ The GEO homepage is comprised of 4 components:
 * May contain tables describing extracted data, summary conclusions, and/or analyses
 * GEO accession number (GSExxx)
 
-<img src="./geo_images/geo_series_browser.png" width="1000">
+<img src="./intro_to_geo_img/geo_series_browser.png" width="1000">
 
 #### Example Series Record
 
-<img src="./geo_images/geo_series_ex.png" width="1000">
+<img src="./intro_to_geo_img/geo_series_ex.png" width="1000">
 
 ## Curated records 
 
@@ -107,7 +107,7 @@ The GEO homepage is comprised of 4 components:
 * DataSet records contain resources and tools for further analysis, including clustering utilities and multi-sample comparisons
 * Because of a (massive) backlog in the generation of DataSets, not every Series has an accompanying DataSet record
 
-<img src="./geo_images/geo_dataset_browser.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_browser.png" width="1000">
 
 ## Searching GEO
 
@@ -120,12 +120,12 @@ GEO offers both `general` and `advanced` query functionality
 * To General search, type content into the `Search` box on the GEO Datasets front page and hit enter
 * While easy to use, a general search will often give you an overwhelming number of results
 
-<img src="./geo_images/geo_dataset_search.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_search.png" width="1000">
 
 * To refine your query, you can use the `Advanced Search` button
   * Selecting `Advanced Search` brings you to another GEO Datasets page
 
-<img src="./geo_images/geo_dataset_allsearch.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_allsearch.png" width="1000">
 
 * This lists *everything* related to your search query. To refine to Datasets, choose `DataSets` from the `Entry type` column on the left side of the page
 
@@ -134,13 +134,13 @@ GEO offers both `general` and `advanced` query functionality
 * Advanced search is a bit more involved, but still fairly easy to use
 * To access the `Advanced Search` builder, select `Advanced` under the general search bar
 
-<img src="./geo_images/geo_advancedquery.png" width="1000">
+<img src="./intro_to_geo_img/geo_advancedquery.png" width="1000">
 
 * To build a search query, first you need to `Add terms to the query box`
   * The dropdown menu gives you a large number of fields to choose from, which can be further refined by the terms entered
   * There is also an autocomplete feature built in that helps avoid spelling mistakes, and expands functionality
 
-<img src="./geo_images/geo_dataset_querybuilder.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_querybuilder.png" width="1000">
 
 * Refine your advanced search to only DataSets by choosing `DataSets` from the `Entry type` column on the left side of the page
 
@@ -151,7 +151,7 @@ GEO offers both `general` and `advanced` query functionality
 * Underneath Accession number are quick links to related GEO Profiles, PubMed citation page, PMC free full-text articles, and tools for analysis
 * Selecting the main title brings you to the specific DataSet Record page
 
-<img src="./geo_images/geo_dataset_results.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_results.png" width="1000">
 
 #### GEO DataSet Records
 
@@ -161,7 +161,7 @@ GEO offers both `general` and `advanced` query functionality
 * Under that are options to download various files containing additional DataSet information, experimental variable subsets, etc
 * At the bottom are additional data analysis tools for finding genes, comparing sets of samples, generating heatmaps, and examining experimental design + value distributions.
 
-<img src="./geo_images/geo_dataset_record.png" width="1000">
+<img src="./intro_to_geo_img/geo_dataset_record.png" width="1000">
 
 ### GEO Profile 
 
@@ -170,7 +170,7 @@ GEO offers both `general` and `advanced` query functionality
 * Assembled and sourced from GEO microarray data
 * Queries based upon gene annotation / profile characteristics
 
-<img src="./geo_images/geo_profile_result.png" width="1000">
+<img src="./intro_to_geo_img/geo_profile_result.png" width="1000">
 
 #### GEO Profile Results
 
@@ -182,7 +182,7 @@ GEO offers both `general` and `advanced` query functionality
   * Reporter: Original sequence reporter(s) taken from the Platform record supplied by submitter
   * Experiment: DataSet from where the profile comes from
 
-<img src="./geo_images/geo_profile_record.png" width="1000">
+<img src="./intro_to_geo_img/geo_profile_record.png" width="1000">
 
 #### GEO Profile Chart
 
@@ -194,7 +194,7 @@ GEO offers both `general` and `advanced` query functionality
   * Because of this, the values should be considered arbitrary, and direct comparisons between different Datasets may not be accurate.
   * The squares represent rank order of expression measurements, and indicate where the expression of that gene falls in comparison to all other genes on an array.
 
-<img src="./geo_images/geo_profile_chart.png" width="1000">
+<img src="./intro_to_geo_img/geo_profile_chart.png" width="1000">
 
 #### GEO Profile Sample Accession
 
@@ -208,17 +208,17 @@ GEO offers both `general` and `advanced` query functionality
 * Also includes the Platform ID (GPL) and Series ID at the bottom
 * You also have the option to download raw Sample specific CEL data, either through a web browser, or through FTP
 
-<img src="./geo_images/geo_profile_sampleacc.png" width="1000">
+<img src="./intro_to_geo_img/geo_profile_sampleacc.png" width="1000">
 
 ## Downloading GEO Data with FTP
 
 * NCBI provides you with a plethora of options to download GEO data. We'll touch on the FTP site briefly
 
-<img src="./geo_images/geo_download.png" width="1000">
+<img src="./intro_to_geo_img/geo_download.png" width="1000">
 
 * Almost all data queried or interacted with on NCBI can be direct downloaded from the FTP site, using an index location and command line programs such as `curl` or `wget`
 
-<img src="./geo_images/geo_index.png" width="1000">
+<img src="./intro_to_geo_img/geo_index.png" width="1000">
 
 ## Contact
 

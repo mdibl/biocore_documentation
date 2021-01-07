@@ -1,11 +1,10 @@
 ---
 title: Introduction to NCBI
-author: Nathaniel Maki
+author: "Nathaniel Maki"
 organization: MDIBL Computational Core
-date: May 17th, 2020
+date: "May 23rd"
 ---
 # Introduction to NCBI
-
 ## Learning Objectives
 
 * Acquire a basic understanding of the NCBI website, its resources, and its most commonly used utilities/tools
@@ -23,11 +22,11 @@ date: May 17th, 2020
 
 In addition the the above, NCBI also produces training materials to assist in orienting students, fledgling researchers, and seasoned PIs to the tools and resources they offer
 
-#### Training material can be found [here](https://www.ncbi.nlm.nih.gov/home/learn/)
+**Training material can be found [here](https://www.ncbi.nlm.nih.gov/home/learn/)**
 
 ## Logging in / Creating an NCBI Account
 
-#### Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
+**Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.**
 
 * This includes working with NCBI's programming API:
   * With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonymous
@@ -38,11 +37,9 @@ In addition the the above, NCBI also produces training materials to assist in or
 
 ## Platform Overview
 
-<img src="./ncbi_images/ncbi_home.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_home.png" width="1000">
 
 The front page of NCBI acts as a hub, with the main source of navigation being the Entrez search bar, and the database selection menu to the left, and popular resources on the right
-
-On the right side of the page are popular resources within the NCBI site.
 
 Content in the center is comprised of links to the main functions of the NCBI site
 
@@ -55,27 +52,27 @@ Content in the center is comprised of links to the main functions of the NCBI si
 
 At the top left of the page, under the label `Resources`, are links to grouped tools and data repositories 
 
-<img src="./ncbi_images/ncbi_resources_dropdown.png" width="600">
+<img src="./intro_to_ncbi_img/ncbi_resources_dropdown.png" width="600">
 
 Specifically selecting BLAST will take you to the tools' homepage:
 
-<img src="./ncbi_images/ncbi_blast.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_blast.png" width="1000">
 
 For a comprehensive list of all resources, select `All Resources` under the `Resources` drop-down menu
 
-<img src="./ncbi_images/ncbi_allresource.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_allresource.png" width="1000">
 
 Tutorials for many facets of NCBI are under the `How-To` menu
 
-<img src="./ncbi_images/ncbi_howto_dropdown.png" width="600">
+<img src="./intro_to_ncbi_img/ncbi_howto_dropdown.png" width="600">
 
 For guides on common tool use-cases, select `Data and Software`:
 
-<img src="./ncbi_images/howto_expanded.png" width="1000">
+<img src="./intro_to_ncbi_img/howto_expanded.png" width="1000">
 
 Selecting `Download the complete genome for an organism` will take you to a walkthrough of how to use the FTP site:
 
-<img src="./ncbi_images/howto_ftp_teaser.png" width="1000">
+<img src="./intro_to_ncbi_img/howto_ftp_teaser.png" width="1000">
 
 ## Entrez Advanced Search
 
@@ -113,7 +110,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 * Largest publicly available repository of High Throughput Sequencing (HTS) data
 * Accompanied by SRA-toolkit suite for acquisition + dumping of data from SRA database to local and remote machines
 
-<img src="./ncbi_images/sra_start.png" width="1000">
+<img src="./intro_to_ncbi_img/sra_start.png" width="1000">
 
 ### Genbank
 
@@ -123,7 +120,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Gene (region of biological interest in record)
   * Coding sequence (CDS)
 
-<img src="./ncbi_images/genbank_start.png" width="1000">
+<img src="./intro_to_ncbi_img/genbank_start.png" width="1000">
 
 ### PubMed + PubMed Central
 
@@ -134,7 +131,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
 * **PubMed Central (PMC)** contains full-text versions of articles for free
 * If available, PubMed will link to PMC for appropriate article
 
-<img src="./ncbi_images/pubmed_start.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_start.png" width="1000">
 
 ## Commonly used NCBI Site Utilities
 
@@ -149,18 +146,18 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * CD-search, which locates conserved domains in the submitted sequence
   * Primer-BLAST, which allows you to design primers that are specific to a PCR template
 
-<img src="./ncbi_images/ncbi_blast.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_blast.png" width="1000">
 
 ### Downloading + FTP
 
 * There are suites of tools for general data access (Entrez Programming Utilities) and ones that are repository specific (SRA Toolkit, GEO2R) 
 * Some require software to be installed locally before use
 
-<img src="./ncbi_images/download_hub.png" width="1000">
+<img src="./intro_to_ncbi_img/download_hub.png" width="1000">
 
 * Almost all data queried or interacted with on NCBI can be direct downloaded from the FTP site, using an index location and command line programs such as `curl` or `wget`.
 
-<img src="./ncbi_images/ftp_index.png" width="1000">
+<img src="./intro_to_ncbi_img/ftp_index.png" width="1000">
 
 
 ## Under Development
@@ -175,7 +172,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * For example, searching for *Mus musculus*, will present you with only a couple reference genomes, and a single available annotation
 * As this resource expands, expect usefulness to mature as well
 
-<img src="./ncbi_images/ncbi_datasets.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_datasets.png" width="1000">
 
 ### NCBI Virus (Beta)
 
@@ -185,7 +182,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Links to a page dedicated to COVID-19 research and literature
 * Here you can browse vast amounts of nucleotide and protein data, locate relevant PubMed and PMC articles, perform in-place alignments, and construct phylogenetic trees
 
-<img src="./ncbi_images/ncbi_virus.png" width="1000">
+<img src="./intro_to_ncbi_img/ncbi_virus.png" width="1000">
 
 ## Contact
 

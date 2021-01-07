@@ -7,6 +7,7 @@ date: "June 21st, 2020"
 # Introduction to CWL
 
 [//]: <> (TODO: add reference to man-pages)
+[//]: <> (TODO: update with reference images)
 
 ## Learning Objectives
 
@@ -16,24 +17,27 @@ date: "June 21st, 2020"
 
 ## Summary
 
-* The analysis work we do in the MDIBL Computational Core can be boiled down to a few key components/tools/languages, two of which we will be discussing today (CWL and JSON/YAML)
+The analysis work we do in the MDIBL Computational Core can be boiled down to a few key components/tools/languages, two of which we will be discussing today (CWL and JSON/YAML)
 
 ## CWL
 
-* In a nutshell, the Common Workflow Language, also known as CWL, serves as a medium in which to write descriptions of existing command line programs and tools, and then to string those descriptions into functional workflows
-* The language requires you to preemptively record inputs and expected outputs, but can be very flexible in what it takes in, and what results are given
+In a nutshell, the Common Workflow Language (also known as CWL), serves as a medium in which to write descriptions of existing command line programs and tools, and then to string those descriptions into functional workflows
+
+The language requires you to preemptively record inputs and expected outputs, but can be very flexible in what it accepts, and what results are given
 * The main benefit of using this language is its incredible portability, re-usability, and scalability
-* Instead of having to deal with the environment of your host machine to run your analysis / execute your tool, you can use integrated Docker calls to download and configure images of your tool at runtime
-  * To run a pipeline written in CWL, essentially all you need to have installed is CWLTool and Docker
+
+Instead of having to deal with the environment of your host machine to run your analysis / execute your tool, you can use integrated Docker calls to download and configure images of your tool at runtime
+  * To launch a pipeline written in CWL, you only need to have CWLTool and Docker installed
   * Important to note, edits do need to be made to the accompanying YAML/JSON configuration file to properly pass in whatever files and program parameters you want to run your pipeline with.
   * However, you only need to do this once, and once edited, you have a saved record of what settings you used, and what tools, in what order, and which files were provided for input
-* Because of the above attributes, CWL has seen adoptions in fields such as Astronomy, Machine Learning, and Bioinformatics
+
+Because of the above attributes, CWL has seen adoptions in fields such as Astronomy, Machine Learning, and Bioinformatics
 
 **This tutorial assumes that you already have CWLTool and Docker installed locally or on a remote machine**
 
 ## YAML/JSON
 
-* These are human-readable data transfer languages, and interchangeable with one another (serve the same purpose, syntactically similar)
+These are human-readable data transfer languages, and interchangeable with one another (serve the same purpose, syntactically similar)
 
 ### JSON Example
 ```json
@@ -69,7 +73,7 @@ nthreads: 8
 
 ## Editing Configuration Files
 
-* Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files needed to successfully execute a wrapped tool
+Before we can start working with CWL directly, it's important to first get a grasp on how to edit the configuration files needed to successfully execute a wrapped tool
 * As mentioned above, they can be written in either the JSON or YAML language
 * To access the scripts and config files for this tutorial, clone the biocore_documentation repository found [here](https://github.com/mdibl/biocore_documentation)
   1. To clone, simply click the `Clone` button on the main repo page, and copy the link provided in the `Clone with HTTPS` box

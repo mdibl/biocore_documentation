@@ -1,12 +1,11 @@
 ---
-title: Working with the SRA and the SRA Toolkit
+title: Introduction to the Sequence Read Archive and SRA Toolkit
 author: "Nathaniel Maki"
-contact: nmaki@mdibl.org
 organization: MDIBL Computational Core
 date: "May 12th, 2020"
 ---
 **add images to improve guide**
-## What is SRA?
+# Introduction to the Sequence Read Archive and SRA Toolkit
 The Sequence Read Archive, or SRA, is an online archive for raw sequence data, generated from next generation sequencing tech such as Illumina, PacBio, and IonTorrent.
 
 It is also the National Institute of Health's (NIH) primary repository for high throughput sequencing data.

@@ -1,7 +1,6 @@
 ---
 title: Introduction to the Windows Subsystem for Linux
 author: "Nathaniel Maki"
-contact: nmaki@mdibl.org
 organization: MDIBL Computational Core
 date: "May 28th"
 ---

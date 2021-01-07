@@ -30,7 +30,7 @@ date: May 25th, 2020
 
 ## Platform Overview
 
-<img src="./ncbi_images/pubmed_start.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_start.png" width="1000">
 
 * PubMed draws from three main sources for citations and literature
   * MEDLINE
@@ -52,14 +52,14 @@ date: May 25th, 2020
 * Through the NIH Preprint Pilot (as of June 2020), includes preprints that are the result of research funded by National Institutes of Health
   * Currently focused on preprints relating to SARS-CoV-2 virus and COVID-19
 
-<img src="./ncbi_images/pubmed_PMC.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_PMC.png" width="1000">
 
 ### Bookshelf
 
 * Online archive that provides free access to books and documentation in the healthcare and life science fields
 * Differentiates itself from PMC and MEDLINE by the depth of the content available
 
-<img src="./ncbi_images/bookshelf_search.png" width="1000">
+<img src="./intro_to_ncbi_img/bookshelf_search.png" width="1000">
 
 ## Searching PubMed
 
@@ -73,12 +73,12 @@ PubMed offers both `general` and `advanced` query functionality
   * Depending on what you looked for, PubMed (using a machine learning algorithm) will do its best to find the most relevant citation(s)
   * While easy to use, a general search will often give you an overwhelming number of results
 
-<img src="./ncbi_images/pubmed_general_search.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_general_search.png" width="1000">
 
 * You can use the filters on the left to help refine your records
 * Once you've selected an entry:
 
-<img src="./ncbi_images/pubmed_results.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_results.png" width="1000">
 
 * Notice the `Full Text Links` button, that will take you to the publisher page, where the full article is freely available to access
 * You can use the `Page Navigation` links on the right to find similar articles and additional resources
@@ -88,26 +88,26 @@ PubMed offers both `general` and `advanced` query functionality
 * Advanced search is a bit more involved, but still fairly easy to use
 * To access the `Advanced Search` builder, select `Advanced` under the general search bar
 
-<img src="./ncbi_images/pubmed_advanced_search.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_advanced_search.png" width="1000">
 
 * To build a search query, first you need to `Add terms to the query box`
   * The dropdown menu gives you a large number of fields to choose from, which can be further refined by the terms entered
   * There is also an autocomplete feature built in that helps avoid spelling mistakes, and expands functionality
 
-<img src="./ncbi_images/pubmed_allfields.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_allfields.png" width="1000">
 
 * You can also modify how these terms are interpreted by using boolean operators
 
-<img src="./ncbi_images/Pubmed_searchop.png" width="1000">
+<img src="./intro_to_ncbi_img/Pubmed_searchop.png" width="1000">
 
 * Once you've entered in all terms, click `Search`
 
-<img src="./ncbi_images/pubmed_advanced_result.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_advanced_result.png" width="1000">
 
 * From here, you can refine your search in the same way that we covered in the `General search` component
 * If you go back to the `PubMed Advanced Search Builder` page, you'll notice that near the bottom of the page, your History and Search Details are saved
 
-<img src="./ncbi_images/pubmed_querybuilt.png" width="1000">
+<img src="./intro_to_ncbi_img/pubmed_querybuilt.png" width="1000">
 
 * When signed in to NCBI, these queries are recorded, and provide a good reference point, should you ever need to revisit for similar content in the future
 

@@ -1,6 +1,7 @@
-# MINOTA Workshop: Introduction to Quality Control
+# Introduction to Quality Control
 
-Welcome to the MDIBL MINOTA Workshop. In this portion of the course, we'll be covering the critical process of Quality Control.
+In this tutorial, we'll be covering the critical process of Quality Control.
+
 First, a review of some exploratory tools for both pre and post transcriptome analysis, and how they can provide you with an overview of your input data and output results, without having to sift through pages of text log files (as fun as that sounds).
 
 Next, we're taking a look at a couple of software packages that do the heavy lifting, and are chiefly responsible for the Quality Control aspects of QC. Specifically Trimmomatic, in an integrated context within Trinity, and Trim Galore!; a wonderful piece of software built by the developers of FastQC (which is, coincidentally, half of it!).
