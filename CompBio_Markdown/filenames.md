@@ -3,7 +3,8 @@ Today's tip for those of you who are trying to learn to work from the command-li
 
 When it comes to filenames, spaces, commas, and pretty much anything that isn't either a letter (a-z, A-Z), number (0-9), dash (-), underscore (_), or period (.) are ***EVIL and SHOULD BE AVOIDED.***
 
-tl;dr (i.e., here's the explanation)
+
+### tl;dr (i.e., here's the explanation)
 
 Command-lines are generally interpreted by breaking the line as entered (when you hit return or enter) by white space, which, while it can include some punctuation marks, is generally present in the form of spaces or tabs.
 
