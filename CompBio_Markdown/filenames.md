@@ -1,7 +1,7 @@
+## Spaces, commas, and other things that go bump in filenames (at the command-line)
 Today's tip for those of you who are trying to learn to work from the command-line (or who might ever send a file to me).
 
 When it comes to filenames, spaces, commas, and pretty much anything that isn't either a letter (a-z, A-Z), number (0-9), dash (-), underscore (_), or period (.) are EVIL and SHOULD BE AVOIDED.
-
 
 
 tl;dr (i.e., here's the explanation)
