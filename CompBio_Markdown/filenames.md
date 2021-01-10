@@ -13,7 +13,9 @@ So, for example, if you have files with names "*my_file_1.txt*" and "*my file 2.
 
 >cat my_file_1.txt
 
-This will successfully print out all of my_file_1.txt to the screen. It would also work for any other action (e.g., >cp my_file_1.txt my_file_1_copy.txt, which would duplicate "*my_file_1.txt*" into the second file "*my_file_1_copy.txt*").
+This will successfully print out all of my_file_1.txt to the screen. It would also work for any other action (e.g., 
+>cp my_file_1.txt my_file_1_copy.txt
+which would duplicate "*my_file_1.txt*" into the second file "*my_file_1_copy.txt*").
 
 In contrast, if you try that with the second file, you would see the following
 
