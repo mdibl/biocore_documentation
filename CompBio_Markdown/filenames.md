@@ -28,7 +28,9 @@ cat: 2.txt: No such file or directory
 
 This can be worked around, for example, by typing either
 
->cat my\ file\ 2.txt or >cat "my file 2.txt"
+>cat my\ file\ 2.txt 
+or 
+>cat "my file 2.txt"
 
 But, honestly, do you need that kind of extra work in your life?
 
