@@ -15,8 +15,8 @@ date: "May 28th"
 
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
-* PuTTY offers Windows-Version agnostic method of connecting to a remote machine via SSH
-* FileZilla provides a way of transfering files between local and remote machines, when command line tools such as `rsync` may not be available (or desired)
+* PuTTY offers a Windows-Version agnostic method of connecting to a remote machine via SSH
+* FileZilla provides a way of transferring files between local and remote machines, when command line tools such as `rsync` may not be available (or desired)
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If looking for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
@@ -47,13 +47,13 @@ To check which version of PowerShell you have installed, run the following comma
 
 <img src="./intro_to_wsl_img/powershell_ver_check.png">
 
-To see which version of Windows you're on, enter `winver` into the PowerShell commandline
+To see which version of Windows you're on, enter `winver` into the PowerShell command line
 
 <img src="./intro_to_wsl_img/winver.png">
 
 If you meet all of the criteria above, feel free to remote away :blush:
 
-If not, you need to install the OpenSSh plugin, or you can work with PuTTY and Filezilla to get similar funtionality:
+If not, you need to install the OpenSSh plugin, or you can work with PuTTY and Filezilla to get similar functionality:
 
 ### Installing OpenSSH into PowerShell (For Windows Version 7 +)
 
@@ -78,7 +78,7 @@ PuTTY is a free implementation of SSH for Windows, and will let you easily acces
 FileZilla, on the other hand, is a (free) FTP tool, letting you move data between remote machines and local
 * To install FileZilla, follow this [Link](https://filezilla-project.org/download.php?type=client), click `Download FileZilla Client`, and choose the standard FileZilla "version"
   * When running through the installer, be sure to choose `no` on the additional installation of McAfee
-* To connect, launch FileZilla and paste your Amazon instance name under `Host`, followed by entering your username and password under `Username` and `Password` respetively, and entering 22 for `Port`, and selecting the `Quickconnect` button
+* To connect, launch FileZilla and paste your Amazon instance name under `Host`, followed by entering your username and password under `Username` and `Password` respectively, and entering 22 for `Port`, and selecting the `Quickconnect` button
 
 <img src="./intro_to_wsl_img/filezilla.png">
 
