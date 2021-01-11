@@ -32,14 +32,13 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 
 ### Launching PowerShell
 
-#### Open the start menu  
+**Open the start menu**
+
 <img src="./intro_to_wsl_img/start_menu.png">
 
-#### Search for powershell  
-<img src="./intro_to_wsl_img/search_powershell.png">
+**Search for powershell and select from menu**
 
-#### Select from the menu  
-<img src="./intro_to_wsl_img/powershell.png">
+<img src="./intro_to_wsl_img/search_powershell.png">
 
 To check which version of PowerShell you have installed, run the following command:
   * `Get-Host | Select-Object Version`
