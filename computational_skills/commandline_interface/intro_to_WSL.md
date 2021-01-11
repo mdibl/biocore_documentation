@@ -28,7 +28,9 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 * If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
 * This means that you can remotely connect to a server via PowerShell without any additional installations
 
-**If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), a combination of FileZilla and PuTTY will work as well**
+**If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), you'll have to enable ssh by installing the OpenSSH feature into powershell**
+
+**alternatively, a combination of FileZilla and PuTTY will work as well**
 
 ### Launching PowerShell
 
@@ -51,7 +53,17 @@ To see which version of Windows you're on, enter `winver` into the PowerShell co
 
 If you meet all of the criteria above, feel free to remote away :blush:
 
-If not, you can work with PuTTY and Filezilla to get similar funtionality:
+If not, you need to install the OpenSSh plugin, or you can work with PuTTY and Filezilla to get similar funtionality:
+
+### Installing OpenSSH into PowerShell (For Windows Version 7 +)
+
+First search for `Optional Features` on the Windows start menu
+* Select `+ Add a feature`
+* Search the list for `OpenSSH Client`
+* Select `Install`
+* After install completes, reboot
+
+### PuTTY + FileZilla
 
 PuTTY is a free implementation of SSH for Windows, and will let you easily access your remote Amazon instance
 * To install PuTTY, follow this [Link](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and select the 64-bit MSI installer
