@@ -101,7 +101,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Curated and expanded upon by NCBI in the forms of GEO Datasets and Profiles
 * In addition to functioning as an experimental archive, NCBI provides a robust suite of tools for further analysis and exploration of submitted records
 
-<img src="./geo_images/geo_start.png" width="1000">
+<img src="./intro_to_geo_img/geo_start.png" width="1000">
 
 ### Sequence Read Archive (SRA)
 
