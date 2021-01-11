@@ -19,37 +19,41 @@ date: May 25th, 2020
 
 ## Logging in / Creating an NCBI Account
 
-#### Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.
+**Having an NCBI account greatly increases the flexibility of the tools and resources at your disposal.**
 
-* This includes working with NCBI's programming API:
-  * With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonymous
-* Assists in searching for and submitting through NCBI:
-  * Saving of search strategies and queries built through PubMed and other repositories
-  * You're required to have an account for data submission
-* To sign in/create an account, click this [link](https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)
+This includes working with NCBI's programming API:
+* With a verified account, your API calls are not throttled, and you're afforded more compute than if you were to remain anonymous
+
+Assists in searching for and submitting through NCBI:
+* Saving of search strategies and queries built through PubMed and other repositories
+* You're required to have an account for data submission
+
+To sign in/create an account, click this [link](https://www.ncbi.nlm.nih.gov/account/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)
 
 ## Platform Overview
 
 <img src="./intro_to_ncbi_img/pubmed_start.png" width="1000">
 
-* PubMed draws from three main sources for citations and literature
-  * MEDLINE
-  * PMC
-  * BookShelf
+PubMed draws from three main sources for citations and literature
+* MEDLINE
+* PMC
+* BookShelf
 
 ### MEDLINE
 
-* US National Library of Medicine (NLM) primary bibliographic database, containing over 25 million references to journal articles with a focus on biomedicine
+US National Library of Medicine (NLM) primary bibliographic database, containing over 25 million references to journal articles with a focus on biomedicine
 * Most of PubMed references are acquired from this source
-* A fair number of citations in MEDLINE are being updated with links to the free full text articles, archived in PMC
-* If full text is not available through PMC, you can use the `Loansome Doc` feature to "borrow" the article through the National Network of Libraries of Medicine
+
+A fair number of citations in MEDLINE are being updated with links to the free full text articles, archived in PMC
+
+**If full text is not available through PMC, you can use the `Loansome Doc` feature to "borrow" the article through the National Network of Libraries of Medicine**
 
 ### PubMed Central (PMC)
 
-* Free full-text archive of biomedical and life sciences journal literature, managed by NCBI
-* Contains over 5 million full text records, with literature dating back to as late as the 1700s
+Free archive of biomedical and life sciences journal literature, managed by NCBI, and contains over 5 million full text records, with records dating back to as late as the 1700s
 * If a full text article exists in a PubMed record, often it will include a link to a sibling PMC page
-* Through the NIH Preprint Pilot (as of June 2020), includes preprints that are the result of research funded by National Institutes of Health
+
+Through the NIH Preprint Pilot (as of June 2020), also includes preprints that are the result of research funded by National Institutes of Health
   * Currently focused on preprints relating to SARS-CoV-2 virus and COVID-19
 
 <img src="./intro_to_ncbi_img/pubmed_PMC.png" width="1000">

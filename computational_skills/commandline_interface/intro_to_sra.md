@@ -4,7 +4,7 @@ author: "Nathaniel Maki"
 organization: MDIBL Computational Core
 date: "May 12th, 2020"
 ---
-**add images to improve guide**
+**add intro_to_sra_img to improve guide**
 # Introduction to the Sequence Read Archive and SRA Toolkit
 The Sequence Read Archive, or SRA, is an online archive for raw sequence data, generated from next generation sequencing tech such as Illumina, PacBio, and IonTorrent.
 
@@ -60,7 +60,7 @@ The Sequence Read Archive can be broken into four main levels, each with their o
 * Analysis: DRZ, ERZ, SRZ accessions
 * Run: DRR, ERR, SRR accessions
 
-<img src="./images/sra_structure_infograph.png" width="600">
+<img src="./intro_to_sra_img/sra_structure_infograph.png" width="600">
 
 **will introduce GEO before SRA**
 
@@ -70,11 +70,11 @@ We'll be using this one [GEO summary page](https://www.ncbi.nlm.nih.gov/geo/quer
 
 To find the SRA link, just scroll down from the top of the page:
 
-<img src="./images/geo_accession_upper.png" width="600">
+<img src="./intro_to_sra_img/geo_accession_upper.png" width="600">
 
 And look near the bottom, and under **Relations** select the SRA accession link
 
-<img src="./images/geo_accession_lower.png" width="600">
+<img src="./intro_to_sra_img/geo_accession_lower.png" width="600">
 
 The accession link brings you to a page that holds all biological samples related to this analysis.
 Selecting, for example, this [Link](https://www.ncbi.nlm.nih.gov/sra/SRX365519[accn]) loads that specific run, and the files associated with it.
@@ -87,7 +87,7 @@ To do this:
 
 The SRA Run Selector page should open upo in another tab, and lookc like this:
 
-<img src="./images/sra_run_selector.png" width="1000">
+<img src="./intro_to_sra_img/sra_run_selector.png" width="1000">
 
 Under **Common Fields** you'll find a ton of information describing the samples from the study, including:
 * Assay Type (RNA-seq, CHiP-seq, etc)
