@@ -22,7 +22,7 @@ date: "May 28th"
 
 ## A Couple Caveats
 
-Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
+Before we begin, there are a couple things that I'd like to point out, mostly to save you time
 
 **If all you're looking to do is to remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is probably overkill**  
 * If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
@@ -49,7 +49,7 @@ To see which version of Windows you're on, enter `winver` into the PowerShell co
 
 <img src="./intro_to_wsl_img/winver.png">
 
-If you meet all of the criteria above, feel free to remote away!
+If you meet all of the criteria above, feel free to remote away :blush:
 
 If not, you can work with PuTTY and Filezilla to get similar funtionality:
 
@@ -77,13 +77,13 @@ It acts as a hub of sorts for Command Prompt, PowerShell, and WSL, and natively 
 
 ## Windows Subsystem for Linux
 
-<p>In a nutshell, WSL lets you execute a Linux environment directly in Windows. No virtual machine or VM software required.
+<p>In a nutshell, WSL lets you execute a Linux environment directly in Windows. No virtual machine or VM software required
 
 At the moment, you are constrained to command-line tools and applications, though Microsoft is working to bring full GUI
 applications to the platform. 
 
 This lets you leverage the wide range of professional programs developed for Windows, along with 
-the vast repositories of free and open source software built on and for Linux.</p>
+the vast repositories of free and open source software built on and for Linux</p>
 
 * WSL allows for the running of many common command-line tools, including: 
 * `rsync`, `grep`,`awk`,`sed`
