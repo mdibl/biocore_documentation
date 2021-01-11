@@ -30,7 +30,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 
 **If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), you'll have to enable ssh by installing the OpenSSH feature into powershell**
 
-**alternatively, a combination of FileZilla and PuTTY will work as well**
+**Alternatively, a combination of FileZilla and PuTTY will work as well**
 
 ### Launching PowerShell
 
