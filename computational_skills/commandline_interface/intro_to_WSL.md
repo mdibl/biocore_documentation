@@ -28,7 +28,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 * If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
 * This means that you can remotely connect to a server via PowerShell without any additional installations
 
-**If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), you'll have to enable ssh by installing the OpenSSH feature into powershell**
+**If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), you'll have to enable ssh by installing the OpenSSH feature into PowerShell**
 
 **Alternatively, a combination of FileZilla and PuTTY will work as well**
 
@@ -38,7 +38,7 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 
 <img src="./intro_to_wsl_img/start_menu.png">
 
-**Search for powershell and select from menu**
+**Search for PowerShell and select from menu**
 
 <img src="./intro_to_wsl_img/search_powershell.png">
 
