@@ -7,13 +7,16 @@ date: "May 28th"
 # Introduction to the Windows Subsystem for Linux
 
 ## Learning Objectives
-* Get introduced to PowerShell
+* Introduction to PowerShell
+* Installation of alternative toolset (PuTTY + FileZilla)
 * Learn how to enable the WSL feature-set 
 * Install the Ubuntu Linux distribution from the Microsoft Store
 * Launch Ubuntu Linux and install a small piece of software
 
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
+* PuTTY offers Windows-Version agnostic method of connecting to a remote machine via SSH
+* FileZilla provides a way of transfering files between local and remote machines, when command line tools such as `rsync` may not be available (or desired)
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If looking for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
