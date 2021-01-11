@@ -21,7 +21,7 @@ date: "May 28th"
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time.
 
-**If all you're looking to do is to remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is probably overkill.**  
+**If all you're looking to do is to remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is probably overkill**  
 * If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
 * This means that you can remotely connect to a server via PowerShell without any additional installations
 
