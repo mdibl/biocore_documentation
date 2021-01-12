@@ -26,7 +26,7 @@ Open PowerShell and type in the following command:
 
 Use `ls` to check the contents of the folder
 
-<img src="./configuring_ssh_img/ssh_ls.png">
+<img src="./configuring_ssh_img/powershell_ssh_ls.png">
 
 If there is no config file present, create one using:
 * `ni config`
@@ -38,7 +38,7 @@ Here is where you'll give your host machine a more concise name
 
 <img src="./configuring_ssh_img/config_notepad.png">
 
-You can see in my example that I named the `Host` smcc_aws
+You can see in my example (ignore the first `Host jenkins` entry) that I named the `Host` smcc_aws
 * `Hostname` is where you'd paste the full length name of your Amazon machine
 * `User` is whichever account you use to log into that machine
 
@@ -48,4 +48,37 @@ Now when you go to remote in, instead of typing in `ssh` `user@ec2.....`, simply
 
 It should look something like this
 
-<img src="./configuring_ssh_img/config_ssh.png">
+<img src="./configuring_ssh_img/powershell_config_ssh.png">
+
+## Linux/macOS
+
+Open a terminal and type in the following command:
+* `cd ~/.ssh`
+
+Use `ls -al` to check the contents of the folder
+
+<img src="./configuring_ssh_img/terminal_ssh_ls.png">
+
+If there is no config file present, create one using:
+* `touch config`
+
+Then, open it with:
+* `nano config`
+
+This launches the `nano` text editor within the terminal
+
+The format of this file is identical to the one mentioned above for Windows machines
+
+<img src="./configuring_ssh_img/terminal_nano.png">
+
+To save your changes to the config file:
+* On a Windows based keyboard, use `ctrl` + `o`, followed by enter to confirm
+* On a macOS based keyboard, use `ctrl` + `o`, followed by enter to confirm
+
+To exit out of `nano`:
+* On a Windows based keyboard, use `ctrl` + `x`
+* On a macOS based keyboard, use `ctrl` + `x`
+
+To remote in, just type `ssh` followed by whatever you gave as a name for the `Host` in your config file
+
+<img src="./configuring_ssh_img/terminal_config_ssh.png">
