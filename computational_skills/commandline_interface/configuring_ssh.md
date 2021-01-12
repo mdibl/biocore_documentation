@@ -34,7 +34,7 @@ If there is no config file present, create one using:
 Then, open it with:
 * `notepad config`
 
-Here is where you'll give your host machine a more concise name like soL
+Here is where you'll give your host machine a more concise name
 
 <img src="./configuring_ssh_img/config_notepad.png">
 
