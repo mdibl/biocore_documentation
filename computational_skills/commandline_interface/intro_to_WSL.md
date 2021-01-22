@@ -63,10 +63,12 @@ For those on PowerShell, if you'd like a nice quality of life upgrade, you can i
 It acts as a hub for Command Prompt, PowerShell, and WSL, and natively supports many terminal features that can be found on MacOS/Linux distributions
 ## Windows Subsystem for Linux
 
-<p>In a nutshell, WSL gives you access to a fully featured Linux environment within the Windows operating system. No virtual machine or VM software required
+<p>WSL gives you access to a fully featured Linux environment within the Windows operating system. No virtual machine or VM software required (the capability is already integrated)
 
 This lets you leverage the wide range of professional programs developed for Windows, along with 
-the vast repositories of free and open source software built on and for Linux</p>
+the vast repositories of free and open source software built on and for Linux
+
+Most importantly, it brings Windows users to functional command line parity with macOS and Linux, by providing them with a native Unix shell</p>
 
 * WSL allows for the running of many common command-line tools, including: 
 * `rsync`, `grep`,`awk`,`sed`
@@ -79,18 +81,17 @@ At the moment, you are constrained to command-line tools and applications, thoug
 
 ## Enabling WSL
 
-**WSL is supported on Windows 10 Version 1709 and higher**  
+**WSL 1 is supported on Windows 10 Version 1709 and higher**  
 
 **If you are running an earlier version, you need to update your system to gain access to this feature** 
 
-With the above requirement met, turning on WSL is fairly straightforward, especially as it comes baked into Windows.  
+With the above requirement met, turning on WSL is fairly straightforward, especially as it comes baked into Windows
 
 ### If you are comfortable working on the command line 
 * Open an elevated (administrator) PowerShell window
   * To do so, right click on the **Windows PowerShell** application and select *Run as administrator*
 * Next, paste the following code into your open, elevated PowerShell window: 
   * `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-* Reboot your computer at earliest convenience
 
 ### If you'd rather use the Graphical User Interface (GUI)
 
@@ -102,16 +103,18 @@ With the above requirement met, turning on WSL is fairly straightforward, especi
 
 <img src="./intro_to_wsl_img/wsl_box.png">
 
-**Click OK and Restart**
+**Read below before clicking OK**
+## WSL 1 / WSL 2
 
-## WSL1 / WSL2
+The steps above outline the install process for WSL 1, however, there is an upgrade available called WSL 2 (the caveat being you need a newer version of Windows).
 
-The steps above outline the install process for WSL1. WSL2 is an upgrade to WSL1 in most regards, with the caveat of requiring a newer version of Windows to be installed
-
-WSL2 give you access to a full linux kernel, as opposed to the cut-down (but still very functional) version in WSL1, in addition to greater system call compatibility and general performance
+WSL 2 provides access to a full linux kernel, as opposed to the cut-down (but still very functional) version in WSL 1. Additionally, the upgrade provides greater system call compatibility, and a general performance uplift
 
 **WSL2 is supported on Windows 10 Version 1903 and higher**
 
+If you still have the `Turn Windows features on or off` window open, check the box marked `Virtual Machine Platform`
+* Reboot
+### If you'd rather use the command line
 * Open an elevated (administrator) PowerShell window
   * To do so, right click on the **Windows PowerShell** application and select *Run as administrator*
 * Next, paste the following code into your open, elevated PowerShell window:
