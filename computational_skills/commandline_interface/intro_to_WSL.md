@@ -8,15 +8,12 @@ date: "May 28th"
 
 ## Learning Objectives
 * Introduction to PowerShell
-* Installation of alternative toolset (PuTTY + FileZilla)
 * Learn how to enable the WSL feature-set 
 * Install the Ubuntu Linux distribution from the Microsoft Store
 * Launch Ubuntu Linux and install a small piece of software
 
 ## Summary
 * PowerShell, an integrated Command Line Interface (CLI) within Windows, has the capability to connect to remote machines via SSH
-* PuTTY offers a Windows-Version agnostic method of connecting to a remote machine via SSH
-* FileZilla provides a way of transferring files between local and remote machines, when command line tools such as `rsync` may not be available (or desired)
 * For Windows users, PowerShell acts as a robust test environment for basic command line proficiency to be established
 * If looking for a more comprehensive "Unix-on-Windows" experience, install and work within the Windows Subsystem for Linux (WSL) 
 
@@ -29,9 +26,6 @@ Before we begin, there are a couple things that I'd like to point out, mostly to
 * This means that you can remotely connect to a server via PowerShell without any additional installations
 
 **If on a Windows OS earlier than Windows 10 1809 (Windows 7, 8, 8.1 etc), you'll have to enable ssh by installing the OpenSSH feature into PowerShell**
-
-**Alternatively, a combination of FileZilla and PuTTY will work as well**
-
 ### Launching PowerShell
 
 **Open the start menu**
@@ -63,36 +57,13 @@ First search for `Optional Features` on the Windows start menu
 * Select `Install`
 * After install completes, reboot
 
-### PuTTY + FileZilla
-
-PuTTY is a free implementation of SSH for Windows, and will let you easily access your remote Amazon instance
-* To install PuTTY, follow this [Link](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and select the 64-bit MSI installer
-* To connect, launch PuTTY and paste your Amazon instance name under `Host Name` and click `Open`
-
-<img src="./intro_to_wsl_img/putty_launch.png">
-
-* Click `Yes` on the initial prompt asking about ECSA key, and then enter your username and password to login
-
-<img src="./intro_to_wsl_img/putty_login.png">
-
-FileZilla, on the other hand, is a (free) FTP tool, letting you move data between remote machines and local
-* To install FileZilla, follow this [Link](https://filezilla-project.org/download.php?type=client), click `Download FileZilla Client`, and choose the standard FileZilla "version"
-  * When running through the installer, be sure to choose `no` on the additional installation of McAfee
-* To connect, launch FileZilla and paste your Amazon instance name under `Host`, followed by entering your username and password under `Username` and `Password` respectively, and entering 22 for `Port`, and selecting the `Quickconnect` button
-
-<img src="./intro_to_wsl_img/filezilla.png">
-
 For those on PowerShell, if you'd like a nice quality of life upgrade, you can install the Windows Terminal from the Microsoft Store
 * Windows Terminal is a fast, customizable, and modern terminal application, specifically built for Windows 10
 
-It acts as a hub of sorts for Command Prompt, PowerShell, and WSL, and natively supports many terminal features that can be found on MacOS/Linux distributions
-
+It acts as a hub for Command Prompt, PowerShell, and WSL, and natively supports many terminal features that can be found on MacOS/Linux distributions
 ## Windows Subsystem for Linux
 
-<p>In a nutshell, WSL lets you execute a Linux environment directly in Windows. No virtual machine or VM software required
-
-At the moment, you are constrained to command-line tools and applications, though Microsoft is working to bring full GUI
-applications to the platform. 
+<p>In a nutshell, WSL gives you access to a fully featured Linux environment within the Windows operating system. No virtual machine or VM software required
 
 This lets you leverage the wide range of professional programs developed for Windows, along with 
 the vast repositories of free and open source software built on and for Linux</p>
@@ -104,11 +75,13 @@ the vast repositories of free and open source software built on and for Linux</p
 * Language support for Python, Ruby, NodeJS, etc
 * Utilization of the selected Linux distributions package manager: installation of additional software/tools 
 
+At the moment, you are constrained to command-line tools and applications, though Microsoft is working to bring full GUI applications to the platform.
+
 ## Enabling WSL
 
-**WSL is supported on Windows 10 version 1709 and higher**  
+**WSL is supported on Windows 10 Version 1709 and higher**  
 
-**If you are running an earlier build, you need to update your system to gain access to this feature** 
+**If you are running an earlier version, you need to update your system to gain access to this feature** 
 
 With the above requirement met, turning on WSL is fairly straightforward, especially as it comes baked into Windows.  
 
@@ -131,6 +104,21 @@ With the above requirement met, turning on WSL is fairly straightforward, especi
 
 **Click OK and Restart**
 
+## WSL1 / WSL2
+
+The steps above outline the install process for WSL1. WSL2 is an upgrade to WSL1 in most regards, with the caveat of requiring a newer version of Windows to be installed
+
+WSL2 give you access to a full linux kernel, as opposed to the cut-down (but still very functional) version in WSL1, in addition to greater system call compatibility and general performance
+
+**WSL2 is supported on Windows 10 Version 1903 and higher**
+
+* Open an elevated (administrator) PowerShell window
+  * To do so, right click on the **Windows PowerShell** application and select *Run as administrator*
+* Next, paste the following code into your open, elevated PowerShell window:
+  * `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+* Restart your machine to finish the install and update to WSL2
+* **On reboot, open PowerShell and run the following command to set WSL2 as the default version**
+  * `wsl --set-default-version 2` 
 ## Installing a Linux Distribution
 
 **Enabling WSL is the first step, the second being to choose a Linux distribution to install from the Microsoft Store**
