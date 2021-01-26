@@ -6,7 +6,6 @@ organization: MDIBL Computational Core
 date: "May 25th, 2020"
 ---
 # Introduction to GEO
-
 ## Learning Objectives
 
 * Become familiar with what GEO is used for, and how it can supplement research

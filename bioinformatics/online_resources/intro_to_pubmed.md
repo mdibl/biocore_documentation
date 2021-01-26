@@ -5,7 +5,6 @@ organization: MDIBL Computational Core
 date: May 25th, 2020
 ---
 # Introduction to PubMed
-
 ## Learning Objectives
 
 * Become familiar with accessing and navigating PubMed/PMC
