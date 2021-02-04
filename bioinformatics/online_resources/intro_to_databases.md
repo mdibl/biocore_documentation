@@ -29,3 +29,4 @@ Commonly, databases are characterized as either primary or secondary, and this h
 * These resources are incredibly complex, combining manual and computational analysis/interpretation, and are very highly curated
 * Their primary purpose is to exist as vast repositories of reference material, with detailed data ranging from single genes, to complete and published experimental results
   * Ex: Uniprot, Ensembl, InterPro
+
