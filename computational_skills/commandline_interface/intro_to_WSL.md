@@ -22,6 +22,7 @@ date: "May 28th"
 ## A Couple Caveats
 
 Before we begin, there are a couple things that I'd like to point out, mostly to save you time
+
 **If all you're looking to do is to remote into a server via SSH, then enabling WSL and installing Ubuntu Linux is probably overkill**
 
 * If your Windows 10 release version is **1809** or higher, and you are running **PowerShell 5.1** or higher, you already have SSH capabilities
@@ -168,9 +169,11 @@ Open up the Microsoft Store and search `Ubuntu`
 
 #### Navigating to the Windows Filesystem
 
-By default, when launching your installed Linux distribution through WSL, you will be placed in your instance-specific home directory
+By default, when launching your installed Linux distribution through WSL, you will be placed into your Windows user directory
 
-To work with files/folders that exist on your Windows Filesystem, you can use the following command: `cd /mnt/`, followed by the letter of the drive where your data is stored on
+To navigate to your home directory within Linux, use the `cd ~` command
+
+To go back and work with files/folders that exist on your Windows Filesystem, you can use the following command: `cd /mnt/`, followed by the letter of the drive where your data is stored on
 
 * For example, if you've saved your output data to the `C:` drive, then your command would look like this: `cd /mnt/c`. If you've saved to another drive, just replace `c` with that letter (`d`,`e`,etc)
 
