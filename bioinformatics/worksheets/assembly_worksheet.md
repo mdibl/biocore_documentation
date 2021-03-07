@@ -21,3 +21,10 @@ In short, ensure that you've connected to the Bowdoin VPN, have logged into Moos
 <img src="./assembly_worksheet_img/img1.png" width="800">
 
 ### Navigating through the Cluster ( where are all the things :thinking: )
+
+The path to your specific User directory is `/mnt/courses/biol2566/people/` followed by your username
+
+Once you've migrated into your directory, you should see folder such as `analysis`, `data`, etc
+
+These are the folders that you'll be working with for the worksheet, and duration of the course
+
