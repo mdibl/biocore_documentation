@@ -101,8 +101,8 @@ The default file will look like this:
 				}
 			],
 			"options": [
-				"--assembly /compbio/people/YOUR_USERNAME/analysis/EXPERIMENT_NAME/ANALYSIS_ID/Trinity/Trinity.fasta>",
-				"--output /compbio/people/YOUR_USERNAME/analysis/EXPERIMENT_NAME/ANALYSIS_ID/transrate/",
+				"--assembly /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/Trinity/Trinity.fasta>",
+				"--output /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/transrate/",
 				"--threads 16"
 			],
 			"arguments":null
@@ -173,8 +173,8 @@ The block identifier will be denoted in **bold**, with expected output following
 #### 3.5: commands
 
 * Ignore the entries up until the "options" block
-* Update the "--assembly" option with the details for "experiment_name" and "analysis_id"
-* Update the "--output" option with the details for "experiment_name" and "analysis_id"
+* Update the "--assembly" option with the details for "pi", "experiment_name" and "analysis_id"
+* Update the "--output" option with the details for "pi", "experiment_name" and "analysis_id"
 
 **Expected**
 
@@ -196,8 +196,8 @@ The block identifier will be denoted in **bold**, with expected output following
 				}
 			],
 			"options": [
-				"--assembly /compbio/people/nmaki/analysis/jcoffman_001.reduced/0123456789/Trinity/Trinity.fasta>",
-				"--output /compbio/people/YOUR_USERNAME/analysis/jcoffman_001.reduced/0123456789/transrate/",
+				"--assembly /compbio/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/Trinity/Trinity.fasta>",
+				"--output /compbio/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/transrate/",
 				"--threads 16"
 			],
 			"arguments":null
@@ -226,3 +226,9 @@ To launch your shell script, simply type the following into the command line
 To check on a currently submitted job, you can use
 
 * `qstat -u "username"`
+
+### Step 6: Examining output
+
+Your output will be deposited into your home directory (reachable through `cd ~`) in a folder named `transrate_results`
+
+* `/home/nmaki/transrate_results`
