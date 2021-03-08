@@ -154,7 +154,7 @@ The block identifier will be denoted in **bold**, with expected output following
 
 * Update the "pi" entry to "Bowdoin"
 * Update the "experiment_name" entry to "jcoffman_001.reduced"
-* Update the "analysis_id" entry to an id of your choosing (can be 123456789)
+* Update the "analysis_id" entry to an id of your choosing (can be 0123456789)
 * Update the "analysis_path" entry with your username where specified
 * Update the "workdir" entry with your username where specified
 
