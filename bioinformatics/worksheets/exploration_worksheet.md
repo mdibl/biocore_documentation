@@ -183,7 +183,7 @@ The block identifier will be denoted in **bold**, with expected output following
 		{
 			"command": "transrate",
 			"batch": false,
-            "tasks": 1,
+			"tasks": 1,
 			"cpus": 3,
 			"memory": 128,
 			"singularity_path": "$classdirectory/software/sif",
