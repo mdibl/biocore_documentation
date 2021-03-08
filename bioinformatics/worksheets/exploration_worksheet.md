@@ -88,7 +88,7 @@ The default file will look like this:
 		{
 			"command": "transrate",
 			"batch": false,
-            "tasks": 1,
+			"tasks": 1,
 			"cpus": 3,
 			"memory": 128,
 			"singularity_path": "$classdirectory/software/sif",
