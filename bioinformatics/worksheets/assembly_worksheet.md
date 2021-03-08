@@ -36,7 +36,8 @@ Those template files can be found at `/mnt/courses/biol2566/software/compbio_com
 
 First, create a directory called `qsub` in your home directory (reached by typing `cd ~`)
 
-`cd` into `qsub`
+* `mkdir qsub`
+* `cd` into `qsub`
 
 Copy the template json files we've provided from the above path to the `qsub` directory
 
@@ -260,8 +261,15 @@ The block identifier will be denoted in **bold**, with expected output following
 
 ### Step 4: Executing Commander on edited Trinity json file
 
-Once you've made all the necessary changes, and your script closely resembles the example above, save your changes with `ctrl + o` and then exit out of `nano` using `ctrl + x`
+Once we've made all the necessary modification, and our script closely resembles the example above, save the changes with `ctrl + o` and then exit out of `nano` using `ctrl + x`
 
-`/mnt/courses/biol2566/software/compbio_commander/commander --sge --preflight nmaki_trinity_template.json`
+Next, we want to feed the json file into Commander, which will generate a bash script and allow us to run the job on our compute cluster
+
+The command you'll want to run is as follow:
+
+* `/mnt/courses/biol2566/software/compbio_commander/commander --sge --preflight nmaki_trinity_template.json`
+
+If you execute an `ls` in your `qsub` directory, you'll see that we now have another file, one with a `.sh` suffix
 
 ### Step 5: Launching the Trinity shell script through qsub
+
