@@ -102,6 +102,8 @@ The default file will look like this:
 			],
 			"options": [
 				"--assembly /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/Trinity/Trinity.fasta>",
+				"--left /compbio/data/PI_NAME/EXPERIMENT_NAME/jcoffman_001_reduced_all_R2.fastq",
+				"--right /compbio/data/PI_NAME/EXPERIMENT_NAME/jcoffman_001_reduced_all_R1.fastq",
 				"--output /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/transrate/",
 				"--threads 16"
 			],
@@ -197,6 +199,8 @@ The block identifier will be denoted in **bold**, with expected output following
 			],
 			"options": [
 				"--assembly /compbio/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/Trinity/Trinity.fasta>",
+				"--left /compbio/data/Bowdoin/jcoffman_001.reduced/jcoffman_001_reduced_all_R2.fastq",
+				"--right /compbio/data/Bowdoin/jcoffman_001.reduced/jcoffman_001_reduced_all_R1.fastq",
 				"--output /compbio/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/transrate/",
 				"--threads 16"
 			],
@@ -229,6 +233,6 @@ To check on a currently submitted job, you can use
 
 ### Step 6: Examining output
 
-Your output will be deposited into your home directory (reachable through `cd ~`) in a folder named `transrate_results`
+Your output will be deposited in a path similar to the one below
 
-* `/home/nmaki/transrate_results`
+* `/mnt/courses/biol2566/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/transrate/Trinity/`
