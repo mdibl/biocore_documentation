@@ -8,6 +8,7 @@ date: March 1st, 2021
 # Transcriptome Assembly Worksheet
 
 ## Learning Objectives
+
 * Improve skills in filesystem navigation and file modification through the use of the CLI and nano
 * Through the Bowdoin SGE Compute Cluster, use a Trinity script in conjunction with Commander to generate a basic transcriptome
 * Understand the options contained within the Trinity script, and how they can impact your resulting Assembly
