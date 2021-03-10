@@ -57,12 +57,12 @@ The default file will look like this:
 ```
 {
 	"job_details": {
-		"job_name": "ENTER_YOUR_JOBNAME_HERE"
+		"job_name": "YOUR_USERNAME_trinity_test"
 	},
 	"experiment_details": {
-		"pi": "PI_NAME",
-		"experiment_name": "EXPERIMENT_NAME",
-		"analysis_id": "ANALYSIS_ID",
+		"pi": "Bowdoin",
+		"experiment_name": "jcoffman_001.reduced",
+		"analysis_id": "0123456789",
 		"sample_path": "/mnt/courses/biol2566/data",
 		"analysis_path": "/mnt/courses/biol2566/people/YOUR_USERNAME/analysis",
 		"workdir": "/mnt/hpc/tmp/YOUR_USERNAME",
@@ -111,12 +111,12 @@ The default file will look like this:
 				"--seqType fq",
 				"--SS_lib_type RF",
 				"--normalize_by_read_set",
-				"--samples_file /compbio/data/PI_NAME/EXPERIMENT_NAME/SAMPLE_FILE_NAME",
+				"--samples_file /compbio/data/Bowdoin/jcoffman_001.reduced/jcoffman_001.reduced.samples.txt",
 				"--trimmomatic",
 				"--max_memory 64G",
 				"--CPU 16",
-				"--workdir /hpctmp/ENTER_YOUR_JOBNAME_HERE-$JOB_ID",
-				"--output /hpctmp/ENTER_YOUR_JOBNAME_HERE-$JOB_ID"
+				"--workdir /hpctmp/YOUR_USERNAME_trinity_test-$JOB_ID",
+				"--output /hpctmp/YOUR_USERNAME_trinity_test-$JOB_ID"
 			],
 			"arguments":null
 		}
@@ -128,7 +128,7 @@ The default file will look like this:
 		"sleep 60s",
 		"",
 		"# copy final output file from temporary working directory",
-		"cp $hpctmp/ENTER_YOUR_JOBNAME_HERE-$JOB_ID/Trinity.* $classdirectory/people/$USER/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/Trinity"
+		"cp $hpctmp/YOUR_USERNAME_trinity_test-$JOB_ID/Trinity.* $classdirectory/people/$USER/analysis/Bowdoin/jcoffman_001.reduced/0123456789/Trinity"
 	]
 }
 ```
@@ -153,9 +153,6 @@ The block identifier will be denoted in **bold**, with expected output following
 
 #### 3.2: experiment_details
 
-* Update the "pi" entry to "Bowdoin"
-* Update the "experiment_name" entry to "jcoffman_001.reduced"
-* Update the "analysis_id" entry to an id of your choosing (can be 0123456789)
 * Update the "analysis_path" entry with your username where specified
 * Update the "workdir" entry with your username where specified
 
@@ -196,8 +193,6 @@ The block identifier will be denoted in **bold**, with expected output following
 #### 3.5: commands
 
 * Ignore the entries up until the "options" block
-* Update the "--samples_file" option with the details for "pi_name" and "experiment_name" respectively
-  * We didn't define the "SAMPLE_FILE_NAME" previously, it is `jcoffman_001.reduced.samples.txt`
 * Update the "--workdir" option with the "JOBNAME" we defined at the top of the file
 * Update the "--output" option with the "JOBNAME" we defined at the top of the file
 
@@ -242,7 +237,7 @@ The block identifier will be denoted in **bold**, with expected output following
 
 #### 3.6 cleanup
 
-* Update the final line of the script, starting with `"cp`, with your JOBNAME, PI_NAME, EXPERIMENT_NAME, and ANALYSIS_ID using the inputs we defined in the "experiment_details" block above
+* Update the final line of the script, starting with `"cp`, with your YOUR_USERNAME using the input we defined in the "job_details" block above
 
 **Expected**
 
@@ -288,8 +283,6 @@ Your output will be deposited in a path similar to the one below
 
 The names of the directories that have been auto-generated rely upon the parameters given in the json script 
 
-Some of these folders may differ depending upon what you called them
-
 Assuming that everything has ran properly, running an `ls` in the `Trinity` directory should yield three results
 
 * Trinity.fasta
@@ -299,6 +292,8 @@ Assuming that everything has ran properly, running an `ls` in the `Trinity` dire
 #### 6.1 Trinity.fasta
 
 Running the `head -n 5` command on the `Trinity.fasta` file will give us a look into what constitutes our transcriptome assembly
+
+Keep in mind that every assembly will be a bit different, so your output will vary
 
 ```
 >TRINITY_DN30_c0_g1_i1 len=259 path=[0:0-258]
@@ -311,7 +306,7 @@ CCGAGATTTTGCGCAGCTTACTGTGTTGCTGCAAACCAGTCCAGCACAGCCGTGACAACAACCCAGCCAATCACAACCAT
 * These clusters are referenced as a gene, and are encoded within the Trinity fasta accession
   * The fasta accession encodes Trinity gene and isoform data
 
-Lets examine the second accession, `TRINITY_DN30_c0_g2_i5`
+Lets examine an accession, `TRINITY_DN30_c0_g2_i5` in this example
 
 `TRINITY_DN30_c0_g2_i5` points to Trinity read cluster `TRINITY_DN30_c0`, gene `g2`, and isoform `i5`
 
@@ -332,7 +327,8 @@ Path information is also stored on the same line as the accession, in the form o
 #### 6.2 Trinity.fasta.gene_trans_map
 
 * Mapping between the a Trinity gene id, and it's corresponding transcript accession
-* Useful for downstream analysis, such as porting abundance estimates to an expression matrix, using a built in Trinity tool
+* It's the necessary bridge between individual transcripts, which is where all of our direct questions concerning alignment, expression, and processing are carried out, and the genes, which is normally how the summary of the experiment will be presented
+* In a nutshell, we need to work with the transcripts, but the most interesting and interpretable answers lie at the gene level
 
 #### 6.3 Trinity.timing
 

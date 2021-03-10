@@ -57,12 +57,12 @@ The default file will look like this:
 ```
 {
 	"job_details": {
-		"job_name": "ENTER_YOUR_JOBNAME_HERE"
+		"job_name": "YOUR_USERNAME_transrate_test"
 	},
 	"experiment_details": {
-		"pi": "PI",
-		"experiment_name": "EXPERIMENT_NAME",
-		"analysis_id": "ANALYSIS_ID",
+		"pi": "Bowdoin",
+		"experiment_name": "jcoffman_001.reduced",
+		"analysis_id": "0123456789",
 		"sample_path": "/mnt/courses/biol2566/data",
 		"analysis_path": "/mnt/courses/biol2566/people/YOUR_USERNAME/analysis",
 		"workdir": null,
@@ -102,8 +102,8 @@ The default file will look like this:
 				}
 			],
 			"options": [
-				"--assembly /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/Trinity/Trinity.fasta",
-				"--output /compbio/people/YOUR_USERNAME/analysis/PI_NAME/EXPERIMENT_NAME/ANALYSIS_ID/transrate/",
+				"--assembly /compbio/people/YOUR_USERNAME/analysis/Bowdoin/jcoffman_001.reduced/0123456789/Trinity/Trinity.fasta",
+				"--output /compbio/people/YOUR_USERNAME/analysis/Bowdoin/jcoffman_001.reduced/0123456789/transrate/",
 				"--threads 16"
 			],
 			"arguments":null
@@ -132,9 +132,6 @@ The block identifier will be denoted in **bold**, with expected output following
 
 #### 3.2: experiment_details
 
-* Update the "pi" entry to "Bowdoin"
-* Update the "experiment_name" entry to "jcoffman_001.reduced"
-* Update the "analysis_id" entry to an id of your choosing (can be 0123456789)
 * Update the "analysis_path" entry with your username where specified
 
 **Expected**
