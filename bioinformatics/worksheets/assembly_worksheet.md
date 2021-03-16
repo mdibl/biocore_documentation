@@ -29,7 +29,7 @@ This User directory will be automatically populated with `Analysis`, `Data`, etc
 
 We're going to be editing some template files to point towards your specific directory structure, but first, we need to retrieve them
 
-Those template files can be found at `/mnt/courses/biol2566/software/compbio_commander/paramfile_templates`
+Those template files can be found at `/mnt/courses/biol2566/software/trinity_demo`
 
 ### Step 2: Copying Template files to qsub directory
 
@@ -38,9 +38,9 @@ First, create a directory called `qsub` in your home directory (reached by typin
 * `mkdir qsub`
 * `cd` into `qsub`
 
-Copy the template json files we've provided from the above path to the `qsub` directory
+Copy the template json file we've provided from the above path to the `qsub` directory
 
-* `cp /mnt/courses/biol2566/software/compbio_commander/paramfile_templates/*.json ./`
+* `cp /mnt/courses/biol2566/software/trinity_demo/*.json ./`
 
 ### Step 3: Editing the Trinity json file
 
