@@ -34,6 +34,50 @@ While these are described in steps, the order in which we do 1 and 2 can be reve
 
 ### Step 1: Assessment
 
+#### Trinitystats
+
+Built into Trinity, provides some basic metrics on our assembly
+
+```
+################################
+## Counts of transcripts, etc.
+################################
+Total trinity 'genes':  172
+Total trinity transcripts:      188
+Percent GC: 44.52
+
+########################################
+Stats based on ALL transcript contigs:
+########################################
+
+        Contig N10: 4734
+        Contig N20: 3158
+        Contig N30: 2711
+        Contig N40: 2361
+        Contig N50: 2010
+
+        Median contig length: 527.5
+        Average contig: 1032.97
+        Total assembled bases: 194198
+
+
+#####################################################
+## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+#####################################################
+
+        Contig N10: 3732
+        Contig N20: 2989
+        Contig N30: 2621
+        Contig N40: 2187
+        Contig N50: 1939
+
+        Median contig length: 461
+        Average contig: 970.77
+        Total assembled bases: 166972
+```
+
+Contains information about contig length distributions, based on all transcripts and only on the longest isoform per gene
+
 #### Transrate
 
 Written by the developers of Trinity, Transrate is a piece of software for *de-novo* transcriptome assembly quality analysis
@@ -68,6 +112,50 @@ The process here is identical to running Trinity:
 #### Step 1.3: Examining Output
 
 * Looking at the *.o##### log file
+
+##### Transrate Score
+
+The most useful metric, measure quality of the assembly *without* using a reference
+
+* Score is generated for the entire assembly, and for each contig, with the scoring process using the reads that were used to build the assembly as evidence
+* Provides you with the capability to compare multiple assemblies based off of the same reads
+  * an increase in your score most likely corresponds to an assembly with higher biological accuracy
+  * captures how confident you can be in what was assembled, and how "complete" your transcriptome is
+  * Scales from 0 to 1.0 (maximum)
+
+Expression-weighted quality score
+
+* Score for each contig is multiplied by its relative expression before being included in assembly score (low weight assigned to poorly expressed contigs)
+* More generous to assemblies with poorly assembled contigs of low expression
+  * stored in the `assemblies.csv` file
+
+```
+TRANSRATE ASSEMBLY SCORE     0.0573
+-----------------------------------
+TRANSRATE OPTIMAL SCORE      0.1539
+TRANSRATE OPTIMAL CUTOFF     0.3685
+good contigs                     81
+p good contigs                 0.43
+```
+
+##### Contig Score
+
+Stored in the `contigs.csv` file, each contig gets assigned a score by measuring how well it's supported by read evidence
+
+Four components to the score
+
+* Measure of correct base call
+* Measure of whether each base is part of the transcript
+* Probability that the contig is derived from a single transcript (and not pieces of two or more)
+* Probability that the contig is structurally complete and accurate
+
+##### Optimized Assembly Score
+
+Using contig scores, bad contigs are filtered out from your assembly, leaving only those that are well assembled
+
+* Done automatically, by learning contig score cutoff that maximizes assembly score
+* Good contigs determined by the above optimization are in the good.*.fa file
+* Bad contigs are in the bad.*.fa file
 
 ##### Contig Metrics
 
@@ -144,23 +232,6 @@ What makes a "good" mapping?
 
 Your mapping is "poor" if any of the above metrics aren't met
 
-Running in the above produces:
-
-##### Transrate Score
-
-The most useful metric, measure quality of the assembly *without* using a reference
-
-* Score is generated for the entire assembly, and for each contig, with the scoring process using the reads that were used to build the assembly as evidence
-
-```
-TRANSRATE ASSEMBLY SCORE     0.0573
------------------------------------
-TRANSRATE OPTIMAL SCORE      0.1539
-TRANSRATE OPTIMAL CUTOFF     0.3685
-good contigs                     81
-p good contigs                 0.43
-```
-
 The core stats that make up that file will be located here in the following directory
 
 * `/mnt/courses/biol2566/people/nmaki/analysis/Bowdoin/jcoffman_001.reduced/0123456789/transrate/`
@@ -181,11 +252,7 @@ Assuming that everything has ran properly, running an `ls` in the `transrate` di
 
 A program (from the CD-HIT suite) that is primarily used to cluster and compare protein and/or nucleotide sequences, massively reducing the amount of computational cycles required for downstream tasks
 
-Clusters nucleotides sequences that match some similarity threshold, building a fasta file of representative sequences (reduced) and a text file of the clusters
-
-Why is this tool useful?
-
-What risks might it pose?
+Clusters nucleotides sequences that match some similarity threshold, building a fasta file of representative sequences (reducing redundancy) and a text file of the clusters
 
 #### Step 2.1: Editing `bowdoin_cdhit_template.json`
 
@@ -220,20 +287,6 @@ Generates two files:
 >Cluster 3
 0	1953aa, >TRINITY_DN47_c0_g1_... at 97.54%
 1	3732aa, >TRINITY_DN47_c0_g1_... *
->Cluster 4
-0	3661aa, >TRINITY_DN2_c0_g3_i... *
->Cluster 5
-0	3218aa, >TRINITY_DN64_c0_g1_... *
->Cluster 6
-0	3212aa, >TRINITY_DN17_c0_g2_... *
->Cluster 7
-0	2989aa, >TRINITY_DN13_c0_g2_... *
->Cluster 8
-0	2812aa, >TRINITY_DN4_c0_g1_i... *
->Cluster 9
-0	2803aa, >TRINITY_DN30_c0_g1_... *
->Cluster 10
-0	2756aa, >TRINITY_DN13_c0_g1_... *
 ```
 
 The tool has two modes, global and local
@@ -242,12 +295,6 @@ The tool has two modes, global and local
 * local computes it as the number identical bases divided by the length of the alignment
 
 Sequence identity needs to exceed a sequence identity threshold to relate that two sequences are part of the same cluster
-
-##### Questions?
-
-How to tell what the "representative sequence" is for multiple accessions in a cluster?
-
-"*" characters following sequences in a cluster (falls below threshold)
 
 ### Step 3: Exploration
 
