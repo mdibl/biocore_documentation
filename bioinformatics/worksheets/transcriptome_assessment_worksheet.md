@@ -296,11 +296,15 @@ The tool has two modes, global and local
 
 Sequence identity needs to exceed a sequence identity threshold to relate that two sequences are part of the same cluster
 
+Used as a reduction technique, though you run the risk of merging together biologically interesting but similar sequences
+
+* Upshot is drop potentially redundant isoforms that would impact the quality of your assembly
+
 ### Step 3: Exploration
 
 #### TransDecoder
 
-Identifies candidate coding regions within transcripts
+Identifies candidate protein coding regions within transcripts, allowing you to stage sequences in blastp/blastx for functional discovery
 
 Based upon following criteria:
 
@@ -333,7 +337,7 @@ Also have the option to identify ORFs that have homology to known proteins throu
 
 Once you've extracted your ORFS, you can predict likely coding regions using TransDecoder.Predict
 
-* Final set of candidate coding regions have the flag '.transdecoder' and consist of extensions .pep, .cds, .gff3, and .bed
+* Normally, final set of candidate coding regions have the flag '.transdecoder' and consist of extensions .pep, .cds, .gff3, and .bed
 
 ```
 transcripts.fasta.transdecoder.pep : peptide sequences for the final candidate ORFs; all shorter candidates within longer ORFs were removed.
