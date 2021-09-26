@@ -86,17 +86,37 @@ The next module introduces basic commands and operations able to be carried out 
 * ```pwd```
 * ```ls```, ```ls -al```
 * ```cd```
+* ```man```
 
-## Guided Exercise 1
+### Guided Exercise 1.0: Where am I?
 
 Make sure you're connected to your AWS machine through terminal (macOS/Linux) or PowerShell (Windows)
 
-You should be greeted with an ASCII graphic that says ```Amazon Linux 2 AMI```
-
-The command line prompt should also look similar to this ```[ec2-user@ip-117-42-66-867 ~]$```
+* You should be greeted with an ASCII graphic that says ```Amazon Linux 2 AMI```
+* The command line prompt should also look similar to this ```[ec2-user@ip-117-42-66-867 ~]$```
 
 Your first task is to **find your current working directory**
 
+The proper command will print out your current location in the filesystem, and will look like this
+
+```/home/ec2-user```
+
+### Guided Exercise 1.1: What's in this Dir?
+
+Your next task is to list the contents of your current directory
+
+* You should see two objects, a directory (Dir, in blue text), and a README.txt file
+
+Then, use that same command with the **argument** to show hidden files and details
+
+* Your output will look much busier than before, with new files and directories that start with a ```.```
+
+### Guided Exercise 1.2: Getting a move on
+
+Now that you know what's in your home directory, let's move into the hidden ```.ghost_in_the_dir``` folder
+
+* Once you're in the dir, check to see what's inside it
+* Also check your current working directory
 
 
 ## Module 2: File and Folder Creation, Content Visualization
@@ -154,25 +174,4 @@ This module covers some more involved arguments and capabilities, such as wildca
 
 * ```wc```
 * ```* -r```
-* ```man```
 * ```nano```
-
-## Module 1
-
-Now that you're all situated on your provisioned machine, it's time to run our first command!
-
-Ensure that the terminal/PowerShell window is selected, and in all lowercase type
-
-```
-pwd
-```
-
-and hit the **enter** key
-
-You should get an output that looks something like this
-
-```
-/home/ec2-user
-```
-
-## Locating Current Working Directory
