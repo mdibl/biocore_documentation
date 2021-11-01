@@ -9,11 +9,11 @@ created: 09-29-2021
 
 ## Introduction:
 
-The Bioinformatics Core at MDIBL has put together a short document to help you brush up on your Unix skills. We'll start with first getting you set up on your remote computer and gradually move through useful commands, with links in our Orientation page to relevant third-party documentation should you need a refresher.
+The Bioinformatics Core at MDIBL has put together a short document to help you brush up on your Unix skills. We'll start with first getting you set up on your remote computer and gradually move through useful commands, with links in our Orientation page to relevant third-party and in-house documentation should you need a refresher.
 
-These module will be based upon the following [documentation](https://ngs-docs.github.io/2021-august-remote-computing/introduction-to-the-unix-command-line.html)
+These module will be loosely based upon the following [documentation](https://ngs-docs.github.io/2021-august-remote-computing/introduction-to-the-unix-command-line.html)
 
-If you get stuck on an exercise or are unsure about how to proceed, don't hesitate to check the above link or post in the Discussion board on LabCentral.
+If you get stuck on an exercise or are unsure about how to proceed, don't hesitate to check the above link or post in the Discussion board on LabCentral
 
 We will also be hosting office hours at set times throughout the week, where you can drop in and ask any questions you may have
 
@@ -38,11 +38,11 @@ We will also be hosting office hours at set times throughout the week, where you
 ### Exercise 1.2
 
 * Move into the hidden *ghost* directory
-* List all contents of *ghost* directory
 * Get current working directory
+* List all contents of *ghost* directory
 * Move back to a directory above
-* Move into *compbio* directory
-* List all contents of *compbio*
+* Move into *example_dir* directory
+* List all contents of *example_dir*
 * Move back to your home directory, using shorthand
 * Access ```man``` pages of a chosen CLI program
 
@@ -52,7 +52,7 @@ We will also be hosting office hours at set times throughout the week, where you
 
 * Move back into *ghost* directory
 * Create a folder called test_dir
-* Create a file called test1.txt inside of test_dir
+* Create a file called test1.txt inside of the *ghost* directory
 * Move test1.txt into test_dir
 * Move into test_dir, copy test1.txt to test2.txt
 * Now migrate out of test_dir, up one directory
@@ -82,13 +82,12 @@ We will also be hosting office hours at set times throughout the week, where you
 * Check permissions of the contents of your root dir
 * Print out the number of lines in the README file
 * Move into test_dir1
-* Open the test1.txt file in an editor and add some text, saving changes, and exit
+* Open the test1.txt file in nano and add some text, saving changes, and exit
 * Using the wildcard character, remove both text files
 * Navigate up a directory and remove test_dir
-* Create a new file made up all the contents of a file using redirection
 * Using redirection, store the contents of your directory into a text file
 * Pipe ls -l into less
-* Pipe cat to head (place some tab delimited tables in directory)
+* Print out the `history` of your command line entries to the terminal
 
 ## Module 5: Introduction to tmux
 
