@@ -80,7 +80,6 @@ We will also be hosting office hours at set times throughout the week, where you
 ### Exercise 4.1
 
 * Check permissions of the contents of your root dir
-* Print out the number of lines in the README file
 * Move into test_dir1
 * Open the test1.txt file in nano and add some text, saving changes, and exit
 * Using the wildcard character, remove both text files
@@ -93,9 +92,8 @@ We will also be hosting office hours at set times throughout the week, where you
 
 ### Exercise 5.1
 
-* Access the manual for tmux
 * Start a tmux session
-* Exit your tmux session
+* Quit your tmux session
 * Re-enter tmux, and detach from current session
 * View active sessions
 * Re-attach to your session, and split the pane

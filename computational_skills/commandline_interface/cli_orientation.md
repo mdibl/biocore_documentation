@@ -8,16 +8,17 @@ created: 09-07-2021
 
 ## Introduction
 
-Hi! Welcome to our Command Line Orientation! This document is meant to act as a guide to the command line, with links to useful resources, videos, and additional documentation for you to access and review. We've also included a link to a short worksheet, meant to test your CLI skills. For parity of experience, we've spun up personal Amazon compute instances for each user. This lets every student follow along, regardless of their local operating system.
+Hello! Welcome to our Command Line Orientation! This document is meant to act as a guide to the command line, with links to useful resources, videos, and additional documentation for you to access and review. We've also included a link to a short worksheet, meant to test your CLI skills. For parity of experience, we've spun up personal Amazon compute instances for each user. This lets every student follow along, regardless of their local operating system.
 
 Included under each module will be links to relevant material, provided by both in-house and external authors.
 
 ## Available Materials and References
 
-* For our in-house Command Line markdown documentation, select this [link](biocore_stuff).
-* Click this [link](https://www.youtube.com/watch?v=Irl8VXxqs8o) to access useful Command Line videos by the Hubbard Center for Genome Studies. These will be helpful for all Modules.
+* For our in-house Command Line markdown documentation, select this [link](https://compbio.mdibl.org/resources/tutorials/computational_skills/commandline_interface/documents).
+* Click this [link](https://www.youtube.com/channel/UCEGqL6Li_k2DX86a2L6DAoQ/videos) to access useful Command Line videos by the Hubbard Center for Genome Studies. These will be helpful for all Modules.
 * This [link](https://ngs-docs.github.io/2021-august-remote-computing/introduction-to-the-unix-command-line.html) also contains a useful guide to the command line, and from which the exercises somewhat follow.
 * Lastly, this [link](https://medium.com/hackernoon/a-gentle-introduction-to-tmux-8d784c404340) provides a fantastic introduction to the ```tmux``` program (which we'll cover in class).
+  * An alternative [link](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) if Medium is not available
 
 ## Module 0: SSH and Accessing Your Remote Machine
 
@@ -36,15 +37,11 @@ From Spotlight Search, type **terminal**. The terminal application should be the
 
 You can also launch the terminal from the application launcher or menu.
 
-Once terminal opens, you should see a window similar to the one below.
-
 ## Module 0: Windows
 
 ### Launching PowerShell in Windows
 
-Open the Start Menu, and search for PowerShell.
-
-Once you launch the PowerShell app, you should see a window similar to the one below.
+Open the Start Menu, and search for PowerShell, then select.
 
 ## SSH and Connecting to your AWS Machine
 

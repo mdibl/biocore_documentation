@@ -248,3 +248,55 @@ For a running record of everything we've done so far, we can use the `history` c
 
 ### tmux
 
+tmux is a terminal multiplexer. Essentially, it allows you to organize your terminal sessions into panes, which you can interact with and manipulate
+
+* eliminates need to have multiple terminal windows open
+* one of the most useful features is the ability to detach from a session
+  * session lives until you kill it (restart, etc), and you can reattach at any time
+  * especially needed when running large Bioinformatics processes
+  * trigger a pipeline, detach, and check back later
+* Otherwise, a "standard" terminal session can time out or lose connection, prematurely killing your process
+
+#### launch
+
+to launch a `tmux` session, simply execute the `tmux` command on the CLI
+
+* a green bar at the bottom of your terminal indicates that `tmux` is active
+
+commands in `tmux` are initiated by the use of a *prefix key*, followed by *command key*. Default is `ctrl + b` + `command`
+
+#### exit
+
+to exit `tmux`:
+
+* type `exit` on the terminal, or use `ctrl + d`
+
+now, relaunch `tmux`
+
+#### detach
+
+* to `detach` from an active session, use `ctrl + b` + `d`
+
+this drops you out of `tmux` and back into your standard shell
+
+however, you've only detached, not killed, so you can reconnect to your still-running session
+
+#### view
+
+* to view current sessions, use `tmux ls`
+
+#### attach
+
+to reattach to your session, use `tmux attach-session -t "session #"`
+
+#### pane-split
+
+to split your pane in a horizontal fashion, use `ctrl + b` + `"`
+
+for vertical, `ctrl + b` + `%`
+
+#### pane-navigation
+
+great, we now have a couple open panes. how do we navigate between them?
+
+simply use `ctrl + b` + `arrow key`
