@@ -19,6 +19,7 @@ Included under each module will be links to relevant material, provided by both 
 * This [link](https://ngs-docs.github.io/2021-august-remote-computing/introduction-to-the-unix-command-line.html) also contains a useful guide to the command line, and from which the exercises somewhat follow.
 * Lastly, this [link](https://medium.com/hackernoon/a-gentle-introduction-to-tmux-8d784c404340) provides a fantastic introduction to the ```tmux``` program (which we'll cover in class).
   * An alternative [link](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) if Medium is not available
+  * Tmux cheat sheet [link](https://tmuxcheatsheet.com/)
 
 ## Module 0: SSH and Accessing Your Remote Machine
 
