@@ -47,15 +47,11 @@ Open the Start Menu, and search for PowerShell, then select.
 
 Launching an ssh session is accomplished with the `ssh` command. `ssh` accepts the destination of the remote machine as an argument.
 
-You'll have been provided an address to a remote machine, as well as a .pem file.
+You'll have been provided credential to access your remote AWS machine
 
-The .pem file will allow you to securely access your specific AWS instance.
+Connecting will look similar to the below ssh command
 
-If your .pem file is located in your Downloads folder, ensure your terminal/PowerShell windows is open, and mimic the following command.
-
-```
-ssh -i ~/Downloads/test_key.pem ec2-user@ec2-3-138-120-84.us-east-2.compute.amazonaws.com
-```
+`ssh minota@ec2-3-138-120-84.us-east-2.compute.amazonaws.com`
 
 Your terminal/PowerShell windows should look like the following.
 
