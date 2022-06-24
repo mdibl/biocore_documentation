@@ -123,7 +123,7 @@ As this is just an introduction to NCBI, a guide to building queries with Entrez
   * Gene (region of biological interest in record)
   * Coding sequence (CDS)
 
-<img src="./ncbi_images/genbank_start.png" width="1000">
+<img src="./ncbi_images/genbank_start.PNG" width="1000">
 
 ### PubMed + PubMed Central
 
